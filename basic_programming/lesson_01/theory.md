@@ -71,7 +71,7 @@
 
 Интерпретаторы - медленные.
 
-![image](https://github.com/ait-tr/cohort27/blob/main/basic_programming/lesson_01/img/1.png)
+![image](https://raw.githubusercontent.com/ait-tr/cohort27/main/basic_programming/lesson_01/img/1.png)
 
 ## 05. Переменные
 
