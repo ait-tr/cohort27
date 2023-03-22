@@ -325,7 +325,7 @@ System.out.println(c); // -128
 `\n` - переход на новую строку, код `10`
 `\t` - символ табуляции (большой пробел), код `9`    
 
-![image](https://raw.githubusercontent.com/ait-tr/cohort27/main/basic_programming/lesson_05/img/1.webp)
+[Таблица кодировки](https://raw.githubusercontent.com/ait-tr/cohort27/main/basic_programming/lesson_05/img/1.webp)
 
 ## Словарик
 
