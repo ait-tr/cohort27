@@ -1,0 +1,18 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/arrays/src/Main1.java",
+    "code/arrays/src/Main2.java",
+    "code/arrays/src/Main3.java",
+    "code/arrays/src/Main4.java",
+    "code/arrays/src/Main5.java",
+    "code/arrays/src/Main6.java",
+    "code/arrays/src/Main7.java",
+    "code/arrays/src/Main8.java",
+    "code/arrays/src/Main9.java",
+    "code/arrays/src/Main10.java"
+  ],
+  "video": ""
+}
