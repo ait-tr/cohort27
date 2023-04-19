@@ -1,0 +1,17 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/homeworks/src/Task13_v1.java",
+    "code/homeworks/src/Task13_v2.java",
+    "code/homeworks/src/Task13_v3.java",
+    "code/homeworks/src/Task14.java",
+    "code/homeworks/src/Task15.java",
+    "code/switch_case/src/Main.java",
+    "code/switch_case/src/Main2.java",
+    "code/switch_case/src/Main3.java",
+    "code/strings/src/Main.java"
+  ],
+  "video": ""
+}
