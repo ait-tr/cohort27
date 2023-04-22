@@ -1,0 +1,19 @@
+{
+  "plan": "",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/src/beginner/Main.java",
+    "code/src/beginner/Main2.java",
+    "code/src/beginner/Main3.java",
+    "code/src/beginner/Main4.java",
+    "code/src/beginner/task/Main1.java",
+    "code/src/beginner/task/Main2.java",
+    "code/src/beginner/task/Main3.java",
+    "code/src/beginner/task/Main4.java",
+    "code/src/beginner/task/Main5.java"
+    "code/src/advanced/Task16Star.java",
+    "code/src/advanced/Main2.java"
+  ],
+  "video": ""
+}
