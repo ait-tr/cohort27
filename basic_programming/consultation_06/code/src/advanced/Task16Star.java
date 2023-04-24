@@ -18,7 +18,7 @@ public class Task16Star {
         for (int i = 0; i < words.length; i++) {
             String min = words[i];
             int minIndex = i;
-            for (int j = 0; j < words.length; j++) {
+            for (int j = i + 1; j < words.length; j++) {
                 // научиться сравнивать два слова и понимать, какое меньше, а какое больше
                 if (false) { // words[j] < min
                     min = words[j];
