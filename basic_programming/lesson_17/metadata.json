@@ -1,0 +1,20 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/strings_comparing/src/Main.java",
+    "code/strings_comparing/src/Main2.java",
+    "code/strings_comparing/src/Main3.java",
+    "code/strings_comparing/src/Main4.java",
+    "code/strings_comparing/src/Main5.java",
+    "code/strings_comparing/src/Main6.java",
+    "code/strings_comparing/src/Main6_v2.java",
+    "code/subprograms/src/Main.java",
+    "code/subprograms/src/Main1.java",
+    "code/subprograms/src/Main2.java",
+    "code/subprograms/src/Main3.java",
+    "code/subprograms/src/Ex14.java"
+  ],
+  "video": ""
+}
