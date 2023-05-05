@@ -1,0 +1,17 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/oop/src/example01/Human.java",
+    "code/oop/src/example01/Main.java",
+    "code/oop/src/example01/Main2.java",
+    "code/oop/src/example02/Main.java",
+    "code/oop/src/example02/Rectangle.java",
+    "code/oop/src/example03/Human.java",
+    "code/oop/src/example03/Main.java",
+    "code/oop/src/example04/Human.java",
+    "code/oop/src/example04/Main.java"
+  ],
+  "video": ""
+}
