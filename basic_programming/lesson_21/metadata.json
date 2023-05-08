@@ -1,0 +1,16 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/oop/src/Car.java",
+    "code/oop/src/Main.java",
+    "code/oop/src/Main2.java",
+    "code/oop/src/Main3.java",
+    "code/oop/src/ex/Ex15.java",
+    "code/oop/src/ex/Ex15_v2.java",
+    "code/oop/src/ex/Main.java",
+    "code/oop/src/ex/Point.java"
+  ],
+  "video": ""
+}
