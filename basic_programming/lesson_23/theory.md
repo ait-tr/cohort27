@@ -2,7 +2,7 @@
 
 ## 01. Решение задач средствами ООП
 
-![image](https://raw.githubusercontent.com/ait-tr/cohort27/main/basic_programming/lesson_22/img/1.png)
+![image](https://raw.githubusercontent.com/ait-tr/cohort27/main/basic_programming/lesson_23/img/1.png)
 
 * вывести координаты центра самого большого прямоугольника
 * самый большой - по площади
