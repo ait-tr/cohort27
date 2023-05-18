@@ -30,3 +30,4 @@ effective-settings.xml
 *.lck
 *.jar
 */dependency-reduced-pom.xml
+.DS_Store
