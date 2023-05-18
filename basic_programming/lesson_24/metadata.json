@@ -3,13 +3,13 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
-    "code/oop/src/example_01/Dictionary.java",
-    "code/oop/src/example_01/Main.java",
-    "code/oop/src/example_01/Main2.java",
-    "code/oop/src/example_01/NodeString.java",
-    "code/oop/src/example_02/Main.java",
-    "code/oop/src/example_02/Main2.java",
-    "code/oop/src/example_02/Node.java"
+    "code/oop/src/example01/Dictionary.java",
+    "code/oop/src/example01/Main.java",
+    "code/oop/src/example01/Main2.java",
+    "code/oop/src/example01/NodeString.java",
+    "code/oop/src/example02/Main.java",
+    "code/oop/src/example02/Main2.java",
+    "code/oop/src/example02/Node.java"
   ],
   "video": ""
 }
