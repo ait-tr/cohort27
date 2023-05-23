@@ -1,0 +1,19 @@
+{
+  "plan": "",
+  "theory": "",
+  "homework": "",
+  "code": [
+    "code/src/exceptions_and_validation/Main.java",
+    "code/src/exceptions_and_validation/Validator.java",
+    "code/src/exceptions_and_validation/LengthValidator.java",
+    "code/src/exceptions_and_validation/LowercaseValidator.java",
+    "code/src/exceptions_and_validation/SpecialCharactersValidator.java",
+    "code/src/exceptions_and_validation/UppercaseValidator.java",
+    "code/src/exceptions_and_validation/ValidationException.java",
+    "code/src/exceptions_and_validation/ValidatorPipeline.java",
+    "code/src/tasks_strings/Main.java",
+    "code/src/tasks_strings/Main2.java",
+    "code/src/tasks_strings/Task19Star.java"
+  ],
+  "video": ""
+}
