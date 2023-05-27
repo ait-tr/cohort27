@@ -1,0 +1,18 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/composition/src/example01/Bus.java",
+    "code/composition/src/example01/Driver.java",
+    "code/composition/src/example01/Main01.java",
+    "code/composition/src/example01/Main02.java",
+    "code/composition/src/example01/Passenger.java",
+    "code/composition/src/example02/Husband.java",
+    "code/composition/src/example02/Main.java",
+    "code/composition/src/example02/Main01.java",
+    "code/composition/src/example02/Main02.java",
+    "code/composition/src/example02/Wife.java"
+  ],
+  "video": ""
+}
