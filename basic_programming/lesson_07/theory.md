@@ -291,6 +291,6 @@ if (условие) {
 все остальные ситуации игнорируются
 ```
 
-* см. код `Main2`
+* см. код `composition.Main2`
 
 ![image](https://raw.githubusercontent.com/ait-tr/cohort27/main/basic_programming/lesson_07/img/3.png)

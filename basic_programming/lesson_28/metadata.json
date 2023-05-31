@@ -1,0 +1,23 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/src/composition/Passenger.java",
+    "code/src/composition/Bus.java",
+    "code/src/composition/Main2.java",
+    "code/src/composition/Driver.java",
+    "code/src/consultation/Task20.java",
+    "code/src/consultation/MyArray.java",
+    "code/src/consultation/Main04_no_comments.java",
+    "code/src/consultation/Task16Star.java",
+    "code/src/static_members/A.java",
+    "code/src/static_members/example/Security.java",
+    "code/src/static_members/example/Main.java",
+    "code/src/static_members/example/Building.java",
+    "code/src/static_members/Main.java",
+    "code/src/static_members/Main2.java",
+    "code/src/static_members/Main3.java"
+  ],
+  "video": ""
+}
