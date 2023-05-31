@@ -1,0 +1,14 @@
+{
+  "plan": "",
+  "theory": "theory.md",
+  "homework": "",
+  "code": [
+    "code/src/exceptions/ProblemWithFileException.java",
+    "code/src/model/User.java",
+    "code/src/repositories/UsersRepository.java",
+    "code/src/repositories/UsersRepositoryImpl.java",
+    "code/src/services/UsersService.java",
+    "code/src/Main.java"
+  ],
+  "video": ""
+}
