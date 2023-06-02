@@ -1,0 +1,18 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/src/example01/Main.java",
+    "code/src/example01/Pair.java",
+    "code/src/example01/Printer.java",
+    "code/src/example01/Table.java",
+    "code/src/example02/Main01.java",
+    "code/src/example02/Main02.java",
+    "code/src/example02/Table.java",
+    "code/src/composition/Main.java",
+    "code/src/composition/PasswordValidator.java",
+    "code/src/composition/UsersService.java"
+  ],
+  "video": ""
+}
