@@ -1,0 +1,19 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/src/oop/Main.java",
+    "code/src/oop/User.java",
+    "code/src/task26/Channel.java",
+    "code/src/task26/Program.java",
+    "code/src/task26/RemoteController.java",
+    "code/src/task26/TV.java",
+    "code/src/example01/Main.java",
+    "code/src/example01/Table.java",
+    "code/src/example02/Main.java",
+    "code/src/example02/Main2.java",
+    "code/src/example02/MyArrayList.java"
+  ],
+  "video": ""
+}
