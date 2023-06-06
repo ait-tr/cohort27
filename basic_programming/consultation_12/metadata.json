@@ -1,0 +1,18 @@
+{
+  "plan": "",
+  "theory": "theory.md",
+  "homework": "",
+  "code": [
+    "code/src/task18/Task18.java",
+    "code/src/task17/Main.java",
+    "code/src/task19/Task19Star.java",
+    "code/src/task20/Task20.java",
+    "code/src/task21/Circle.java",
+    "code/src/task21/Task21.java",
+    "code/src/task22/Human.java",
+    "code/src/task22/Task22.java",
+    "code/src/task23/MyArray.java",
+    "code/src/task23/Task23.java"
+  ],
+  "video": ""
+}
