@@ -1,0 +1,27 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/src/example01/Developer.java",
+    "code/src/example01/Human.java",
+    "code/src/example01/Main.java",
+    "code/src/example02/Developer.java",
+    "code/src/example02/Human.java",
+    "code/src/example02/Main.java",
+    "code/src/example02/Student.java",
+    "code/src/example03/Developer.java",
+    "code/src/example03/Human.java",
+    "code/src/example03/Main.java",
+    "code/src/example03/Main2.java",
+    "code/src/example03/Main3.java",
+    "code/src/example03/Point2D.java",
+    "code/src/example03/Point3D.java",
+    "code/src/example03/Printer.java",
+    "code/src/example03/PrinterRed.java",
+    "code/src/example04/Circle.java",
+    "code/src/example04/Ex16.java",
+    "code/src/example04/Figure.java"
+  ],
+  "video": ""
+}
