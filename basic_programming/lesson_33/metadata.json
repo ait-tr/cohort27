@@ -1,0 +1,14 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/src/example01/Attorney.java",
+    "code/src/example01/Contract.java",
+    "code/src/example01/Document.java",
+    "code/src/example01/DriverLicense.java",
+    "code/src/example01/ExpirationDocument.java",
+    "code/src/example01/Main.java"
+  ],
+  "video": ""
+}
