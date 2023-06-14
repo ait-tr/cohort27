@@ -1,0 +1,20 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "src/example01/Ellipse.java",
+    "src/example01/Figure.java",
+    "src/example01/Main.java",
+    "src/example01/Main2.java",
+    "src/example01/Rectangle.java",
+    "src/example02/AbstractFinder.java",
+    "src/example02/BinarySearchFinder.java",
+    "src/example02/Main.java",
+    "src/example02/SimpleFinder.java",
+    "src/example03/Dictionary.java",
+    "src/example03/LinkedList.java",
+    "src/example03/Main.java"
+  ],
+  "video": ""
+}
