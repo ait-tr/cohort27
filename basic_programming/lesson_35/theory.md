@@ -72,7 +72,7 @@ public class НазваниеКласса implements НазваниеИнтер�
 Интерфейс объектнаяПеременая = объектнаяПеременнаКласса;
 ```
 
-![image](https://raw.githubusercontent.com/ait-tr/cohort27/main/basic_programming/lesson_35/img.2.png)
+![image](https://raw.githubusercontent.com/ait-tr/cohort27/main/basic_programming/lesson_35/img/2.png)
 
 ### Когда используем интерфейсы, а когда абстрактные классы?
 
@@ -85,11 +85,11 @@ public class НазваниеКласса implements НазваниеИнтер�
 * Момент с обходом того, что у класса только один предок. - потому что сама задача не подразумевает наличие более одного предка.
 * Если вам необходимо, чтобы у класса было более одного предка - значит что-то не так с архитектурой.
 
-![image](https://raw.githubusercontent.com/ait-tr/cohort27/main/basic_programming/lesson_33/img/3.png)
+![image](https://raw.githubusercontent.com/ait-tr/cohort27/main/basic_programming/lesson_35/img/3.png)
 
 ### Проблема ромбовидного наследования
 
-![image](https://raw.githubusercontent.com/ait-tr/cohort27/main/basic_programming/lesson_33/img/4.png)
+![image](https://raw.githubusercontent.com/ait-tr/cohort27/main/basic_programming/lesson_35/img/4.png)
 
 ### Определенные правила именования
 
@@ -102,7 +102,7 @@ public class НазваниеКласса implements НазваниеИнтер�
 * `MyArrayList` - реализация списка на основе массива
 * `MyLinkedList` - реализация списка на основе узлов
 
-![image](https://raw.githubusercontent.com/ait-tr/cohort27/main/basic_programming/lesson_33/img/5.png)
+![image](https://raw.githubusercontent.com/ait-tr/cohort27/main/basic_programming/lesson_35/img/5.png)
 
 ### Дополнительно
 
