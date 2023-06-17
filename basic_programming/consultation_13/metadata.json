@@ -1,0 +1,14 @@
+{
+  "plan": "",
+  "theory": "theory.md",
+  "homework": "",
+  "code": [
+    "src/task24Star/Main.java",
+    "src/task24Star/MyArray.java",
+    "src/task24Star/Task24Star.java",
+    "src/task29Star/MyLinkedList.java",
+    "src/task29Star/Node.java",
+    "src/Task18.java"
+  ],
+  "video": ""
+}
