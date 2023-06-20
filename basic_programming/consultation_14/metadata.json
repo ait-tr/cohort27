@@ -1,0 +1,15 @@
+{
+  "plan": "",
+  "theory": "",
+  "homework": "",
+  "code": [
+    "code/src/main/java/de/ait/models/User.java",
+    "code/src/main/java/de/ait/repositories/UsersRepository.java",
+    "code/src/main/java/de/ait/repositories/UsersRepositoryArrayImpl.java",
+    "code/src/main/java/de/ait/services/UsersServiceImpl.java",
+    "code/src/main/java/de/ait/Main.java",
+    "code/src/test/java/de/ait/services/UsersServiceImplTest.java",
+    "code/pom.xml"
+  ],
+  "video": ""
+}
