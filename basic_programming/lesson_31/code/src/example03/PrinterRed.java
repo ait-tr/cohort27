@@ -1,4 +1,4 @@
-package example03;
+package example02;
 
 public class PrinterRed extends Printer {
     public void print(String message) {

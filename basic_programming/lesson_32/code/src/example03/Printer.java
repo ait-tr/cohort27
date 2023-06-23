@@ -1,4 +1,4 @@
-package example03;
+package example02;
 
 public class Printer {
     public void print(String message) {

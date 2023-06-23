@@ -1,0 +1,30 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/src/example03/Main2.java",
+    "code/src/example02/Main2.java",
+    "code/src/example01/Point2D.java",
+    "code/src/example03/Point2DColored.java",
+    "code/src/example03/Main1.java",
+    "code/src/example02/Point2DColored.java",
+    "code/src/example03/Point2D.java",
+    "code/src/example03/Main.java",
+    "code/src/example01/Main.java",
+    "code/src/example02/Point2D.java",
+    "code/src/example02/Main.java",
+    "code/src/example01/Main2.java",
+    "code/src/example00/Student.java",
+    "code/src/example00/Programmer.java",
+    "code/src/example00/Human.java",
+    "code/src/example00/Main.java",
+    "code/src/example04/Point2D.java",
+    "code/src/example04/Point2DColored.java",
+    "code/src/example05/Human.java",
+    "code/src/example05/Main.java",
+    "code/src/example05/Main2.java",
+    "code/src/example05/MySet.java"
+  ],
+  "video": ""
+}

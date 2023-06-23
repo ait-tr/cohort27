@@ -1,4 +1,4 @@
-package example03;
+package example02;
 
 public class Point3D extends Point2D {
     private int z;

@@ -1,6 +1,6 @@
 package example04;
 
-import example03.MyArray;
+import example02.MyArray;
 
 public class Main {
 

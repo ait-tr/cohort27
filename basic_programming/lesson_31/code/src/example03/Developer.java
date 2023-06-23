@@ -1,4 +1,4 @@
-package example03;
+package example02;
 
 public class Developer extends Human {
     private int experience;

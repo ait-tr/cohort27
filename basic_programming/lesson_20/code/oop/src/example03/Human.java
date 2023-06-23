@@ -1,4 +1,4 @@
-package example03;
+package example02;
 
 // класс, файл имеет название Human.java
 public class Human {
