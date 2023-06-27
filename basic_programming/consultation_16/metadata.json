@@ -1,0 +1,20 @@
+{
+  "plan": "",
+  "theory": "theory.md",
+  "homework": "",
+  "code": [
+    "code/example01/Order.java",
+    "code/example01/Good.java",
+    "code/example01/Main.java",
+    "code/example01/Main2.java",
+    "code/example02/UsersRepositoryFileImpl.java",
+    "code/example02/UsersRepositoryListImpl.java",
+    "code/example02/UsersService.java",
+    "code/example02/UsersRepository.java",
+    "code/example02/Main.java",
+    "goods.txt",
+    "orders.txt",
+    "orders_goods.txt"
+  ],
+  "video": ""
+}
