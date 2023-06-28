@@ -46,7 +46,7 @@ public static <T> MyArrayList<T> toMyArrayList(T[] array) {
 * `T[]` - тип входного массива, говорим, что он будет какого-то типа `T`
 * `MyArrayList<T>` - возвращаемое значение, список ТАКОГО ЖЕ ТИПА, КАК И ВХОДНОЙ МАССИВ
 
-## Оберточные типы/Wrappers
+## 02. Оберточные типы/Wrappers
 
 ```
 Integer
@@ -96,7 +96,7 @@ public class Boolean {
 
 ![image](https://raw.githubusercontent.com/ait-tr/cohort27/main/basic_programming/lesson_40/img/2.png)
 
-## Практическая задача
+## 03. Практическая задача
 
 * Необходимо реализовать реестр документов. 
 * Для всего реестра документов можно будет проводить различные манипуляции с ними.
