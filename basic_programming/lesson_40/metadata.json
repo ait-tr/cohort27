@@ -1,0 +1,22 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "src/example01/ListAlgorithms.java",
+    "src/example01/Main.java",
+    "src/example01/MyArrayList.java",
+    "src/example01/MyLinkedList.java",
+    "src/example02/Main.java",
+    "src/example02/Main2.java",
+    "src/example03/Certificate.java",
+    "src/example03/DocumentItem.java",
+    "src/example03/DocumentsRegistry.java",
+    "src/example03/License.java",
+    "src/example03/Main.java",
+    "src/example03/ReviewedDocument.java",
+    "src/example03/Reviewer.java",
+    "src/example03/Statement.java"
+  ],
+  "video": ""
+}
