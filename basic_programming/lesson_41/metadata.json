@@ -1,0 +1,14 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/Main.java",
+    "code/MyArrayList.java",
+    "code/MyIterable.java",
+    "code/MyIterator.java",
+    "code/MyLinkedList.java",
+    "code/MyList.java"
+  ],
+  "video": ""
+}
