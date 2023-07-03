@@ -29,6 +29,8 @@ public class Task1 {
       int x = scanner.nextInt();
       numbers.add(x);
     }
-    System.out.println("Получившийся список: " + numbers);
+    // отладочный вывод - вывод промежуточного результата
+    // перед сдачей программы его необходимо удалить или закомментировать
+//    System.out.println("[DEBUG] Получившийся список: " + numbers);
   }
 }
