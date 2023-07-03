@@ -19,9 +19,15 @@ public class Task2 {
     List<String> names = new ArrayList<>();
     System.out.println("Введите " + amount + " имён, каждое с новой строки:");
     for (int i = 0; i < amount; ++i) {
-      String name = scanner.nextLine();
-      names.add(name);
+      names.add(scanner.nextLine());
     }
+    printNumberedList(names);
+  }
 
+  private static void printNumberedList(List<String> words) {
+    for (int i = 0; i < words.size(); ++i) {
+      int k = i + 1; // k - порядковый номер, (индекс + 1)
+      System.out.println(k + ". " + words.get(i));
+    }
   }
 }
