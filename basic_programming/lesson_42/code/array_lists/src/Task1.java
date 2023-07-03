@@ -22,6 +22,13 @@ public class Task1 {
     // - сохранить прочитанные числа в список
     // - вывести только элементы с чётными индексами
     Scanner scanner = new Scanner(System.in);
-
+    System.out.print("Введите количество чисел: ");
+    int amount = scanner.nextInt();
+    System.out.println("Введите " + amount + " чисел:");
+    for (int i = 0; i < amount; ++i) { // повтори amount раз
+      int x = scanner.nextInt();
+      numbers.add(x);
+    }
+    System.out.println("Получившийся список: " + numbers);
   }
 }
