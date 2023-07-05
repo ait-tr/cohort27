@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Scanner;
 
@@ -37,12 +38,22 @@ public class Task4 {
     }
     printNumberedList(names);
     System.out.print("Введите номер имени, которое хотите заменить: ");
-    int ordToReplace = scanner.nextInt(); // читаем номер от 1 до size
-    scanner.nextLine();
-    int iToReplace = ordToReplace - 1; // нужен индекс от 0 до (size - 1)
-    System.out.println("Старое имя: " + names.get(iToReplace));
-    System.out.print("Введите новое имя: ");
-    String name = scanner.nextLine();
-    names.set(iToReplace, name);
+    try {
+      int ordToReplace = scanner.nextInt(); // читаем номер от 1 до size
+      scanner.nextLine();
+      int iToReplace = ordToReplace - 1; // нужен индекс от 0 до (size - 1)
+      System.out.println("Старое имя: " + names.get(iToReplace));
+      System.out.print("Введите новое имя: ");
+      String name = scanner.nextLine();
+      names.set(iToReplace, name);
+    } catch (IndexOutOfBoundsException e) {
+      // stdout - System.out - стандартный поток вывода
+      // stderr - System.err - стандартный поток сообщений об ошибках
+      System.out.println("Некорректный номер имени: " + e.getMessage());
+    } catch (InputMismatchException e) {
+      System.out.println("Некорректный ввод, введите целое число");
+    } finally {
+      System.out.println("Эта команда выполнится в любом случае");
+    }
   }
 }
