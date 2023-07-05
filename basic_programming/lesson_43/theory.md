@@ -22,6 +22,8 @@ In Java, there is a distinction between checked and unchecked exceptions.
 
 В Java существует различие между проверяемыми (checked) и непроверяемыми (unchecked) исключениями.
 
+![Exceptions Hierarchy (Иерархия исключений)](https://github.com/ait-tr/cohort27/raw/main/basic_programming/lesson_43/img/exceptions.jpeg)
+
 ## Checked Exceptions (Проверяемые исключения)
 
 Checked exceptions are exceptions that must be declared in the method signature or handled explicitly using a `try`-`catch` block. These exceptions are typically used to represent recoverable conditions or expected errors that a method or block of code may encounter. The compiler enforces that these exceptions are either caught or declared to be thrown.
