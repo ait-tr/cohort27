@@ -27,15 +27,16 @@ public class Task2 {
     int ordToRemove = scanner.nextInt(); // читаем номер от 1 до size
     scanner.nextLine(); // дочитываем до конца строки
     // нужен индекс от 0 до (size - 1)
-    System.out.println("Старое имя: " + names.get(ordToRemove - 1));
+    int iToRemove = ordToRemove - 1;
+    System.out.println("Старое имя: " + names.get(iToRemove));
     // удалим старое имя
-    names.remove(ordToRemove - 1); // номер превращаем в индекс
+    names.remove(iToRemove); // номер превращаем в индекс
     // прочитаем новое имя
     System.out.print("Введите новое имя: ");
     String name = scanner.nextLine();
     // добавим новое имя на то же место
     // в методе add указывается НОВЫЙ, желаемый индекс вставляемого элемента
-    names.add(ordToRemove - 1, name);
+    names.add(iToRemove, name);
     // добавление в конец: какой индекс?
     // предположим, что в списке 3 элемента (индексы от 0 до 2, size == 3)
     //                            0 1 2 3 4
