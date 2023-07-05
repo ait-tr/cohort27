@@ -8,6 +8,9 @@ public class Task3 {
     Scanner scanner = new Scanner(System.in);
     System.out.print("Введите количество имён: ");
     int amount = scanner.nextInt();
+    if (amount <= 0) {
+      return;
+    }
     scanner.nextLine();
     List<String> names = new ArrayList<>();
     System.out.println("Введите " + amount + " имён, каждое с новой строки:");
@@ -29,9 +32,19 @@ public class Task3 {
   }
 
   private static void replaceName(Scanner scanner, List<String> names) {
+    if (names.isEmpty()) {
+      // если список пустой:
+      // list.isEmpty()
+      // list.size() == 0
+      return;
+    }
     printNumberedList(names);
     System.out.print("Введите номер имени, которое хотите заменить: ");
     int ordToReplace = scanner.nextInt(); // читаем номер от 1 до size
+    if (ordToReplace < 1 || ordToReplace > names.size()) {
+      System.out.println("Некорректный номер имени: ");
+      return; // досрочное завершение метода
+    }
     scanner.nextLine();
     int iToReplace = ordToReplace - 1; // нужен индекс от 0 до (size - 1)
     System.out.println("Старое имя: " + names.get(iToReplace));
