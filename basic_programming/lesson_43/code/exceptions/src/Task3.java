@@ -41,11 +41,11 @@ public class Task3 {
     printNumberedList(names);
     System.out.print("Введите номер имени, которое хотите заменить: ");
     int ordToReplace = scanner.nextInt(); // читаем номер от 1 до size
+    scanner.nextLine();
     if (ordToReplace < 1 || ordToReplace > names.size()) {
       System.out.println("Некорректный номер имени: ");
       return; // досрочное завершение метода
     }
-    scanner.nextLine();
     int iToReplace = ordToReplace - 1; // нужен индекс от 0 до (size - 1)
     System.out.println("Старое имя: " + names.get(iToReplace));
     System.out.print("Введите новое имя: ");
