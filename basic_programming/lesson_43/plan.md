@@ -1,3 +1,2 @@
-1. For-Each
-2. Exceptions (Исключения)
-3. `Try`-`Catch`
+1. Exceptions (Исключения)
+2. `Try`-`Catch`
