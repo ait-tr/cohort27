@@ -1,3 +1,4 @@
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Main {
@@ -8,6 +9,7 @@ public class Main {
   private static final int ADD = 1;
   private static final int CLOSE = 2;
   private static final int EXIT = 0;
+  private static final int INCORRECT = -1;
 
   // MVP - Minimal Valuable Product
   // Кассовый аппарат:
@@ -30,13 +32,23 @@ public class Main {
   }
 
   private static int readCommand(Scanner scanner) {
-    System.out.println("Команды:");
-    System.out.println(ADD + ". Добавить позицию");
-    System.out.println(CLOSE + ". Закрыть чек"); // автоматически начнётся новый
-    System.out.println(EXIT + ". Выход");
-    System.out.println("Выберите команду:");
-    int command = scanner.nextInt();
-    scanner.nextLine();
+    int command = INCORRECT;
+    while (command == INCORRECT) {
+      System.out.println("Команды:");
+      System.out.println(ADD + ". Добавить позицию");
+      System.out.println(CLOSE + ". Закрыть чек"); // автоматически начнётся новый
+      System.out.println(EXIT + ". Выход");
+      System.out.print("Выберите команду: ");
+      try {
+        command = scanner.nextInt(); // здесь может быть InputMismatchException
+      } catch (InputMismatchException e) {
+        System.out.println("Некорректный ввод, введите номер команды!");
+      } finally {
+        // пропустить некорректную строчку
+        // или дочитать до конца корректную
+        scanner.nextLine();
+      }
+    }
     return command;
   }
 }
