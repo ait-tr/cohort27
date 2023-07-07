@@ -26,7 +26,20 @@ public class Main {
     int command;
     do {
       command = readCommand(scanner);
-      System.out.println("Вы ввели команду " + command);
+      switch (command) {
+        case ADD:
+          register.addInteractive(scanner);
+          break;
+        case CLOSE:
+          register.closeBill();
+          break;
+        case EXIT:
+          break;
+        default:
+          // Мы не должны здесь оказаться, `readCommand()` уже всё проверил
+          System.out.println("Некорректная команда: " + command);
+          break;
+      }
     } while (command != EXIT);
     System.out.println("До свидания!");
   }
