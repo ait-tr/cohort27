@@ -1,17 +1,26 @@
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Register {
 
+  // У поля `bills` МОЖНО вызывать любые методы, в том числе add и remove,
+  // но НЕЛЬЗЯ перезаписать само поле (ссылку) - нельзя написать `bills = новоеЗначение`
+  private final List<Bill> bills = new ArrayList<>(); // хранилище готовых (закрытых) чеков
+  private Bill current = new Bill(); // текущий (незакрытый) чек
+
   public void addInteractive(Scanner scanner) {
-    System.out.println("добавление позиции в чек");
-    // TODO добавление позиции в чек
+    current.addInteractive(scanner);
   }
 
   public void closeBill() {
-    System.out.println("закрытие чека");
-    // TODO:
-    //  закрытие чека
-    //  вывод на экран
-    //  начало нового чека
+    // закрытие чека current:
+    bills.add(current); // кладём только что закрытый чек в хранилище готовых чеков
+    // вывод его на экран
+    System.out.println(current);
+    // начало нового чека:
+    current = new Bill(); // начинаем новый чек
+    // bills:    Bill@1, Bill@2
+    // current:  Bill@3
   }
 }

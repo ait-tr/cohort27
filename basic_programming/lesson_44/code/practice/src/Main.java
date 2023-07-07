@@ -66,6 +66,7 @@ public class Main {
   }
 
   private static boolean isCommand(int command) {
+    // здесь мог бы быть любой другой способ проверки
     switch (command) {
       case ADD:
       case CLOSE:
