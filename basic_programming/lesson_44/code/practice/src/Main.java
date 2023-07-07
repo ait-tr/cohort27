@@ -34,10 +34,7 @@ public class Main {
   private static int readCommand(Scanner scanner) {
     int command = INCORRECT;
     while (!isCommand(command)) {
-      System.out.println("Команды:");
-      System.out.println(ADD + ". Добавить позицию");
-      System.out.println(CLOSE + ". Закрыть чек"); // автоматически начнётся новый
-      System.out.println(EXIT + ". Выход");
+      printMenu();
       System.out.print("Выберите команду: ");
       try {
         command = scanner.nextInt(); // здесь может быть InputMismatchException
@@ -64,5 +61,12 @@ public class Main {
       default:
         return false;
     }
+  }
+
+  private static void printMenu() {
+    System.out.println("Команды:");
+    System.out.println(ADD + ". Добавить позицию");
+    System.out.println(CLOSE + ". Закрыть чек"); // автоматически начнётся новый
+    System.out.println(EXIT + ". Выход");
   }
 }
