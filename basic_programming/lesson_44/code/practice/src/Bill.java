@@ -23,6 +23,10 @@ public class Bill {
 
   @Override
   public String toString() {
-    return "Чек";
+    StringBuilder result = new StringBuilder("Чек:\n");
+    for (Row row : rows) {
+      result.append(row).append("\n");
+    }
+    return result.toString();
   }
 }

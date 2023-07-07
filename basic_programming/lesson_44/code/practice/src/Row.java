@@ -7,4 +7,10 @@ public class Row {
     this.title = title;
     this.price = price;
   }
+
+  @Override
+  public String toString() {
+//    return title + " =" + price;
+    return String.format("%s = %.2f", title, price);
+  }
 }
