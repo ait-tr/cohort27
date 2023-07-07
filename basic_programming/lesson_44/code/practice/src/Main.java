@@ -33,7 +33,7 @@ public class Main {
 
   private static int readCommand(Scanner scanner) {
     int command = INCORRECT;
-    while (command != ADD && command != CLOSE && command != EXIT) {
+    while (!isCommand(command)) {
       System.out.println("Команды:");
       System.out.println(ADD + ". Добавить позицию");
       System.out.println(CLOSE + ". Закрыть чек"); // автоматически начнётся новый
@@ -41,7 +41,7 @@ public class Main {
       System.out.print("Выберите команду: ");
       try {
         command = scanner.nextInt(); // здесь может быть InputMismatchException
-        if (command != ADD && command != CLOSE && command != EXIT) {
+        if (!isCommand(command)) {
           System.out.println("Некорректный номер команды: " + command);
         }
       } catch (InputMismatchException e) {
@@ -53,5 +53,16 @@ public class Main {
       }
     }
     return command;
+  }
+
+  private static boolean isCommand(int command) {
+    switch (command) {
+      case ADD:
+      case CLOSE:
+      case EXIT:
+        return true;
+      default:
+        return false;
+    }
   }
 }
