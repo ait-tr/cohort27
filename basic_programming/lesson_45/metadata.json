@@ -3,6 +3,14 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
+    "code/hash_set/src/homework_42/Task1.java",
+    "code/hash_set/src/homework_43/Task1.java",
+    "code/hash_set/src/homework_44/Row.java",
+    "code/hash_set/src/homework_44/Bill.java",
+    "code/hash_set/src/homework_44/Register.java",
+    "code/hash_set/src/homework_44/Main.java",
+    "code/hash_set/src/Person.java",
+    "code/hash_set/src/Main.java"
   ],
   "video": ""
 }
