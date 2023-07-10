@@ -11,7 +11,9 @@ public class Register {
   private final List<Bill> bills = new ArrayList<>(); // хранилище готовых (закрытых) чеков
   private Bill current = new Bill(); // текущий (незакрытый) чек
 
+  // добавить позицию в текущий чек
   public void addInteractive(Scanner scanner) {
+    // берём текущий чек (`current`) и вызываем у него метод `добавитьПозицию`
     current.addInteractive(scanner);
   }
 
