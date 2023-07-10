@@ -40,7 +40,6 @@ public class Main {
     for (Person student : students) {
       System.out.println(student);
     }
-    System.out.println("Что-то пошло не так...");
     System.out.println("alice == bob: " + alice.equals(bob));
     System.out.println("bob == bob2: " + bob.equals(bob2));
   }

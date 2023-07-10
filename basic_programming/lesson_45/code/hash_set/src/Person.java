@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 public class Person {
 
   private final String name;
@@ -38,5 +40,14 @@ public class Person {
     return name.equals(otherPerson.name) &&
         lastName.equals(otherPerson.lastName) &&
         (age == otherPerson.age);
+  }
+
+  // правило для метода hashCode:
+  // - если объекты равны (equals()), хэш-коды должны совпадать
+  // - НЕ ОБЯЗАТЕЛЬНО в обратную сторону (но очень хотелось бы)!
+  @Override
+  public int hashCode() {
+//    return name.hashCode() * lastName.hashCode() * age;
+    return Objects.hash(name, lastName, age);
   }
 }
