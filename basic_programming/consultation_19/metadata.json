@@ -1,0 +1,12 @@
+{
+  "plan": "",
+  "theory": "theory.md",
+  "homework": "",
+  "code": [
+   "code/Main.java",
+   "code/Main2.java",
+   "code/MyHashMap.java",
+   "code/SimpleMap.java"
+  ],
+  "video": ""
+}
