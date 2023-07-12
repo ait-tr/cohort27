@@ -3,6 +3,8 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
+    "code/hash_map/src/Main.java",
+    "code/hash_map/src/Task1.java"
   ],
   "video": ""
 }
