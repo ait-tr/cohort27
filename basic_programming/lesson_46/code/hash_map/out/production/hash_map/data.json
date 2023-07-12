@@ -1,0 +1,8 @@
+{
+  "orderId": "4c2bc95b-9e17-4d78-9c07-3f639cbd38a8",
+  "status": "delivery",
+  "total": {
+    "currency": "EUR",
+    "amount": 123.45
+  }
+}
