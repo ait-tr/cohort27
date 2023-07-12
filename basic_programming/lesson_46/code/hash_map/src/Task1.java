@@ -1,6 +1,5 @@
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
@@ -85,16 +84,42 @@ public class Task1 {
       // правильный, но неаккуратный способ
 //      // если в Map уже есть такой ключ
 //      if (result.containsKey(group)) {
+//        // получаем существующий список студентов по ключу (группе)
 //        List<String> students = result.get(group);
 //        students.add(name);
 //        // при попытке положить значение по существующему ключу значение ПЕРЕЗАПИШЕТСЯ
 ////        result.put(group, students);
 //        // но нам не надо ничего перезаписывать, ссылка остаётся той же
 //      } else {
+//        // создаём новый список студентов, потому что в Map ещё нет такого ключа
 //        List<String> students = new ArrayList<>();
 //        students.add(name);
 //        result.put(group, students);
 //      }
+
+      // чуть более аккуратный способ
+      if (!result.containsKey(group)) { // если группу встретили первый раз
+        // нужно создать для неё список (пока пустой)
+        result.put(group, new ArrayList<>());
+      } // теперь список точно есть!
+//      List<String> students = result.get(group);
+//      students.add(name);
+      result.get(group).add(name);
+    }
+
+    // for-each:
+    // можно перебирать только ключи: Map.keySet() (множество ключей)
+    // for (String group : result.keySet())
+    // можно перебирать только значения (но зачем?): Map.values() (коллекция значений)
+    // for (List<String> students : result.values())
+    // можно перебирать пары ключ-значение (класс Map.Entry<K, V>): Map.entrySet() (множество пар)
+    for (Map.Entry<String, List<String>> pair : result.entrySet()) {
+      String group = pair.getKey(); // получить ключ из конкретной пары
+      System.out.println(group);
+      List<String> students = pair.getValue(); // получить значение из конкретной пары
+      for (String student : students) {
+        System.out.println("- " + student);
+      }
     }
   }
 }
