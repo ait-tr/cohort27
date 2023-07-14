@@ -1,3 +1,7 @@
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
+
 public class Main {
 
   // Проект:
@@ -52,6 +56,41 @@ public class Main {
   // McCain 16
   // Obama 17
   public static void main(String[] args) {
+    Map<String, Integer> votes = new HashMap<>();
+    Scanner scanner = new Scanner(System.in);
+    while (scanner.hasNextLine()) { // пока строчки не закончились
+      String line = scanner.nextLine(); // читаем следующую строку
+      int spaceIndex = line.indexOf(' '); // ищем в строке пробел
+//      int secondSpaceIndex = line.indexOf(' ', spaceIndex + 1);
+      if (spaceIndex == -1) { // если не нашли пробел
+        System.out.println("Некорректная строка: " + line);
+        continue; // досрочно перейдёт к следующему шагу цикла
+      }
+      // если сюда попали, то continue не было и пробел найден
+      // substring - подстрока - копирует из строки фрагмент
+      // от beginIndex (включая) до endIndex (не включая)
+      // с начала строки до пробела, не включая пробел
 
+      // i    =  012345678
+      // line = "McCain 10"
+      // spIn = 6
+      // name = line.substring(0, 6) = символы с индексами 0,1,2,3,4,5
+      // name = "McCain"
+      String name = line.substring(0, spaceIndex);
+      // vtSt = line.substring(7) = символы от индекса 7 до конца строки
+      // то же самое, что line.substring(7, line.size())
+      // vtSt = "10"
+      // начнём с символа ПОСЛЕ пробела (индекс пробела + 1)
+      // substring с одним аргументом (только начало) - "до самого конца"
+      String voteStr = line.substring(spaceIndex + 1);
+      // превратим строку voteStr в число vote: "10" -> 10
+      int vote = Integer.parseInt(voteStr); // NumberFormatException, если не получится
+      System.out.println("name: " + name + ", vote: " + vote);
+    }
+    // вместо while можно for:
+    // подвох: первую строку попытаемся прочитать без проверок
+//    for (String line = sc.nextLine(); sc.hasNextLine(); line = sc.nextLine()) {
+//      // обработка line
+//    }
   }
 }
