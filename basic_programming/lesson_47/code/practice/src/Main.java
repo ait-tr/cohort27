@@ -85,12 +85,29 @@ public class Main {
       String voteStr = line.substring(spaceIndex + 1);
       // превратим строку voteStr в число vote: "10" -> 10
       int vote = Integer.parseInt(voteStr); // NumberFormatException, если не получится
-      System.out.println("name: " + name + ", vote: " + vote);
+//      int oldValue = votes.get(name); // для нового имени вернёт null
+//      System.out.println("name: " + name + ", vote: " + vote);
+      // getOrDefault(ключ, значениеПоУмолчанию):
+      // - если ключ есть, даст его значение
+      // - если ключа нет, даст значениеПоУмолчанию
+      int value = votes.getOrDefault(name, 0); // для нового имени вернёт число 0
+//      System.out.println("  value: " + value + "+" + vote);
+      // value = value + vote;
+      value += vote; // добавляем прочитанные голоса
+      votes.put(name, value);
+//      System.out.println("  " + votes);
     }
     // вместо while можно for:
     // подвох: первую строку попытаемся прочитать без проверок
 //    for (String line = sc.nextLine(); sc.hasNextLine(); line = sc.nextLine()) {
 //      // обработка line
 //    }
+    // Map состоит из пар "ключ-значение"
+    // Map.Entry - класс, в котором может лежать отдельная такая пара
+    for (Map.Entry<String, Integer> result : votes.entrySet()) {
+      String name = result.getKey();
+      int vote = result.getValue();
+      System.out.println(name + " " + vote);
+    }
   }
 }
