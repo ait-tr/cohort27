@@ -47,13 +47,13 @@ public class Task1 {
 //    }
     // превращаем строку в массив char и перебираем массив через for-each
     for (char c : text.toLowerCase().toCharArray()) {
-      if (counters.containsKey(c)) {
-        int value = counters.get(c) + 1;
-        counters.put(c, value); // перезаписываем значение счётчика
-      } else {
-        counters.put(c, 1); // начальное значение счётчика
-      }
+      int oldValue = counters.getOrDefault(c, 0);
+      counters.put(c, oldValue + 1); // обновляем значение счётчика
     }
+    // получить значение из словаря:
+    // метод                          ключ есть   ключа нет
+    // get(ключ)                      значение    null
+    // getOrDefault(ключ, умолчание)  значение    умолчание
 
     for (Map.Entry<Character, Integer> entry : counters.entrySet()) {
       System.out.println(entry.getKey() + ": " + entry.getValue());
