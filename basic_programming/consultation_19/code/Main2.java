@@ -1,25 +1,25 @@
 /**
- * 7/11/2023
- * Example
+ * 7/18/2023
+ * SimpleProject
  *
  * @author Marsel Sidikov (AIT TR)
  */
 public class Main2 {
-    public static int myHashCode(String key) { // функция, которая преобразует строку в число (будущий индекс в нашем Map)
-        // сначала получим посимвольное представление исходной строки
-        char[] chars = key.toCharArray();
-        // посчитаем сумму кодов всех букв
-        int result = 0;
-        for (int i = 0; i < chars.length; i++) {
-            result = result + chars[i];
-        }
-        return result;
-    }
-
     public static void main(String[] args) {
-        int h1 = "Marsel".hashCode();
-        int h2 = "Masrel".hashCode();
-        System.out.println(h1);
-        System.out.println(h2);
+        Human marsel = new Human(29, "Marsel");
+        Human vadim = new Human(17, "Vadim");
+        Human kenan = new Human(27, "Kenan");
+        Human kenan2 = new Human(28, "Kenan");
+
+        MyHashMap<Human, String> map = new MyHashMap<>();
+        System.out.println(kenan2.hashCode());
+        System.out.println(kenan.hashCode());
+        System.out.println(kenan2.equals(kenan));
+
+        map.put(marsel, "Учитель");
+        map.put(vadim, "Ученик");
+        map.put(kenan, "Ученик");
+        map.put(kenan2, "Учитель");
+
     }
 }

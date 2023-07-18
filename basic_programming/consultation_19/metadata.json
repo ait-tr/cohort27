@@ -3,12 +3,13 @@
   "theory": "theory.md",
   "homework": "",
   "code": [
-    "code/Main2.java",
-    "code/Main.java",
-    "code/Main3.java",
+    "code/Human.java",
     "code/MyHashMap.java",
-    "code/MySimpleHashMap.java",
-    "code/SimpleMap.java"
+    "code/Main2.java",
+    "code/Main3.java",
+    "code/Main.java",
+    "code/SimpleMap.java",
+    "code/MySimpleHashMap.java"
   ],
   "video": ""
 }

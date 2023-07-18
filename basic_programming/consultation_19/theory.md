@@ -138,3 +138,44 @@ B =
 ```
 Реализовать метод get() в MyHashMap по аналогии с put()
 ```
+
+## Очень важные правила
+
+1. Если у двух объектов совпадают hashCode, то скорее всего они могут быть равны по equals(), но не обязательно
+2. Если у двух объектов разные хеш-коды, то по equals они точно не должны быть равны
+3. У строк это уже реализовано, если вы в качестве ключей хотите использовать свои классы, то нужно это правило тоже реализовать.
+4. Поэтому очень важно правильно переопределять equals() и hashCode()
+5. А можно это сделать неправильно?
+6. Если в equals участвует меньше полей, чем в hashCode - получится так, что по equals ваши объекты равны, а для HashMap они разные
+7. В хеш-коде может быть меньше полей, чем в equals, но не наоборот
+8. В идеале и там и там должно быть одинаковое количество полей
+9. Переопределять equals() и hashCode() нужно правильно, чтобы все работало в HashMap
+
+## HashMap в Java
+
+```java
+public class HashMap<K,V> {
+  static final int DEFAULT_INITIAL_CAPACITY = 1 << 4; // aka 16
+
+  static class Node<K,V> implements Map.Entry<K,V> {
+      final int hash;
+      final K key;
+      V value;
+      Node<K, V> next;
+  }
+
+  Node<K,V>[] table;
+
+  public V put(K key, V value) {
+    return putVal(hash(key), key, value, false, true);
+  }
+
+  final V putVal(int hash, K key, V value, boolean onlyIfAbsent,
+                 boolean evict) {
+    // ... 
+    if ((p = tab[i = (n - 1) & hash]) == null) // если бакет пустой
+      tab[i] = newNode(hash, key, value, null); // кладем новую пару
+   // ... 
+  }
+}
+```
