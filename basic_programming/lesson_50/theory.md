@@ -1,3 +1,57 @@
+# Command-Line Arguments (Аргументы командной строки)
+
+When running any program, additional arguments can follow the program name.
+
+При запуске любой программы после названия программы могут идти дополнительные аргументы.
+
+Example:
+
+Пример:
+```shell
+git commit -m "Initial commit"
+```
+
+These arguments are passed to the `String[] args` array - the single argument of the `main()` method, through which the program is launched.
+
+Именно эти аргументы попадают в массив `String[] args` - в единственный аргумент метода `main()`, через который запускается программа.
+
+- Arguments are separated by spaces.
+
+  Аргументы разделены пробелами.
+- Text in quotes is considered a single argument.
+
+  Текст в кавычках считается одним аргументом.
+- The first argument (with index zero) is the name of the program itself.
+
+  Первый (с индексом ноль) аргумент - имя самой программы.
+
+In Java, the "zero" argument - the program name - **disappears**.
+
+При этом "нулевой" аргумент - само название программы - в Java **пропадает**.
+
+In the above example, if git were a program written in Java, the `String[] args` array would have a size of 3.
+
+В приведённом выше примере, если бы git был программой, написанной на Java, массив `String[] args` был бы размера 3.
+
+The array elements would be:
+
+Состав массива:
+- 0: `commit`
+- 1: `-m`
+- 2: `Initial commit`
+
+You can check if there are any arguments using: `args.length > 0`.
+
+Проверить наличие аргументов можно следующим образом: `args.length > 0`.
+
+Command-line arguments are also called "launch parameters." They are usually used to run the program in a specific mode, such as allowing database editing or restricting it to viewing only.
+
+Аргументы командной строки ещё называют "параметры запуска". Обычно они нужны для того, чтобы запустить программу в конкретном режиме -- например, разрешить возможность редактирования базы данных или оставить только просмотр.
+
+Another use case is setting initial constants for the program.
+
+Ещё один вариант использования - задание начальных констант программы.
+
 # File Path (Путь к файлу)
 
 The file path can be specified as either relative (relative to the working directory) or absolute (starting from the root directory of the file system).
@@ -165,57 +219,3 @@ Opening the same file simultaneously for **reading and writing** (or for **writi
 Make sure you open a "free" file for writing and close it immediately after writing.
 
 Убедитесь, что вы открыли для записи "свободный" файл, и после записи тут же закройте его.
-
-# Command-Line Arguments (Аргументы командной строки)
-
-When running any program, additional arguments can follow the program name.
-
-При запуске любой программы после названия программы могут идти дополнительные аргументы.
-
-Example:
-
-Пример:
-```shell
-git commit -m "Initial commit"
-```
-
-These arguments are passed to the `String[] args` array - the single argument of the `main()` method, through which the program is launched.
-
-Именно эти аргументы попадают в массив `String[] args` - в единственный аргумент метода `main()`, через который запускается программа.
-
-- Arguments are separated by spaces.
-
-  Аргументы разделены пробелами.
-- Text in quotes is considered a single argument.
-
-  Текст в кавычках считается одним аргументом.
-- The first argument (with index zero) is the name of the program itself.
-
-  Первый (с индексом ноль) аргумент - имя самой программы.
-
-In Java, the "zero" argument - the program name - **disappears**.
-
-При этом "нулевой" аргумент - само название программы - в Java **пропадает**.
-
-In the above example, if git were a program written in Java, the `String[] args` array would have a size of 3.
-
-В приведённом выше примере, если бы git был программой, написанной на Java, массив `String[] args` был бы размера 3.
-
-The array elements would be:
-
-Состав массива:
-- 0: `commit`
-- 1: `-m`
-- 2: `Initial commit`
-
-You can check if there are any arguments using: `args.length > 0`.
-
-Проверить наличие аргументов можно следующим образом: `args.length > 0`.
-
-Command-line arguments are also called "launch parameters." They are usually used to run the program in a specific mode, such as allowing database editing or restricting it to viewing only.
-
-Аргументы командной строки ещё называют "параметры запуска". Обычно они нужны для того, чтобы запустить программу в конкретном режиме -- например, разрешить возможность редактирования базы данных или оставить только просмотр.
-
-Another use case is setting initial constants for the program.
-
-Ещё один вариант использования - задание начальных констант программы.
