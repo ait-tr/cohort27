@@ -1,4 +1,4 @@
-public class Main {
+public class Task01CLIExample {
 
   // GUI - graphical user interface - графический интерфейс пользователя
   // CLI - command line interface - интерфейс командной строки
