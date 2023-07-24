@@ -24,6 +24,11 @@ public class Main {
     Month second = Month.values()[1];
     System.out.println("second: " + second);
 
+    // статический метод Класс.valueOf("ЗНАЧЕНИЕ") превратит строку в соответствующее
+    // значение. Значение должно совпадать со строкой ПОСИМВОЛЬНО.
+    System.out.println(
+        "Month.valueOf(\"March\".toUpperCase()): " + Month.valueOf("March".toUpperCase()));
+
     // enum применяется для объединения констант, список которых не планируется менять,
     // или для изменения списка всё равно потребуется переписывать программу.
 
