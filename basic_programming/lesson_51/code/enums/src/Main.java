@@ -22,7 +22,7 @@ public class Main {
 //    Month[] months = Month.values();
 //    Month second = months[1]; // (месяц с индексом 1 - то есть второй по порядку)
     Month second = Month.values()[1];
-    System.out.println("second: " + second);
+    System.out.println("second: " + second + ", second.getName(): " + second.getName());
 
     // статический метод Класс.valueOf("ЗНАЧЕНИЕ") превратит строку в соответствующее
     // значение. Значение должно совпадать со строкой ПОСИМВОЛЬНО.
