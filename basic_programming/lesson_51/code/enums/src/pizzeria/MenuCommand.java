@@ -19,20 +19,30 @@ public enum MenuCommand {
 
   public static MenuCommand readCommand(Scanner scanner) {
     if (!scanner.hasNext()) {
+      // Мы должны выбрасывать исключение, когда что-то пошло настолько не так,
+      // что мы не можем это исправить.
       throw new RuntimeException("Ожидается ввод команды");
     }
     String input = scanner.next();
     switch (input.toLowerCase()) {
-      case "1":
+      case "1": // Integer.toString(START.ordinal())
       case "start":
       case "начать":
         return START;
-      case "2":
+      case "2": // Integer.toString(EXIT.ordinal())
       case "exit":
       case "выход":
         return EXIT;
       default:
         return UNEXPECTED;
+    }
+  }
+
+  public static void printMenu() {
+    for (MenuCommand command : values()) {
+      if (!command.message.isEmpty()) { // message пустое для всех служебных значений
+        System.out.println(command.ordinal() + ". " + command.message);
+      }
     }
   }
 }
