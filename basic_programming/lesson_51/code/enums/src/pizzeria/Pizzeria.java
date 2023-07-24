@@ -1,5 +1,7 @@
 package pizzeria;
 
+import java.util.Scanner;
+
 public class Pizzeria {
 
   // MVP - minimum viable product - минимально жизнеспособный продукт.
@@ -15,6 +17,19 @@ public class Pizzeria {
   //   - данные о заказе добавляются в файл (передаются на кухню) (заказ завершён)
   // - выход
   public static void main(String[] args) {
-
+    Scanner scanner = new Scanner(System.in);
+    while (true) {
+      MenuCommand command = MenuCommand.readCommand(scanner);
+      switch (command) {
+        case START:
+          System.out.println("Делаем заказ");
+          break;
+        case UNEXPECTED:
+          System.out.println("Некорректная команда");
+          break;
+        case EXIT:
+          return; // завершение работы метода main()
+      }
+    }
   }
 }
