@@ -1,0 +1,14 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/enums/src/Main.java",
+    "code/enums/src/Month.java",
+    "code/enums/src/MonthOld.java",
+    "code/enums/src/pizzeria/Pizzeria.java",
+    "code/enums/src/pizzeria/MenuCommand.java",
+    "code/enums/src/pizzeria/Pizza.java"
+  ],
+  "video": ""
+}
