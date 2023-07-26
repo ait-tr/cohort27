@@ -1,5 +1,3 @@
-package pizzeria;
-
 import java.util.Scanner;
 
 public enum MenuCommand {
