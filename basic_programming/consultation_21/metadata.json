@@ -1,0 +1,13 @@
+{
+  "plan": "",
+  "theory": "theory.md",
+  "code": [
+    "code/models/Pizza.java",
+    "code/models/Size.java",
+    "code/models/Type.java",
+    "code/repositories/PizzaRepository.java",
+    "code/repositories/PizzaRepositoryCsvFileImpl.java",
+    "code/Main.java"
+  ],
+  "video": ""
+}
