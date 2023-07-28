@@ -30,34 +30,25 @@ public class Pizza {
     price = sizeToPrice.get(size);
   }
 
-  // фабричный метод, прочитает параметры пиццы в интерактивном режиме
-  public static Pizza readInteractive(Scanner scanner) {
-    // TODO избавиться от дублирования
-    System.out.println("Выберите пиццу:");
-    for (String name : prices.keySet()) {
+  private static String readValueFromSet(Scanner scanner, Set<String> values, String title) {
+    System.out.println("Выберите " + title + ":");
+    for (String name : values) {
       System.out.println("- " + name);
     }
-    System.out.print("Введите название: ");
-    String name = scanner.nextLine();
-    while (!prices.containsKey(name)) {
-      System.out.println("Некорректное название пиццы: " + name);
-      System.out.print("Введите название: ");
-      name = scanner.nextLine();
+    System.out.print("Введите " + title + ": ");
+    String value = scanner.nextLine();
+    while (!values.contains(value)) {
+      System.out.println("Некорректное " + title + " пиццы: " + value);
+      System.out.print("Введите " + title + ": ");
+      value = scanner.nextLine();
     }
+    return value;
+  }
 
-    Set<String> sizes = prices.get(name).keySet();
-    System.out.println("Выберите размер:");
-    for (String size : sizes) {
-      System.out.println("- " + size);
-    }
-    System.out.print("Введите размер: ");
-    String size = scanner.nextLine();
-    while (!sizes.contains(size)) {
-      System.out.println("Некорректный размер: " + size);
-      System.out.print("Введите размер: ");
-      size = scanner.nextLine();
-    }
-
+  // фабричный метод, прочитает параметры пиццы в интерактивном режиме
+  public static Pizza readInteractive(Scanner scanner) {
+    String name = readValueFromSet(scanner, prices.keySet(), "название");
+    String size = readValueFromSet(scanner, prices.get(name).keySet(), "размер");
     return new Pizza(name, size);
   }
 
