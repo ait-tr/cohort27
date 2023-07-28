@@ -26,6 +26,7 @@ public class Pizzeria {
           break;
         case START:
           Pizza pizza = Pizza.readInteractive(scanner);
+          System.out.println("[DEBUG] " + pizza);
           // TODO запись заказа (пиццы) в файл с заказами
           break;
         case EXIT:

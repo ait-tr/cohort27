@@ -86,4 +86,13 @@ public class Pizza {
     }
     return result;
   }
+
+  @Override
+  public String toString() {
+    return "Pizza{" +
+        "name='" + name + '\'' +
+        ", size='" + size + '\'' +
+        ", price=" + price +
+        '}';
+  }
 }
