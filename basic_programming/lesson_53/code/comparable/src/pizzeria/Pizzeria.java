@@ -25,7 +25,8 @@ public class Pizzeria {
           System.out.println("Некорректная команда");
           break;
         case START:
-          Pizza pizza = Pizza.readData(scanner);
+          Pizza pizza = Pizza.readInteractive(scanner);
+          // TODO запись заказа (пиццы) в файл с заказами
           break;
         case EXIT:
           return; // завершение работы метода main()

@@ -30,7 +30,8 @@ public class Pizza {
     price = sizeToPrice.get(size);
   }
 
-  public static Pizza readData(Scanner scanner) {
+  // фабричный метод, прочитает параметры пиццы в интерактивном режиме
+  public static Pizza readInteractive(Scanner scanner) {
     // TODO избавиться от дублирования
     System.out.println("Выберите пиццу:");
     for (String name : prices.keySet()) {
@@ -68,11 +69,16 @@ public class Pizza {
     try {
       Scanner scanner = new Scanner(pizzasFile);
       while (scanner.hasNextLine()) {
+        // line = "Capricciosa,Small,7.5"
         String line = scanner.nextLine();
+        // cells = ["Capricciosa", "Small", "7.5"]
         String[] cells = line.split(SEP);
         try {
+          // pizza = "Capricciosa"
           String pizza = cells[0];
+          // size = "Small"
           String size = cells[1];
+          // price = Double.parseDouble("7.5") = 7.5
           double price = Double.parseDouble(cells[2]);
           if (!result.containsKey(pizza)) { // пицца встретилась первый раз
             result.put(pizza, new HashMap<>()); // кладём ей пока пустой словарь "размер-цена"

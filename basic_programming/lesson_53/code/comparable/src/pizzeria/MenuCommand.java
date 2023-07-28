@@ -17,6 +17,7 @@ public enum MenuCommand {
     return message;
   }
 
+  // фабричный метод - статический метод, который порождает (производит) экземпляр этого класса
   public static MenuCommand readCommand(Scanner scanner) {
     printMenu();
     System.out.print("Введите команду: ");
