@@ -1,6 +1,7 @@
 package pizzeria;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
 
@@ -33,7 +34,8 @@ public class Pizzeria {
           // TODO запись заказа (пиццы) в файл с заказами
           break;
         case EXIT:
-          System.out.println("Заказы за сегодня:");
+          System.out.println("Заказанные за сегодня пиццы:");
+          Collections.sort(pizzas);
           for (Pizza p : pizzas) {
             System.out.println("[DEBUG] " + p);
           }
