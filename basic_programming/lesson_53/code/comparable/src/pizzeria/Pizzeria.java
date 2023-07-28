@@ -1,5 +1,7 @@
 package pizzeria;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Pizzeria {
@@ -18,6 +20,7 @@ public class Pizzeria {
   // - выход
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
+    List<Pizza> pizzas = new ArrayList<>();
     while (true) {
       MenuCommand command = MenuCommand.readCommand(scanner);
       switch (command) {
@@ -26,10 +29,14 @@ public class Pizzeria {
           break;
         case START:
           Pizza pizza = Pizza.readInteractive(scanner);
-          System.out.println("[DEBUG] " + pizza);
+          pizzas.add(pizza);
           // TODO запись заказа (пиццы) в файл с заказами
           break;
         case EXIT:
+          System.out.println("Заказы за сегодня:");
+          for (Pizza p : pizzas) {
+            System.out.println("[DEBUG] " + p);
+          }
           return; // завершение работы метода main()
       }
     }
