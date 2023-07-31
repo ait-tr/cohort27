@@ -20,7 +20,7 @@ public class StudentsDatabase {
     while (!command.equalsIgnoreCase("выход")) {
       switch (command.toLowerCase()) {
         case "добавить":
-          addStudentInteractive(students);
+          addStudentInteractive(reader, students);
           break;
         case "сохранить":
           saveStudentList(students);
@@ -49,8 +49,9 @@ public class StudentsDatabase {
     return reader.readLine();
   }
 
-  private static void addStudentInteractive(List<Student> students) {
-    Student student = Student.readInteractive();
+  private static void addStudentInteractive(BufferedReader reader, List<Student> students)
+      throws IOException {
+    Student student = Student.readInteractive(reader);
     students.add(student);
     System.out.println("Добавляем студента " + student);
   }
