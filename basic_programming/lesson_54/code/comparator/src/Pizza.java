@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 public class Pizza implements Comparable<Pizza> {
   // интерфейс Comparable<Класс> говорит, что объекты этого класса (и наследников) можно сравнивать
   // В этом интерфейсе обязательно нужно реализовать метод `compareTo()`
@@ -52,6 +54,25 @@ public class Pizza implements Comparable<Pizza> {
   }
 
   // определение метода compareTo() должно приводить к переопределению метода equals()
+
+  @Override
+  public boolean equals(Object o) {
+    if (this == o) {
+      return true;
+    }
+    if (!(o instanceof Pizza other)) {
+      return false;
+    }
+    return price == other.price &&
+        size.equals(other.size) &&
+        name.equals(other.name);
+  }
+
   // переопределение метода equals() должно приводить к переопределению метода hashCode()
+  @Override
+  public int hashCode() {
+    return Objects.hash(name, size, price);
+  }
+
   // эти три метода должны быть консистентными - вести себя одинаково
 }
