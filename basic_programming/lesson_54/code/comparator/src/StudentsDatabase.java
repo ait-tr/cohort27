@@ -2,6 +2,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class StudentsDatabase {
@@ -26,7 +27,7 @@ public class StudentsDatabase {
           saveStudentList(students);
           break;
         case "вывести":
-          printStudentList(students);
+          printStudentList(reader, students);
           break;
         default:
           System.out.println("Неизвестная команда: " + command);
@@ -60,8 +61,34 @@ public class StudentsDatabase {
     System.out.println("Сохраняем список " + students);
   }
 
-  private static void printStudentList(List<Student> students) {
-    for (Student s : students) {
+  // - сортировать студентов по:
+  //   - алфавиту
+  //   - накопленному баллу (по убыванию)
+  private static void printStudentList(BufferedReader reader, List<Student> students)
+      throws IOException {
+//    List<Student> toPrint = students; // создание копии ссылки на список
+    List<Student> toPrint = new ArrayList<>(students); // создание копии списка
+    System.out.println("Выберите режим сортировки:");
+    System.out.println("1. По алфавиту");
+    System.out.println("2. По убыванию среднего балла");
+    String mode = reader.readLine();
+    switch (mode) {
+      case "1":
+        toPrint.sort(new StudentNameComparator());
+        break;
+      case "2":
+        toPrint.sort(new StudentScoreComparator()); // по возрастанию среднего балла
+        Collections.reverse(toPrint); // разворачиваем список - теперь по убыванию
+        // другой способ сортировки "по убыванию" - в самом компараторе изменить знак ответа:
+        // + превратится в -
+        // 0 останется 0
+        // - превратится в +
+        break;
+      default:
+        System.out.println("Неизвестный режим сортировки: " + mode);
+        break;
+    }
+    for (Student s : toPrint) {
       System.out.println(s);
     }
   }
