@@ -12,7 +12,7 @@ public class StudentsDatabase {
   // - сохранять список в файл
   // - сортировать студентов по:
   //   - алфавиту
-  //   - среднему баллу (по убыванию)
+  //   - накопленному баллу (по убыванию)
   public static void main(String[] args) throws IOException {
     BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
     List<Student> students = new ArrayList<>();
@@ -50,7 +50,7 @@ public class StudentsDatabase {
   }
 
   private static void addStudentInteractive(List<Student> students) {
-    Student student = new Student();
+    Student student = Student.readInteractive();
     students.add(student);
     System.out.println("Добавляем студента " + student);
   }
