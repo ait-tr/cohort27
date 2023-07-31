@@ -21,6 +21,8 @@ public class Pizza implements Comparable<Pizza> {
         '}';
   }
 
+  // определение "естественного" порядка, натуральной сортировки
+  // natural order, natural sort
   @Override
   public int compareTo(Pizza o) {
     // метод compareTo сравнивает текущий объект (this) с аргументом (o - object - other)
@@ -39,7 +41,11 @@ public class Pizza implements Comparable<Pizza> {
     if (!name.equals(o.name)) { // (compareTo != 0) --> названия не равны (разные)
       return name.compareTo(o.name); // по названиям
     }
-    // если названия одинаковые, то по цене
+    // если названия одинаковые, но размеры разные, то по размерам
+    if (!size.equals(o.size)) {
+      return size.compareTo(o.size);
+    }
+    // если размеры одинаковые, то по цене
     // (double - double) нельзя превращать в int - потеряется дробная часть и 0.3 превратится в 0
 //    return (int) Math.signum(price - o.price); // знак числа (отриц. в -1.0, полож. +1.0)
     return Double.compare(price, o.price);
