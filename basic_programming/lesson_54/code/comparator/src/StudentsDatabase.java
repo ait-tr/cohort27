@@ -1,6 +1,8 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.List;
 
 public class StudentsDatabase {
 
@@ -13,25 +15,24 @@ public class StudentsDatabase {
   //   - среднему баллу (по убыванию)
   public static void main(String[] args) throws IOException {
     BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-    printMenu();
-    String command = reader.readLine();
+    List<Student> students = new ArrayList<>();
+    String command = readMenuCommand(reader);
     while (!command.equalsIgnoreCase("выход")) {
       switch (command.toLowerCase()) {
         case "добавить":
-          System.out.println("Добавляем студента");
+          addStudentInteractive(students);
           break;
         case "сохранить":
-          System.out.println("Сохраняем список");
+          saveStudentList(students);
           break;
         case "вывести":
-          System.out.println("Выводим список на экран");
+          printStudentList(students);
           break;
         default:
           System.out.println("Неизвестная команда: " + command);
           break;
       }
-      printMenu();
-      command = reader.readLine();
+      command = readMenuCommand(reader);
     }
     System.out.println("Выходим из программы");
   }
@@ -41,5 +42,26 @@ public class StudentsDatabase {
     System.out.println("- `Сохранить` список студентов в файл");
     System.out.println("- `Вывести` список студентов на экран");
     System.out.println("- `Выход` из программы");
+  }
+
+  private static String readMenuCommand(BufferedReader reader) throws IOException {
+    printMenu();
+    return reader.readLine();
+  }
+
+  private static void addStudentInteractive(List<Student> students) {
+    Student student = new Student();
+    students.add(student);
+    System.out.println("Добавляем студента " + student);
+  }
+
+  private static void saveStudentList(List<Student> students) {
+    System.out.println("Сохраняем список " + students);
+  }
+
+  private static void printStudentList(List<Student> students) {
+    for (Student s : students) {
+      System.out.println(s);
+    }
   }
 }
