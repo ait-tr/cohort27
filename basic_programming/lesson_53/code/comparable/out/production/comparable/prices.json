@@ -1,0 +1,16 @@
+{
+  "Capricciosa": {
+    "Small": 7.5,
+    "Medium": 10,
+    "Large": 12.5
+  },
+  "Vesuvio": {
+    "Medium": 9.5,
+    "Large": 12.0
+  },
+  "Margherita": {
+    "Small":  6.5,
+    "Medium": 8.0,
+    "Large": 10.5
+  }
+}
