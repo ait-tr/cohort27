@@ -3,6 +3,14 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
+    "code/tests/src/homework_50/Task1.java",
+    "code/tests/src/homework_51/Main.java",
+    "code/tests/src/homework_51/Month.java",
+    "code/tests/src/homework_53/Book.java",
+    "code/tests/src/homework_54/BookTitleAuthorComparator.java",
+    "code/tests/src/Main.java",
+    "code/tests/src/Bill.java",
+    "code/tests/test/BillTests.java"
   ],
   "video": ""
 }
