@@ -1,5 +1,7 @@
 package homework_51;
 
+import java.util.Scanner;
+
 public class Main {
 
   // Усовершенствуйте класс `Month` из классной работы.
@@ -14,9 +16,24 @@ public class Main {
     //   который возвращает массив значений (в порядке описания их в enum):
     //   public static Класс[] values()
     Month[] allMonths = Month.values();
-    Month second = allMonths[1];
-    System.out.println("second: " + second + ", " +
-        "second.getName(): " + second.getName() + ", " +
-        "second.getDays(): " + second.getDays());
+
+    Scanner scanner = new Scanner(System.in);
+    System.out.print("Введите номер месяца: ");
+    while (!scanner.hasNextInt()) {
+      if (!scanner.hasNext()) {
+        System.err.println("Неожиданный конец файла");
+        return; // дальше нечего читать
+      }
+      System.out.println("Некорректный ввод, введите целое число: " + scanner.nextLine());
+    }
+    int monthNumber = scanner.nextInt();
+    if (1 <= monthNumber && monthNumber <= allMonths.length) {
+      int monthIndex = monthNumber - 1; // номер превращается в индекс: 1-12 в 0-11
+      Month month = allMonths[monthIndex];
+      System.out.printf("Месяц с номером %d: %s (%d дней)%n", monthNumber, month.getName(),
+          month.getDays());
+    } else {
+      System.out.println("Нет месяца с номером " + monthNumber);
+    }
   }
 }
