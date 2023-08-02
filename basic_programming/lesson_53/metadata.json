@@ -1,0 +1,12 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/comparable/src/pizzeria/Pizzeria.java",
+    "code/comparable/src/pizzeria/MenuCommand.java",
+    "code/comparable/src/pizzeria/Pizza.java",
+    "code/comparable/src/Main.java"
+  ],
+  "video": ""
+}

@@ -1,0 +1,15 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/comparator/src/Main.java",
+    "code/comparator/src/Pizza.java",
+    "code/comparator/src/PizzaPriceComparator.java",
+    "code/comparator/src/StudentsDatabase.java",
+    "code/comparator/src/Student.java",
+    "code/comparator/src/StudentNameComparator.java",
+    "code/comparator/src/StudentScoreComparator.java"
+  ],
+  "video": ""
+}
