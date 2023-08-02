@@ -1,0 +1,21 @@
+{
+  "plan": "",
+  "theory": "theory.md",
+  "code": [
+    "code/example01/Human.java",
+    "code/example01/Main.java",
+    "code/example01/Main2.java",
+    "code/example01/MinMaxGetter.java",
+    "code/example02/Car.java",
+    "code/example02/CarsByPlacesComparator.java",
+    "code/example02/Human.java",
+    "code/example02/HumanByExperienceComparator.java",
+    "code/example02/HumansByHeightComparator.java",
+    "code/example02/Main2.java",
+    "code/example02/Main3.java",
+    "code/example02/Main4.java",
+    "code/example02/MinMaxGetter.java",
+    "code/example02/Rectangle.java"
+  ],
+  "video": ""
+}
