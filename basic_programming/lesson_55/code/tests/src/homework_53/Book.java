@@ -22,6 +22,18 @@ public class Book implements Comparable<Book> {
     this.pages = pages;
   }
 
+  public String getAuthor() {
+    return author;
+  }
+
+  public String getTitle() {
+    return title;
+  }
+
+  public int getPages() {
+    return pages;
+  }
+
   // не обязательно для решения, но обязательно для проверки
   @Override
   public String toString() {
