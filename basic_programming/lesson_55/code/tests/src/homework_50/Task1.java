@@ -15,8 +15,17 @@ public class Task1 {
   // - запишет его в файл `res/out.txt`
   //
   // Воспользуйтесь методом `Integer.toBinaryString()`.
+
+  // Усовершенствуйте задачу так, чтобы путь к входному и выходному файлу она принимала
+  // в качестве аргументов командной строки
   public static void main(String[] args) {
-    String inputFileName = "res/in.txt";
+    // если аргументов не 2, то нам не передали имена файлов
+    if (args.length != 2) {
+      System.err.println("usage: program input_file output_file");
+      System.err.println("использование: программа входной_файл выходной_файл");
+      return;
+    }
+    String inputFileName = args[0]; // 1-й аргумент командной строки
     File inputFile = new File(inputFileName);
     Scanner scanner;
     try {
@@ -37,7 +46,7 @@ public class Task1 {
 
     String result = Integer.toBinaryString(number);
 
-    String outputFileName = "res/out.txt";
+    String outputFileName = args[1]; // 2-й аргумент командной строки
     File outputFile = new File(outputFileName);
     try {
       FileWriter writer = new FileWriter(outputFile);
