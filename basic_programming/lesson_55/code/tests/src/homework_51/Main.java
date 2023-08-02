@@ -30,8 +30,13 @@ public class Main {
     if (1 <= monthNumber && monthNumber <= allMonths.length) {
       int monthIndex = monthNumber - 1; // номер превращается в индекс: 1-12 в 0-11
       Month month = allMonths[monthIndex];
-      System.out.printf("Месяц с номером %d: %s (%d дней)%n", monthNumber, month.getName(),
-          month.getDays());
+      int days = month.getDays();
+      // число % основание_системы_счисления = последняя_цифра
+      System.out.printf("Месяц с номером %d: %s (%d %s)%n", monthNumber, month.getName(),
+          days, (days % 10 == 1) ? "день" : "дней");
+      // тернарный оператор:
+      // условие ? значение_если_да : значение_если_нет
+      // (days % 10 == 1) ? "день" : "дней"
     } else {
       System.out.println("Нет месяца с номером " + monthNumber);
     }
