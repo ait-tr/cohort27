@@ -1,6 +1,8 @@
 package homework_53;
 
-public class Book {
+import java.util.Objects;
+
+public class Book implements Comparable<Book> {
 
   // Создайте класс `Book` (книга), в конструктор которого передавайте автора,
   // название книги и количество страниц.
@@ -28,5 +30,40 @@ public class Book {
         ", title='" + title + '\'' +
         ", pages=" + pages +
         '}';
+  }
+
+  // Они должны сортироваться по авторам,
+  // а если авторы совпадают - по названиям,
+  // а если и авторы совпадают - по количеству страниц (по возрастанию).
+  @Override
+  public int compareTo(Book o) {
+    if (author.compareTo(o.author) != 0) {
+      return author.compareTo(o.author);
+    }
+    // сюда мы попадём, только если авторы совпали и `author.compareTo(o.author) == 0`
+    if (title.compareTo(o.title) != 0) {
+      return title.compareTo(o.title);
+    }
+    // сюда мы попадём, только если авторы и названия совпали и `title.compareTo(o.title) == 0`
+    // осталось сравнить страницы: если равны, то и книги равны; если не равны, то и книги не равны
+    return Integer.compare(pages, o.pages);
+  }
+
+  // переопределение compareTo заставляет переопределить equals
+  @Override
+  public boolean equals(Object o) {
+    if (this == o) {
+      return true;
+    }
+    if (!(o instanceof Book book)) {
+      return false;
+    }
+    return pages == book.pages && author.equals(book.author) && title.equals(book.title);
+  }
+
+  // переопределение equals заставляет переопределить hashCode
+  @Override
+  public int hashCode() {
+    return Objects.hash(author, title, pages);
   }
 }
