@@ -15,6 +15,8 @@ public class Main {
     //   public static Класс[] values()
     Month[] allMonths = Month.values();
     Month second = allMonths[1];
-    System.out.println("second: " + second + ", second.getName(): " + second.getName());
+    System.out.println("second: " + second + ", " +
+        "second.getName(): " + second.getName() + ", " +
+        "second.getDays(): " + second.getDays());
   }
 }
