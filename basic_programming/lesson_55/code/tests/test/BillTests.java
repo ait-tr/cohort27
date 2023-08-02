@@ -6,6 +6,16 @@ import org.junit.jupiter.api.Test;
 public class BillTests {
 
   @Test
+  public void constructor() {
+    // arrange & act - установить начальные значения и совершить действие
+    Bill bill = new Bill();
+
+    // assert - предположить, что результат правильный
+    // проверить, что строк нет
+    assertEquals(0, bill.getRows().size());
+  }
+
+  @Test
   public void addNewRow() {
     // arrange - установить начальные значения
     Bill bill = new Bill();
