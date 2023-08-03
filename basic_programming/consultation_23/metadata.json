@@ -1,0 +1,15 @@
+{
+  "plan": "",
+  "theory": "theory.md",
+  "code": [
+    "code/example01/BlackPrinter.java",
+    "code/example01/Main.java",
+    "code/example01/Printer.java",
+    "code/example01/RedPrinter.java",
+    "code/example01/WordsPrinter.java",
+    "code/example02/Main.java",
+    "code/example02/MathUtil.java",
+    "code/example02/MathUtilTest.java"
+  ],
+  "video": ""
+}
