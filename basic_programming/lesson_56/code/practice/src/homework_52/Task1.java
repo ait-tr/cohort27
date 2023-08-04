@@ -66,7 +66,12 @@ public class Task1 {
     // ### Ввод с клавиатуры
     // В первой строке записано целое число `m` — количество поисковых слов, чье определение нужно
     // вывести.
-    //
+    int m = scanner.nextInt();
+    scanner.nextLine();
     // В следующих `m` строках записаны сами слова, по одному на строке.
+    for (int i = 0; i < m; ++i) {
+      String word = scanner.nextLine();
+      System.out.printf("[DEBUG] Слово: '%s'%n", word);
+    }
   }
 }
