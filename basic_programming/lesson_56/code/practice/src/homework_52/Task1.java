@@ -64,9 +64,8 @@ public class Task1 {
       // word = "Змея" // от beginIndex включая до endIndex не включая
       String description = wordAndDescription.substring(separatorIndex + 2);
       // description = "язык программирования Python" // c (separatorIndex + 2 = 6) до конца строки
-      dictionary.put(word, description);
+      dictionary.put(word.toLowerCase(), description);
     }
-    System.out.println("[DEBUG] Словарь: " + dictionary);
     // ### Ввод с клавиатуры
     // В первой строке записано целое число `m` — количество поисковых слов, чье определение нужно
     // вывести.
@@ -75,7 +74,14 @@ public class Task1 {
     // В следующих `m` строках записаны сами слова, по одному на строке.
     for (int i = 0; i < m; ++i) {
       String word = scanner.nextLine();
-      System.out.printf("[DEBUG] Слово: '%s'%n", word);
+      // Для каждого слова, независимо от регистра символов, если оно присутствует в словаре,
+      // необходимо вывести **на экран** его определение.
+      if (dictionary.containsKey(word.toLowerCase())) {
+        System.out.println(dictionary.get(word.toLowerCase()));
+      } else {
+        // Если слова в словаре нет, программа должна вывести "Не найдено", без кавычек.
+        System.out.println("Не найдено");
+      }
     }
   }
 }
