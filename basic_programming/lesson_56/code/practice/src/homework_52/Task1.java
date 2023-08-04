@@ -80,16 +80,17 @@ public class Task1 {
     scanner.nextLine();
     // В следующих `n` строках записаны слова и их определения, разделенные двоеточием и символом
     // пробела.
+    String separator = ": ";
     Map<String, String> dictionary = new HashMap<>();
     for (int i = 0; i < n; ++i) {
       String wordAndDefinition = scanner.nextLine();
       //                       012345678
       // wordAndDefinition = "Змея: язык программирования Python"
-      int separatorIndex = wordAndDefinition.indexOf(": ");
+      int separatorIndex = wordAndDefinition.indexOf(separator);
       // separatorIndex = 4 // индекс начала ": "
       String word = wordAndDefinition.substring(0, separatorIndex);
       // word = "Змея" // от beginIndex включая до endIndex не включая
-      String definition = wordAndDefinition.substring(separatorIndex + 2);
+      String definition = wordAndDefinition.substring(separatorIndex + separator.length());
       // definition = "язык программирования Python" // c (separatorIndex + 2 = 6) до конца строки
       dictionary.put(word.toLowerCase(), definition);
     }
