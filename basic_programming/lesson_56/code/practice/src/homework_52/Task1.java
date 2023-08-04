@@ -65,7 +65,7 @@ public class Task1 {
     }
   }
 
-  private static Map<String, String> readDictionary(Scanner scanner) {
+  static Map<String, String> readDictionary(Scanner scanner) {
     // В первой строке задано одно целое число `n` — количество слов в словаре.
     int n = scanner.nextInt();
     scanner.nextLine();
@@ -88,7 +88,7 @@ public class Task1 {
     return dictionary;
   }
 
-  private static List<String> readWords(Scanner scanner) {
+  static List<String> readWords(Scanner scanner) {
     // В первой строке записано целое число `m` — количество поисковых слов, чье определение нужно
     // вывести.
     int m = scanner.nextInt();
@@ -102,7 +102,7 @@ public class Task1 {
     return words;
   }
 
-  private static List<String> findDefinitions(Map<String, String> dictionary, List<String> words) {
+  static List<String> findDefinitions(Map<String, String> dictionary, List<String> words) {
     List<String> definitions = new ArrayList<>();
     for (String word : words) {
       // Для каждого слова, независимо от регистра символов, если оно присутствует в словаре,
