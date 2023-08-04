@@ -1,5 +1,7 @@
 package homework_52;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Scanner;
 
 public class Task1 {
@@ -51,6 +53,7 @@ public class Task1 {
     scanner.nextLine();
     // В следующих `n` строках записаны слова и их определения, разделенные двоеточием и символом
     // пробела.
+    Map<String, String> dictionary = new HashMap<>();
     for (int i = 0; i < n; ++i) {
       String wordAndDescription = scanner.nextLine();
       //                       012345678
@@ -61,8 +64,9 @@ public class Task1 {
       // word = "Змея" // от beginIndex включая до endIndex не включая
       String description = wordAndDescription.substring(separatorIndex + 2);
       // description = "язык программирования Python" // c (separatorIndex + 2 = 6) до конца строки
-      System.out.printf("[DEBUG] Слово: '%s', определение: '%s'%n", word, description);
+      dictionary.put(word, description);
     }
+    System.out.println("[DEBUG] Словарь: " + dictionary);
     // ### Ввод с клавиатуры
     // В первой строке записано целое число `m` — количество поисковых слов, чье определение нужно
     // вывести.
