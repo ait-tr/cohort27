@@ -50,24 +50,7 @@ public class Task1 {
   public static void main(String[] args) throws FileNotFoundException {
     // ### Файл `dict.txt`
     Scanner dictScanner = new Scanner(new File("res/dict.txt"));
-    // В первой строке задано одно целое число `n` — количество слов в словаре.
-    int n = dictScanner.nextInt();
-    dictScanner.nextLine();
-    // В следующих `n` строках записаны слова и их определения, разделенные двоеточием и символом
-    // пробела.
-    Map<String, String> dictionary = new HashMap<>();
-    for (int i = 0; i < n; ++i) {
-      String wordAndDescription = dictScanner.nextLine();
-      //                       012345678
-      // wordAndDescription = "Змея: язык программирования Python"
-      int separatorIndex = wordAndDescription.indexOf(": ");
-      // separatorIndex = 4 // индекс начала ": "
-      String word = wordAndDescription.substring(0, separatorIndex);
-      // word = "Змея" // от beginIndex включая до endIndex не включая
-      String description = wordAndDescription.substring(separatorIndex + 2);
-      // description = "язык программирования Python" // c (separatorIndex + 2 = 6) до конца строки
-      dictionary.put(word.toLowerCase(), description);
-    }
+    Map<String, String> dictionary = readDictionary(dictScanner);
     dictScanner.close();
 
     // ### Ввод с клавиатуры
@@ -88,5 +71,27 @@ public class Task1 {
         System.out.println("Не найдено");
       }
     }
+  }
+
+  private static Map<String, String> readDictionary(Scanner scanner) {
+    // В первой строке задано одно целое число `n` — количество слов в словаре.
+    int n = scanner.nextInt();
+    scanner.nextLine();
+    // В следующих `n` строках записаны слова и их определения, разделенные двоеточием и символом
+    // пробела.
+    Map<String, String> dictionary = new HashMap<>();
+    for (int i = 0; i < n; ++i) {
+      String wordAndDescription = scanner.nextLine();
+      //                       012345678
+      // wordAndDescription = "Змея: язык программирования Python"
+      int separatorIndex = wordAndDescription.indexOf(": ");
+      // separatorIndex = 4 // индекс начала ": "
+      String word = wordAndDescription.substring(0, separatorIndex);
+      // word = "Змея" // от beginIndex включая до endIndex не включая
+      String description = wordAndDescription.substring(separatorIndex + 2);
+      // description = "язык программирования Python" // c (separatorIndex + 2 = 6) до конца строки
+      dictionary.put(word.toLowerCase(), description);
+    }
+    return dictionary;
   }
 }
