@@ -2,7 +2,9 @@ package homework_52;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
 
@@ -60,16 +62,15 @@ public class Task1 {
     int m = scanner.nextInt();
     scanner.nextLine();
     // В следующих `m` строках записаны сами слова, по одному на строке.
+    List<String> words = new ArrayList<>(m); // задали вместимость списка (не размер, он 0)
     for (int i = 0; i < m; ++i) {
       String word = scanner.nextLine();
-      // Для каждого слова, независимо от регистра символов, если оно присутствует в словаре,
-      // необходимо вывести **на экран** его определение.
-      if (dictionary.containsKey(word.toLowerCase())) {
-        System.out.println(dictionary.get(word.toLowerCase()));
-      } else {
-        // Если слова в словаре нет, программа должна вывести "Не найдено", без кавычек.
-        System.out.println("Не найдено");
-      }
+      words.add(word);
+    }
+
+    List<String> definitions = findDefinitions(dictionary, words);
+    for (String definition : definitions) {
+      System.out.println(definition);
     }
   }
 
@@ -93,5 +94,21 @@ public class Task1 {
       dictionary.put(word.toLowerCase(), definition);
     }
     return dictionary;
+  }
+
+  private static List<String> findDefinitions(Map<String, String> dictionary, List<String> words) {
+    List<String> definitions = new ArrayList<>();
+    for (int i = 0; i < words.size(); ++i) {
+      String word = words.get(i);
+      // Для каждого слова, независимо от регистра символов, если оно присутствует в словаре,
+      // необходимо вывести **на экран** его определение.
+      if (dictionary.containsKey(word.toLowerCase())) {
+        definitions.add(dictionary.get(word.toLowerCase()));
+      } else {
+        // Если слова в словаре нет, программа должна вывести "Не найдено", без кавычек.
+        definitions.add("Не найдено");
+      }
+    }
+    return definitions;
   }
 }
