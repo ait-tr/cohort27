@@ -81,16 +81,16 @@ public class Task1 {
     // пробела.
     Map<String, String> dictionary = new HashMap<>();
     for (int i = 0; i < n; ++i) {
-      String wordAndDescription = scanner.nextLine();
+      String wordAndDefinition = scanner.nextLine();
       //                       012345678
-      // wordAndDescription = "Змея: язык программирования Python"
-      int separatorIndex = wordAndDescription.indexOf(": ");
+      // wordAndDefinition = "Змея: язык программирования Python"
+      int separatorIndex = wordAndDefinition.indexOf(": ");
       // separatorIndex = 4 // индекс начала ": "
-      String word = wordAndDescription.substring(0, separatorIndex);
+      String word = wordAndDefinition.substring(0, separatorIndex);
       // word = "Змея" // от beginIndex включая до endIndex не включая
-      String description = wordAndDescription.substring(separatorIndex + 2);
-      // description = "язык программирования Python" // c (separatorIndex + 2 = 6) до конца строки
-      dictionary.put(word.toLowerCase(), description);
+      String definition = wordAndDefinition.substring(separatorIndex + 2);
+      // definition = "язык программирования Python" // c (separatorIndex + 2 = 6) до конца строки
+      dictionary.put(word.toLowerCase(), definition);
     }
     return dictionary;
   }
