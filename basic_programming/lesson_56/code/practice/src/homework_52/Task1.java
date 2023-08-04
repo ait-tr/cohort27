@@ -1,5 +1,7 @@
 package homework_52;
 
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
@@ -45,17 +47,17 @@ public class Task1 {
   // язык программирования Python
   // Не найдено
   // код, который нужен, чтобы исправить несовершенство ранее написанного кода
-  public static void main(String[] args) {
-    Scanner scanner = new Scanner(System.in);
+  public static void main(String[] args) throws FileNotFoundException {
     // ### Файл `dict.txt`
+    Scanner dictScanner = new Scanner(new File("res/dict.txt"));
     // В первой строке задано одно целое число `n` — количество слов в словаре.
-    int n = scanner.nextInt();
-    scanner.nextLine();
+    int n = dictScanner.nextInt();
+    dictScanner.nextLine();
     // В следующих `n` строках записаны слова и их определения, разделенные двоеточием и символом
     // пробела.
     Map<String, String> dictionary = new HashMap<>();
     for (int i = 0; i < n; ++i) {
-      String wordAndDescription = scanner.nextLine();
+      String wordAndDescription = dictScanner.nextLine();
       //                       012345678
       // wordAndDescription = "Змея: язык программирования Python"
       int separatorIndex = wordAndDescription.indexOf(": ");
@@ -66,7 +68,10 @@ public class Task1 {
       // description = "язык программирования Python" // c (separatorIndex + 2 = 6) до конца строки
       dictionary.put(word.toLowerCase(), description);
     }
+    dictScanner.close();
+
     // ### Ввод с клавиатуры
+    Scanner scanner = new Scanner(System.in);
     // В первой строке записано целое число `m` — количество поисковых слов, чье определение нужно
     // вывести.
     int m = scanner.nextInt();
