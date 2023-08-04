@@ -99,16 +99,12 @@ public class Task1 {
 
   private static List<String> findDefinitions(Map<String, String> dictionary, List<String> words) {
     List<String> definitions = new ArrayList<>();
-    for (int i = 0; i < words.size(); ++i) {
-      String word = words.get(i);
+    for (String word : words) {
       // Для каждого слова, независимо от регистра символов, если оно присутствует в словаре,
       // необходимо вывести **на экран** его определение.
-      if (dictionary.containsKey(word.toLowerCase())) {
-        definitions.add(dictionary.get(word.toLowerCase()));
-      } else {
-        // Если слова в словаре нет, программа должна вывести "Не найдено", без кавычек.
-        definitions.add("Не найдено");
-      }
+      // Если слова в словаре нет, программа должна вывести "Не найдено", без кавычек.
+      String definition = dictionary.getOrDefault(word.toLowerCase(), "Не найдено");
+      definitions.add(definition);
     }
     return definitions;
   }
