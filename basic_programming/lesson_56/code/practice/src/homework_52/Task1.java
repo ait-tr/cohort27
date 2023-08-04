@@ -57,16 +57,7 @@ public class Task1 {
 
     // ### Ввод с клавиатуры
     Scanner scanner = new Scanner(System.in);
-    // В первой строке записано целое число `m` — количество поисковых слов, чье определение нужно
-    // вывести.
-    int m = scanner.nextInt();
-    scanner.nextLine();
-    // В следующих `m` строках записаны сами слова, по одному на строке.
-    List<String> words = new ArrayList<>(m); // задали вместимость списка (не размер, он 0)
-    for (int i = 0; i < m; ++i) {
-      String word = scanner.nextLine();
-      words.add(word);
-    }
+    List<String> words = readWords(scanner);
 
     List<String> definitions = findDefinitions(dictionary, words);
     for (String definition : definitions) {
@@ -95,6 +86,20 @@ public class Task1 {
       dictionary.put(word.toLowerCase(), definition);
     }
     return dictionary;
+  }
+
+  private static List<String> readWords(Scanner scanner) {
+    // В первой строке записано целое число `m` — количество поисковых слов, чье определение нужно
+    // вывести.
+    int m = scanner.nextInt();
+    scanner.nextLine();
+    // В следующих `m` строках записаны сами слова, по одному на строке.
+    List<String> words = new ArrayList<>(m); // задали вместимость списка (не размер, он 0)
+    for (int i = 0; i < m; ++i) {
+      String word = scanner.nextLine();
+      words.add(word);
+    }
+    return words;
   }
 
   private static List<String> findDefinitions(Map<String, String> dictionary, List<String> words) {
