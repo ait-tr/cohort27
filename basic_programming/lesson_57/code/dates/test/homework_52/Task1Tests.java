@@ -144,5 +144,32 @@ public class Task1Tests {
     assertTrue(caught);
   }
 
-  // TODO одинаковые слова с разными определениями
+  @Test
+  public void readSeveralDefinitions() {
+    // arrange - задать начальные значения
+    String word1 = "word1";
+    String definition1 = "definition1";
+    String definition2 = "definition2";
+    String separator = ": ";
+
+    // это как бы наш файл:
+    // 2
+    // word1: definition1
+    // word1: definition2
+    String stringBuilder = "2\n"
+        + word1 + separator + definition1 + '\n'
+        + word1 + separator + definition2 + '\n';
+    Scanner scanner = new Scanner(stringBuilder);
+
+    // act - совершить действие
+    Map<String, String> dictionary = readDictionary(scanner);
+
+    // assert - предположить, что результат правильный
+    assertFalse(dictionary.isEmpty()); // избыточная проверка
+    assertEquals(1, dictionary.size());
+    assertTrue(dictionary.containsKey(word1)); // избыточная проверка
+    // первое определение затёрто // избыточная проверка
+    assertFalse(dictionary.containsValue(definition1));
+    assertEquals(definition2, dictionary.get(word1)); // word1 соответствует второе определение
+  }
 }
