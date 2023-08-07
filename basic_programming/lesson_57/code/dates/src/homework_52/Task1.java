@@ -65,14 +65,14 @@ public class Task1 {
     }
   }
 
-  static Map<String, String> readDictionary(Scanner scanner) {
+  static HashMap<String, String> readDictionary(Scanner scanner) {
     // В первой строке задано одно целое число `n` — количество слов в словаре.
     int n = scanner.nextInt();
     scanner.nextLine();
     // В следующих `n` строках записаны слова и их определения, разделенные двоеточием и символом
     // пробела.
     String separator = ": ";
-    Map<String, String> dictionary = new HashMap<>();
+    HashMap<String, String> dictionary = new HashMap<>();
     for (int i = 0; i < n; ++i) {
       String wordAndDefinition = scanner.nextLine();
       //                       012345678
@@ -88,13 +88,13 @@ public class Task1 {
     return dictionary;
   }
 
-  static List<String> readWords(Scanner scanner) {
+  static ArrayList<String> readWords(Scanner scanner) {
     // В первой строке записано целое число `m` — количество поисковых слов, чье определение нужно
     // вывести.
     int m = scanner.nextInt();
     scanner.nextLine();
     // В следующих `m` строках записаны сами слова, по одному на строке.
-    List<String> words = new ArrayList<>(m); // задали вместимость списка (не размер, он 0)
+    ArrayList<String> words = new ArrayList<>(m); // задали вместимость списка (не размер, он 0)
     for (int i = 0; i < m; ++i) {
       String word = scanner.nextLine();
       words.add(word);
@@ -102,8 +102,8 @@ public class Task1 {
     return words;
   }
 
-  static List<String> findDefinitions(Map<String, String> dictionary, List<String> words) {
-    List<String> definitions = new ArrayList<>();
+  static ArrayList<String> findDefinitions(Map<String, String> dictionary, List<String> words) {
+    ArrayList<String> definitions = new ArrayList<>();
     for (String word : words) {
       // Для каждого слова, независимо от регистра символов, если оно присутствует в словаре,
       // необходимо вывести **на экран** его определение.
