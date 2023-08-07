@@ -3,6 +3,7 @@ package homework_52;
 import static homework_52.Task1.readDictionary;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertNull;
 import static org.junit.jupiter.api.Assertions.assertThrowsExactly;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
@@ -36,7 +37,32 @@ public class Task1Tests {
     assertTrue(dictionary.isEmpty());
   }
 
-  // TODO тест на отрицательное число определений
+  @Test
+  public void readNegativeAmount() {
+    // arrange - задать начальные значения
+    String word1 = "word1";
+    String definition1 = "definition1";
+    String separator = ": ";
+
+    // это как бы наш файл:
+    // 1
+    // word1: definition1
+    String input = "-1\n"
+        + word1 + separator + definition1 + '\n';
+    Scanner scanner = new Scanner(input);
+
+    // act - совершить действие
+    // for (int i = 0; i < n; ++i)
+    // `i < -1` неверно с самого начала - мы даже не попадём в цикл
+    Map<String, String> dictionary = readDictionary(scanner);
+
+    // assert - предположить, что результат правильный
+    assertTrue(dictionary.isEmpty());
+    // избыточные проверки
+    assertEquals(0, dictionary.size());
+    assertFalse(dictionary.containsKey(word1));
+    assertNull(dictionary.get(word1));
+  }
 
   @Test
   public void readCommonDictionary() {
@@ -61,11 +87,11 @@ public class Task1Tests {
     Map<String, String> dictionary = readDictionary(scanner);
 
     // assert - предположить, что результат правильный
-    assertFalse(dictionary.isEmpty());
+    assertFalse(dictionary.isEmpty()); // избыточная проверка
     assertEquals(2, dictionary.size());
-    assertTrue(dictionary.containsKey(word1));
+    assertTrue(dictionary.containsKey(word1)); // избыточная проверка
     assertEquals(definition1, dictionary.get(word1));
-    assertTrue(dictionary.containsKey(word2));
+    assertTrue(dictionary.containsKey(word2)); // избыточная проверка
     assertEquals(definition2, dictionary.get(word2));
   }
 
