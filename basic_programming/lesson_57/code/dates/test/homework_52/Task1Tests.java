@@ -95,7 +95,35 @@ public class Task1Tests {
     assertEquals(definition2, dictionary.get(word2));
   }
 
-  // TODO количество меньше строк
+  @Test
+  public void readNotAllFile() {
+    // arrange - задать начальные значения
+    String word1 = "word1";
+    String definition1 = "definition1";
+    String word2 = "word2";
+    String definition2 = "definition2";
+    String separator = ": ";
+
+    // это как бы наш файл:
+    // 1
+    // word1: definition1
+    // word2: definition2
+    String input = "1\n"
+        + word1 + separator + definition1 + '\n'
+        + word2 + separator + definition2 + '\n';
+    Scanner scanner = new Scanner(input);
+
+    // act - совершить действие
+    Map<String, String> dictionary = readDictionary(scanner);
+
+    // assert - предположить, что результат правильный
+    assertFalse(dictionary.isEmpty()); // избыточная проверка
+    assertEquals(1, dictionary.size());
+    assertTrue(dictionary.containsKey(word1)); // избыточная проверка
+    assertEquals(definition1, dictionary.get(word1));
+    assertFalse(dictionary.containsKey(word2));
+    assertNull(dictionary.get(word2)); // избыточная проверка
+  }
 
   @Test
   public void readFileAfterEnd() {
