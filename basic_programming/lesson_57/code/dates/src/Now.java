@@ -15,10 +15,14 @@ public class Now {
     LocalDate currentDate = LocalDate.now();
     System.out.println("Сегодня: " + currentDate);
 
-    LocalDateTime current = LocalDateTime.of(currentDate, currentTime);
-    ZonedDateTime result = ZonedDateTime.of(current, ZoneId.systemDefault());
+//    LocalDateTime current = LocalDateTime.of(currentDate, currentTime);
+//    ZonedDateTime result = ZonedDateTime.of(current, ZoneId.systemDefault());
+    ZonedDateTime result = LocalDateTime.of(currentDate, currentTime)
+        .atZone(ZoneId.systemDefault());
 
-    DateTimeFormatter formatter = DateTimeFormatter.ofLocalizedDateTime(FormatStyle.LONG);
-    System.out.println("Сегодня и сейчас: " + result.format(formatter));
+//    DateTimeFormatter formatter = DateTimeFormatter.ofLocalizedDateTime(FormatStyle.LONG);
+//    System.out.println("Сегодня и сейчас: " + result.format(formatter));
+    System.out.println("Сегодня и сейчас: " + result.format(
+        DateTimeFormatter.ofLocalizedDateTime(FormatStyle.LONG)));
   }
 }
