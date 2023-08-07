@@ -3,15 +3,25 @@ package homework_52;
 import static homework_52.Task1.readDictionary;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertThrowsExactly;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import java.util.Map;
+import java.util.NoSuchElementException;
 import java.util.Scanner;
 import org.junit.jupiter.api.Test;
 
 public class Task1Tests {
 
-  // TODO тест на пустой файл (будет ошибка)
+  @Test
+  public void readEmptyFile() {
+    // arrange
+    String input = "";
+    Scanner scanner = new Scanner(input); // делает ввод из указанной строки
+
+    // act & assert
+    assertThrowsExactly(NoSuchElementException.class, () -> readDictionary(scanner));
+  }
 
   @Test
   public void readEmptyDictionary() {
@@ -61,7 +71,24 @@ public class Task1Tests {
 
   // TODO количество меньше строк
 
-  // TODO количество больше строк (будет ошибка)
+  @Test
+  public void readFileAfterEnd() {
+    // arrange
+    String input = "1\n"; // должна быть одна запись, но записи нет
+    Scanner scanner = new Scanner(input); // делает ввод из указанной строки
+    boolean caught = false; // поймали правильное исключение
+
+    // act
+    try {
+      readDictionary(scanner);
+    } catch (NoSuchElementException e) {
+      // можно добавить проверку на сообщение
+      caught = true;
+    }
+
+    // assert
+    assertTrue(caught);
+  }
 
   // TODO одинаковые слова с разными определениями
 }
