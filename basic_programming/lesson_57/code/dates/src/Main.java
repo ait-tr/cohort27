@@ -2,6 +2,8 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.Month;
+import java.time.format.DateTimeFormatter;
+import java.util.Scanner;
 
 public class Main {
 
@@ -34,5 +36,15 @@ public class Main {
     System.out.println("1.2.2003: " + LocalDate.of(2003, Month.FEBRUARY, 1));
 
     System.out.println("Сегодня и сейчас: " + LocalDateTime.now());
+
+    Scanner scanner = new Scanner(System.in);
+    // формат ввода и вывода:
+    DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd.MM.yyyy");
+    // читаем ввод%
+    System.out.print("Введите день рождения в формате ДД.ММ.ГГГГ: ");
+    String dateStr = scanner.nextLine();
+    LocalDate birthday = LocalDate.parse(dateStr, formatter);
+    System.out.println("Введённая дата: " + birthday);
+    System.out.println("Введённая дата в исходном формате: " + birthday.format(formatter));
   }
 }
