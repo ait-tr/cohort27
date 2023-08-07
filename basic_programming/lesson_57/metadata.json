@@ -3,6 +3,11 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
+    "code/dates/src/homework_52/Task1.java",
+    "code/dates/test/homework_52/Task1Tests.java",
+    "code/dates/src/Main.java",
+    "code/dates/src/Now.java",
+    "code/dates/src/Birthday.java"
   ],
   "video": ""
 }
