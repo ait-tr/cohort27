@@ -45,7 +45,7 @@ public class Task1Tests {
     String separator = ": ";
 
     // это как бы наш файл:
-    // 1
+    // -1
     // word1: definition1
     String input = "-1\n"
         + word1 + separator + definition1 + '\n';
