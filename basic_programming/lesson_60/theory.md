@@ -14,17 +14,17 @@ This refers to the amount of time an algorithm takes to complete as a function o
 
 Это относится к количеству времени, которое алгоритм занимает для завершения в зависимости от размера входных данных. Она предоставляет верхнюю границу времени выполнения алгоритма на основе количества базовых операций (таких как сравнения, присваивания, арифметические операции), выполняемых алгоритмом. Временная сложность обычно выражается с использованием нотации "O большое", которая описывает верхний предел скорости роста времени выполнения алгоритма относительно размера входных данных.
 
-## Space Complexity
+## Space Complexity (Пространственная сложность)
 
 This refers to the amount of memory space an algorithm uses as a function of the input size. It provides an upper bound on the memory required by the algorithm to complete its execution. Space complexity is also expressed using Big O notation.
 
-Пространственная сложность: Это относится к объему памяти, который алгоритм использует в зависимости от размера входных данных. Она предоставляет верхнюю границу памяти, необходимой для завершения выполнения алгоритма. Пространственная сложность также выражается с использованием нотации "O большое".
+Это относится к объему памяти, который алгоритм использует в зависимости от размера входных данных. Она предоставляет верхнюю границу памяти, необходимой для завершения выполнения алгоритма. Пространственная сложность также выражается с использованием нотации "O большое".
 
 Space complexity can include the memory used by variables, data structures, and function call stacks. Similar to time complexity, lower space complexity is generally preferred.
 
 Пространственная сложность может включать в себя память, используемую переменными, структурами данных и стеками вызовов функций. Подобно временной сложности, предпочтительна более низкая пространственная сложность.
 
-## Complexity Classes
+## Complexity Classes (Классификация)
 
 Common time complexity classes, ordered from the most efficient to the least efficient, include:
 
