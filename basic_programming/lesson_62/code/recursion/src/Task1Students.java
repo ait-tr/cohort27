@@ -1,4 +1,6 @@
-public class Main {
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
 
 public class Task1Students {
 
@@ -33,6 +35,22 @@ public class Task1Students {
   // ## Пример вывода
   // 3
   public static void main(String[] args) {
-    System.out.println("Hello world!");
+    Scanner scanner = new Scanner(System.in);
+    int peter = scanner.nextInt();
+    int size = scanner.nextInt();
+    List<Integer> heights = new ArrayList<>();
+    for (int i = 0; i < size; i++) {
+      heights.add(scanner.nextInt());
+    }
+
+    int counter = 1; // хотим встать первым
+    for (int h : heights) {
+      if (h >= peter) {
+        counter++;
+      } else {
+        break;
+      }
+    }
+    System.out.println(counter);
   }
 }
