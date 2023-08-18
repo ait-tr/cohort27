@@ -34,23 +34,23 @@ public class Task1Students {
   //
   // ## Пример вывода
   // 3
-  public static void main(String[] args) {
-    Scanner scanner = new Scanner(System.in);
-    int peter = scanner.nextInt();
-    int size = scanner.nextInt();
-    List<Integer> heights = new ArrayList<>();
-    for (int i = 0; i < size; i++) {
-      heights.add(scanner.nextInt());
+  public static void main(String[] args) {      // Time = O(n)  Space = O(n)
+    Scanner scanner = new Scanner(System.in);   // O(1)         O(1)
+    int peter = scanner.nextInt();              // O(1)         O(1)
+    int size = scanner.nextInt();               // O(1)         O(1)
+    List<Integer> heights = new ArrayList<>();  // O(1)         O(1)
+    for (int i = 0; i < size; i++) {            // n=O(n)       n=O(n) +O(1)
+      heights.add(scanner.nextInt());           // *O(1)        *O(1)
     }
 
-    int counter = 1; // хотим встать первым
-    for (int h : heights) {
-      if (h >= peter) {
-        counter++;
+    int counter = 1; // хотим встать первым     // O(1)         O(1)
+    for (int h : heights) {                     // n=O(n)       n=O(1) +O(1)
+      if (h >= peter) {                         // *O(1)
+        counter++;                              // *O(1)
       } else {
         break;
       }
     }
-    System.out.println(counter);
+    System.out.println(counter);                // O(1)
   }
 }
