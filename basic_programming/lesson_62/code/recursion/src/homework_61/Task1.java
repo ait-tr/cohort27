@@ -22,6 +22,10 @@ public class Task1 {
         }
       }
     }
-    System.out.println(min);
+    if (min % 2 == 0) {
+      System.out.println(min);
+    } else {
+      System.out.println(-1);
+    }
   }
 }
