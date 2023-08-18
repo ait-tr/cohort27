@@ -14,18 +14,15 @@ public class Task1 {
     while (scanner.hasNextInt()) {
       numbers.add(scanner.nextInt());
     }
-    int min = numbers.get(0);
+    int min = -1;
     for (int x : numbers) {
       if (x % 2 == 0) {
-        if (x < min) {
+        // если до этого чётных не было (min == -1) или новое меньше предыдущего минимума (x < min)
+        if (min == -1 || x < min) {
           min = x;
         }
       }
     }
-    if (min % 2 == 0) {
-      System.out.println(min);
-    } else {
-      System.out.println(-1);
-    }
+    System.out.println(min);
   }
 }
