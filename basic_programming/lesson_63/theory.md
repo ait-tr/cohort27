@@ -1,6 +1,6 @@
 # Anonymous Class (Анонимный класс)
 
-In Oracle documentation, a good recommendation is provided: "Use anonymous classes when you need a local class for one-time use."
+In Oracle documentation, a good recommendation is provided: "Use them if you need to use a local class only once."
 
 В документации Oracle приведена хорошая рекомендация: «Применяйте анонимные классы, если вам нужен локальный класс для одноразового использования».
 
