@@ -9,7 +9,9 @@ public class Task1 {
   // - вывести минус в начало строки
   // - вывести минус в конец строки
   public static String reverse(int x) {
-    // пока только для положительных чисел
+    if (x < 0) {
+      return reverse(Math.abs(x)) + "-";
+    }
     // базис рекурсии:
     if (x < 10) {
       return Integer.toString(x);
