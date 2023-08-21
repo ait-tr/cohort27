@@ -5,19 +5,22 @@ import java.util.Scanner;
 
 public class Order {
 
-  private String name;          // имя заказчика
-  private LocalTime startTime;  // время начала
+  private static final double PRICE_PER_CM = 1.5;         // евро за сантиметр длины
+  private static final double MULTIPLIER_PER_COLOR = 0.2; // доля за каждый цвет
+  private String name;                                    // имя заказчика
+  private LocalTime startTime;                            // время начала
   // TODO продолжительность
-  private int colors;           // количество цветов
+  private int colors;                                     // количество цветов
   // TODO список цветов
-  private double length;        // длина волос
-  private double price;         // сумма заказы
+  private double length;                                  // длина волос
+  private double price;                                   // сумма заказы
 
   public Order(String name, LocalTime startTime, int colors, double length) {
     this.name = name;
     this.startTime = startTime;
     this.colors = colors;
     this.length = length;
+    calculatePrice();
   }
 
   public String getName() {
@@ -60,6 +63,20 @@ public class Order {
     this.price = price;
   }
 
+  /**
+   * Обновление поля <code>price</code> с использованием значений полей <code>length</code> и
+   * <code>colors</code>
+   */
+  private void calculatePrice() {
+    price = PRICE_PER_CM * length + MULTIPLIER_PER_COLOR * colors;
+  }
+
+  /**
+   * Интерактивное чтение данных о заказе
+   *
+   * @param scanner источник данных
+   * @return прочитанный заказ
+   */
   public static Order interactiveRead(Scanner scanner) {
     System.out.print("Введите имя заказчика: ");
     String name = scanner.nextLine();
