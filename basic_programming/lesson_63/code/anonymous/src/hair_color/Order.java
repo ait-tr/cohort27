@@ -134,4 +134,15 @@ public class Order {
     scanner.nextLine(); // дочитываем последнюю строку до конца
     return new Order(name, startTime, colors, length);
   }
+
+  @Override
+  public String toString() {
+    return "Order{" +
+        "name='" + name + '\'' +
+        ", startTime=" + startTime +
+        ", colors=" + colors +
+        ", length=" + length +
+        ", price=" + price +
+        '}';
+  }
 }
