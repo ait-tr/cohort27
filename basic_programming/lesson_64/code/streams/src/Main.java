@@ -1,3 +1,8 @@
+import java.util.Arrays;
+import java.util.OptionalInt;
+import java.util.function.IntPredicate;
+import java.util.stream.IntStream;
+
 public class Main {
 
   // Анонимные классы - классы для однократного создания объекта
@@ -35,7 +40,22 @@ public class Main {
   // Поэтому аргументы можно записать в формате `(o1, o2)`
   // И итоговая запись выглядит так:
   // `(o1, o2) -> o1.getStartTime().compareTo(o2.getStartTime())`
+
+  // Стримы (Потоки) - класс Stream
+  // Стримы состоят из:
+  // - источника данных
+  //   из данных получается поток
+  // - промежуточных операторов (intermediate operations)
+  //   из потока с одними данными получается поток с другими данными
+  // - терминального оператора (terminal operation)
+  //   из потока данных получается какой-то результат
   public static void main(String[] args) {
-    System.out.println("Hello world!");
+    // Найти минимальное чётное из списка чисел
+    int[] numbers = new int[]{23, 45, 8, 24, -5, 12};
+    int result = Arrays.stream(numbers)
+                       .filter(x -> x % 2 == 0)
+                       .min()
+                       .orElse(-1);
+    System.out.println(result);
   }
 }
