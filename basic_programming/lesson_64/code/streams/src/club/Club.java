@@ -52,12 +52,18 @@ public class Club {
   }
 
   /**
-   * Вывод списка посетителей, отсортированного по возрасту в порядке возрастания
+   * Вывод списка посетителей, отсортированного по возрасту в порядке возрастания, а при одинаковом
+   * возрасте по именам
    */
   public void printVisitorsByAge() {
     System.out.println("В клуб \"" + title + "\" сейчас " + visitors.size() + " посетителей:");
     ArrayList<Visitor> visitorList = new ArrayList<>(visitors);
-    visitorList.sort((o1, o2) -> Integer.compare(o1.getAge(), o2.getAge()));
+    visitorList.sort((o1, o2) -> {
+      if (o1.getAge() != o2.getAge()) {
+        return Integer.compare(o1.getAge(), o2.getAge());
+      }
+      return o1.getName().compareTo(o2.getName());
+    });
     for (Visitor v : visitorList) {
       System.out.println(v);
     }
