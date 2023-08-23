@@ -15,6 +15,14 @@ public class Club {
     this.allowedAge = allowedAge;
   }
 
+  public int getCapacity() {
+    return capacity;
+  }
+
+  public int getAllowedAge() {
+    return allowedAge;
+  }
+
   /**
    * Вывод сообщения о начале работы клуба
    */
@@ -57,16 +65,24 @@ public class Club {
    */
   public void printVisitorsByAge() {
     System.out.println("В клуб \"" + title + "\" сейчас " + visitors.size() + " посетителей:");
-    ArrayList<Visitor> visitorList = new ArrayList<>(visitors);
-    visitorList.sort((o1, o2) -> {
-      if (o1.getAge() != o2.getAge()) {
-        return Integer.compare(o1.getAge(), o2.getAge());
-      }
-      return o1.getName().compareTo(o2.getName());
-    });
-    for (Visitor v : visitorList) {
-      System.out.println(v);
-    }
+//    ArrayList<Visitor> visitorList = new ArrayList<>(visitors);
+    visitors.stream()
+//    visitorList.sort((o1, o2) -> {
+//      if (o1.getAge() != o2.getAge()) {
+//        return Integer.compare(o1.getAge(), o2.getAge());
+//      }
+//      return o1.getName().compareTo(o2.getName());
+//    });
+        .sorted((o1, o2) -> {
+          if (o1.getAge() != o2.getAge()) {
+            return Integer.compare(o1.getAge(), o2.getAge());
+          }
+          return o1.getName().compareTo(o2.getName());
+        })
+//    for (Visitor v : visitorList) {
+//      System.out.println(v);
+//    }
+        .forEach(v -> System.out.println(v));
   }
 
   /**
