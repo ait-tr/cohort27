@@ -25,7 +25,7 @@ public class ClubRunner {
 
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
-    Club club = new Club("Название", 3);
+    Club club = new Club("Название", 3, 21);
     club.greet(); // начало работы, "добро пожаловать"
 
     while (hasNextVisitors(scanner)) {

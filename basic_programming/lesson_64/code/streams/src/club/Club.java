@@ -6,11 +6,13 @@ public class Club {
 
   private final String title;
   private final int capacity;
+  private final int allowedAge;
   private final ArrayList<Visitor> visitors = new ArrayList<>();
 
-  public Club(String title, int capacity) {
+  public Club(String title, int capacity, int allowedAge) {
     this.title = title;
     this.capacity = capacity;
+    this.allowedAge = allowedAge;
   }
 
   /**
@@ -42,6 +44,10 @@ public class Club {
    * @param visitor потенциальный посетитель
    */
   public void tryToEnter(Visitor visitor) {
+    if (visitor.getAge() < allowedAge) {
+      System.out.println("Извините, вам нельзя в клуб");
+      return;
+    }
     visitors.add(visitor);
   }
 
