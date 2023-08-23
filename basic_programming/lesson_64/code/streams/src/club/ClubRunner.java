@@ -35,10 +35,10 @@ public class ClubRunner {
   }
 
   /**
-   * Выбор команды
+   * Чтение ответа да/Нет
    *
-   * @param scanner источник ввода команды
-   * @return введённая пользователем команда
+   * @param scanner источник ввода ответа
+   * @return <code>true</code> при положительном ответе
    */
   private static boolean hasNextVisitors(Scanner scanner) {
     System.out.println("Есть ли в очереди посетители? [y/N]");
