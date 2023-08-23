@@ -56,7 +56,9 @@ public class Club {
    */
   public void printVisitorsByAge() {
     System.out.println("В клуб \"" + title + "\" сейчас " + visitors.size() + " посетителей:");
-    for (Visitor v : visitors) {
+    ArrayList<Visitor> visitorList = new ArrayList<>(visitors);
+    visitorList.sort((o1, o2) -> Integer.compare(o1.getAge(), o2.getAge()));
+    for (Visitor v : visitorList) {
       System.out.println(v);
     }
   }
