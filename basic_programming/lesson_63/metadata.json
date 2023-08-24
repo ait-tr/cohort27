@@ -1,0 +1,13 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "/code/anonymous/src/homework_62/Task1.java",
+    "/code/anonymous/src/homework_62/Task1Tests.java",
+    "/code/anonymous/src/hair_color/Order.java",
+    "/code/anonymous/src/hair_color/Main.java",
+    "/code/anonymous/src/Functional.java"
+  ],
+  "video": ""
+}

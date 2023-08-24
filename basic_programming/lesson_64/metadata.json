@@ -1,0 +1,13 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/streams/src/club/Club.java",
+    "code/streams/src/club/ClubRunner.java",
+    "code/streams/src/club/Visitor.java",
+    "code/streams/src/Main.java",
+    "code/streams/src/club/ClubRunnerStream.java"
+  ],
+  "video": ""
+}

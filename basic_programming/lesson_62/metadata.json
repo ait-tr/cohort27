@@ -1,0 +1,12 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/recursion/src/homework_61/Task1.java",
+    "code/recursion/src/Task1Students.java",
+    "code/recursion/src/Task2Fibonacci.java",
+    "code/recursion/src/Task3BinarySearch.java"
+  ],
+  "video": ""
+}
