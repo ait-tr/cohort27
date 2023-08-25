@@ -13,6 +13,7 @@ public class BookRunner {
     for (Book b : books) {
       System.out.println(b);
     }
+    books.add(Book.interactiveRead(scanner));
     booksFile.writeBooks(books);
   }
 }
