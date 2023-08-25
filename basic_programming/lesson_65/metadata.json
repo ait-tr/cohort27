@@ -3,6 +3,14 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
+    "code/practice/src/homework_63/Book.java",
+    "code/practice/src/homework_63/Task1.java",
+    "code/practice/src/homework_64/Book.java",
+    "code/practice/src/homework_64/Task1.java",
+    "code/practice/src/Main.java",
+    "code/practice/src/books/Book.java",
+    "code/practice/src/books/BooksFile.java",
+    "code/practice/src/books/BookRunner.java"
   ],
   "video": ""
 }
