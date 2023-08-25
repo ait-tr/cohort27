@@ -54,6 +54,13 @@ public class Book {
     return new Book(author, title, pages);
   }
 
+  /**
+   * Чтение полей класса Book из строки CSV-файла
+   *
+   * @param s         строка CSV-файла
+   * @param delimiter разделитель CSV-файла
+   * @return Book с заполненными полями
+   */
   public static Book parseFromCSVLine(String s, String delimiter) {
     // разбить строку на кусочки, кусочки вернут в виде массива
     String[] cells = s.split(delimiter); // cell - англ. "ячейка" (в нашем случае ячейка таблицы)
