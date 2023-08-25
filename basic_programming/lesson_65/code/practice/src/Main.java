@@ -21,6 +21,14 @@ public class Main {
         return authors;
       }
       return b1.getTitle().compareTo(b2.getTitle());
-    }).forEach(b -> System.out.println(b));
+    }).forEach(System.out::println);
+    // Чтобы реализовать интерфейс Consumer, нам нужен метод `void accept(Book o)`
+    // Мы хотим, чтобы этот метод вызвал `void println(Book o)` у объекта `System.out`
+    // println и будет нашей реализацией accept
+    // method reference - ссылка на метод:
+    // - `объект::метод`
+    // - `Класс::метод` (для статических методов)
+    // - `Класс::метод` (для методов аргумента)
+    // моим лямбда-выражением стал метод println()
   }
 }
