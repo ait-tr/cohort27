@@ -19,8 +19,9 @@ public class Task1 {
     books.sort(new Comparator<Book>() {
       @Override
       public int compare(Book o1, Book o2) {
-        if (o1.getAuthor().compareTo(o2.getAuthor()) != 0) {
-          return o1.getAuthor().compareTo(o2.getAuthor());
+        int authorComparison = o1.getAuthor().compareTo(o2.getAuthor());
+        if (authorComparison != 0) {
+          return authorComparison;
         }
         return o1.getTitle().compareTo(o2.getTitle());
       }
