@@ -15,27 +15,6 @@ public class Book {
     this.pages = pages;
   }
 
-  public String getAuthor() {
-    return author;
-  }
-
-  public String getTitle() {
-    return title;
-  }
-
-  public int getPages() {
-    return pages;
-  }
-
-  @Override
-  public String toString() {
-    return "Book{" +
-        "author='" + author + '\'' +
-        ", title='" + title + '\'' +
-        ", pages=" + pages +
-        '}';
-  }
-
   // модификаторы доступа:
   // - private - только внутри класса
   // - (ничего, package-private) - только внутри пакета
@@ -73,5 +52,41 @@ public class Book {
     }
     int pages = interactiveReadPages(scanner);
     return new Book(author, title, pages);
+  }
+
+  public static Book parseFromCSVLine(String s, String delimiter) {
+    // разбить строку на кусочки, кусочки вернут в виде массива
+    String[] cells = s.split(delimiter); // cell - англ. "ячейка" (в нашем случае ячейка таблицы)
+    try {
+      return new Book(cells[0], cells[1], Integer.parseInt(cells[2]));
+    } catch (ArrayIndexOutOfBoundsException | NumberFormatException e) {
+      throw new IllegalArgumentException("Некорректная строка: " + s);
+    }
+  }
+
+  public String getAuthor() {
+    return author;
+  }
+
+  public String getTitle() {
+    return title;
+  }
+
+  public int getPages() {
+    return pages;
+  }
+
+  @Override
+  public String toString() {
+    return "Book{" +
+        "author='" + author + '\'' +
+        ", title='" + title + '\'' +
+        ", pages=" + pages +
+        '}';
+  }
+
+  public String getCSVLine(String delimiter) {
+//    return author + delimiter + title + delimiter + pages + "\n";
+    return String.join(delimiter, author, title, Integer.toString(pages)) + "\n";
   }
 }
