@@ -33,7 +33,7 @@ public class MainSynchronized extends Thread {
   // MAIN - записать получившееся в counter // 4
   // counter = 4 (а должен был 6)
 
-  // запустится, когда Main3 - отдельный поток
+  // запустится, когда MainSynchronized - отдельный поток
   @Override
   public void run() {
     for (int i = 0; i < 10000; ++i) {
@@ -41,7 +41,7 @@ public class MainSynchronized extends Thread {
     }
   }
 
-  // запустится, когда Main3 - основная программа
+  // запустится, когда MainSynchronized - основная программа
   public static void main(String[] args) throws InterruptedException {
     Thread thread = new MainSynchronized();
     thread.start(); // запустить поток
