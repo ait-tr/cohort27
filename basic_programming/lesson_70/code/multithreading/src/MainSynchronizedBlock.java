@@ -1,5 +1,3 @@
-import java.util.Objects;
-
 public class MainSynchronizedBlock extends Thread {
 
   static int counter = 0;
