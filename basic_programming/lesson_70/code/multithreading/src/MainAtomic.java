@@ -15,6 +15,7 @@ public class MainAtomic extends Thread {
     for (int i = 0; i < 10000; ++i) {
       // предупреждение - непотокобезопасная операция с переменной, помеченной как volatile
       ++pseudoVolatileCounter;
+      // а здесь всё хорошо, здесь атомик - в любом случае потокобезопасная переменная
       counter.incrementAndGet();
     }
   }
@@ -26,6 +27,7 @@ public class MainAtomic extends Thread {
     for (int i = 0; i < 10000; ++i) {
       // предупреждение - непотокобезопасная операция с переменной, помеченной как volatile
       ++pseudoVolatileCounter;
+      // а здесь всё хорошо, здесь атомик - в любом случае потокобезопасная переменная
       counter.incrementAndGet();
     }
     thread.join(); // дождаться завершения потока
