@@ -3,6 +3,10 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
+    "code/multithreading/src/MainSynchronized.java",
+    "code/multithreading/src/MainAtomic.java",
+    "code/multithreading/src/MainSynchronizedBlock.java",
+    "code/multithreading/src/MainExecutorService.java"
   ],
   "video": ""
 }
