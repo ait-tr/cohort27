@@ -1,68 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My first page</title>
-</head>
+  <!-- мета информация -->
 
-<body>
-  <h1>Добро пожаловать в HTML</h1>
-  <!-- комментарий -->
-  <h4>Заголовок более низкого уровня</h4>
-  <p>
-    HTML (от английского HyperText Markup Language) — это язык
-    гипертекстовой разметки текста.
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae eveniet provident saepe magni obcaecati?
-    Consectetur, quaerat? Eius molestiae saepe aspernatur. Adipisci laborum perferendis deserunt saepe tempora quis
-    distinctio! Quasi, cumque?
-  </p>
-  <img src="https://i.pinimg.com/736x/72/88/b5/7288b5c821d3c1064643c23de28653ee.jpg" alt="meme about html" width="300">
-  <h2>Продолжаем изучать html</h2>
-  <p>Как перенести строку? <br> Текст с новой строки </p>
-  <p>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Autem adipisci unde eius est sed! Fugiat consectetur
-    repudiandae provident! <br>Eius ratione sint tenetur error natus?<br> Maxime, sapiente. Deleniti doloribus facilis
-    earum.
-  </p>
+  <head>
 
-  <h6>Ненумерованный список с атрибутом type, значение атрибута "square" </h6>
-  <ul type="square">
-    <li>Яблоко</li>
-    <li>Смородина</li>
-    <li>Слива</li>
-  </ul>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My page</title>
+  </head>
 
-  <h6>Ненумерованный список с атрибутом type, значение атрибута "circle" </h6>
-  <ul type="circle">
-    <li>Яблоко</li>
-    <li>Груша</li>
-    <li>Слива</li>
-  </ul>
+  <!-- код страницы -->
 
-  <h6>Ненумерованный список с атрибутом type, по умолчанию = "disk" </h6>
-  <ul type="disk">
-    <li>"li" - list item - элемент списка </li>
-    <li>"ul" - unordered list - ненумерованный список</li>
-    <li> "ol" - ordered list - нумерованный лист </li>
-  </ul>
-  <h6>Нумерованный список с атрибутом type="1" </h6>
-  <ol type="1">
-    <li>HTML</li>
-    <li>CSS</li>
-    <li>JS</li>
-  </ol>
+  <body>
+    <a href="#image">Ссылка на картинку</a>
 
-  <h6>Нумерованный список с атрибутом type="I" </h6>
-  <ol type="I">
-    <li>HTML</li>
-    <li>CSS</li>
-    <li>JS</li>
-  </ol>
-  <!-- пока -->
-  <img src="../../../" alt="meme">
-</body>
+    <select name="" id="">
+      <option value="">День</option>
+      <option value="">Ночь</option>
+    </select>
+
+    <p>Фрукты:</p>
+
+    <ul id="fruit-list" type="square">
+      <!-- list item -->
+      <li>Яблоко</li>
+      <li>Апельсин</li>
+      <li>Грейпфрут</li>
+    </ul>
+    <!-- heading -->
+    <h1>Hello, world!</h1>
+    <h3>Заголовок поменьше</h3>
+    <h5>Заголовок еще меньше</h5>
+    <!-- images -->
+    <a href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/a">
+      <img id="image" src="26.jpg" width="25px" alt="pic">
+    </a>
+    <img src="26.jpg" width="50px" alt="pic">
+    <img src="26.jpg" width="100px" alt="pic">
+    <!-- paragraph -->
+    <p>Фрукты:</p>
+    <!-- unordered list -->
+    <ul id="part" type="square">
+      <!-- list item -->
+      <li>Яблоко</li>
+      <li>Апельсин</li>
+      <li>Грейпфрут</li>
+    </ul>
+    <!-- якорная ссылка -->
+    <a target="_blank" href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/a">Ссылка на документацию</a><br>
+    <a target="_blank" href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/a">Ссылка на документацию</a>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum iusto, magnam fuga, autem placeat voluptatibus magni animi libero consequuntur sit aliquid totam, perferendis delectus harum ipsam excepturi ducimus quidem.
+      Voluptatem eius non, modi excepturi sequi, officiis ipsa culpa commodi cum voluptates repellat quidem, harum sed cupiditate! Aliquam asperiores sequi ipsum doloribus id? Saepe totam, sequi necessitatibus impedit enim nihil.
+      Praesentium, rerum similique atque quia vel, quae deserunt tenetur eum qui numquam eligendi aliquid corrupti culpa repellendus placeat veniam odit? Omnis ullam esse libero quisquam hic itaque rem ipsum illo!
+    </p>
+
+    <ol type="I">
+      <li>Элемент</li>
+      <li>Элемент</li>
+      <li>Элемент</li>
+    </ol>
+
+
+
+
+
+
+  </body>
 
 </html>
