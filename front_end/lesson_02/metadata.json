@@ -5,8 +5,7 @@
   "code": [
     "./code/index.html",
     "./code/styles/style.css",
-    "./code/info.html",
-    "./code/git.md"
+    "./code/info.html"
   ],
   "video": "",
   "etc": ""
