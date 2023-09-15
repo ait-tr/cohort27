@@ -1,0 +1,75 @@
+body {
+  /* margin: 0; */
+}
+
+
+.square {
+  width: 200px;
+  height: 300px;
+  border: 2px dashed #00374d;
+  margin: 10px;
+  padding: 10px 20px;
+  /* прячет padding вовнутрь элемента */
+  box-sizing: border-box;
+  border-radius: 5%;
+  /* margin: auto; */
+}
+
+.room {
+  background-image: url('https://www.ikea.com/ext/ingkadam/m/359adf248e1bd61a/original/PH193761.jpg');
+  background-size: contain;
+  background-position: center;
+}
+
+
+.mainHeading {
+  margin-top: 30px;
+  margin-bottom: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.mainHeading:hover {
+  color: blueviolet;
+}
+
+.boxImageCover {
+  width: 150px;
+  height: 100px;
+  background-image: url('https://tir-sidon.ru/image/cache/catalog/1-800x800.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.boxImage {
+  width: 100px;
+  /* display: inline-block; */
+  /* margin: auto; */
+}
+
+.boxHeading {
+  text-align: right;
+  margin: auto;
+}
+
+.red {
+  margin: 30px 20px 40px 20px;
+  background-color: red;
+}
+
+.blue {
+  background-color: rgb(191, 191, 250);
+  transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.green {
+  background-color: rgb(182, 254, 182);
+}
+
+.blue:hover {
+  background-color: orange;
+  transform: rotate(0.5turn);
+}

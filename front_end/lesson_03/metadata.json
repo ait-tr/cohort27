@@ -1,0 +1,12 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "./code/css-box-model/index.html",
+    "./code/styles/style.css",
+    "./code/styles/reset.css"
+  ],
+  "video": "",
+  "etc": ""
+}
