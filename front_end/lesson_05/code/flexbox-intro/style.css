@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+p {
+  display: flex;
+  margin-right: 5px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+.header {
+  height: 15vh;
+  background-color: chocolate;
+  padding: 20px;
+  display: flex;
+  /* позиция по горизонтали */
+  justify-content: center;
+  /* позиция по вертикали */
+  align-items: flex-start;
+
+}
+
+.main {
+  min-height: 800px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.cards {
+  display: flex;
+  /* flex-direction: row; */
+  flex-wrap: wrap;
+  align-content: center;
+
+}
+
+.card {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin: 10px;
+  box-sizing: border-box;
+  height: 300px;
+  width: 250px;
+  background-color: grey;
+}
+
+.footer {
+  height: 5vh;
+  background-color: grey;
+}

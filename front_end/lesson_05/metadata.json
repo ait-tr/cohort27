@@ -1,0 +1,19 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "./code/flexbox-intro/index.html",
+    "./code/flexbox-intro/style.css",
+    "./code/dima-code/index.html",
+    "./code/dima-code/style.css",
+    "./code/ustinja-code/index.html",
+    "./code/ustinja-code/style.css",
+    "./code/nadja-code/index.html",
+    "./code/nadja-code/style.css",
+    "./code/task_fe-css-box-model/index.html",
+    "./code/task_fe-css-box-model/style.css"
+  ],
+  "video": "",
+  "etc": ""
+}

@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+}
+h1 {
+  margin: 0;
+}
+a {
+  margin: 0;
+}
+.header {
+  display: flex;
+  flex-direction: flex-end;
+  /* при значении flex-direction: row justify-content отвечает за горизонтальную ось */
+  /* при значении flex-direction: column justify-content отвечает за вертикальную ось */
+  justify-content: flex-end;
+   /* при значении flex-direction : row align-items отвечает за вертикальную ось */
+  /* при значении flex-direction: column align-items отвечает за горизонтальную ось */
+  align-items: column;
+  padding: 10px;
+  height: 15vh;
+  background-color: darkgreen;
+}
+.header > p {
+  margin: 5px;
+}
+.main {
+  min-height: 1000px;
+  background-color: rgb(20, 37, 142);
+}
+.card {
+}
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: center;
+}
+.card {
+  border: 5px coral solid;
+  padding: 15;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  background-color: cyan;
+  width: 300px;
+  height: 250px;
+}
+.card:hover {
+  background-color: rgb(123, 14, 14);
+}
+.foorter {
+  background-color: rgb(red, green, blue);
+  height: 10vh;
+}

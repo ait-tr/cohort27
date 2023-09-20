@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  margin: 0;
+  text-decoration: none;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding: 10px;
+  height: 10vh;
+  background-color: chocolate;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  min-height: 80vh;
+  background-color: bisque;
+}
+
+.card {
+  padding: 15px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  background-color: cadetblue;
+  width: 30%;
+  min-height: 300px;
+  border: 4px dashed rgb(227, 196, 110);
+  border-radius: 5%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:nth-child(2n) {
+  background-color: #ABB448;
+}
+
+.cardLink {
+  display: flex;
+  background-color: #8FC7EF;
+}
+
+a {
+  display: flex;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card:hover {
+  background-color: rgb(227, 196, 110);
+  border: 4px coral solid;
+}
+
+.header>a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer {
+  height: 10vh;
+  background-color: grey;
+}
+
+.cardsImage {
+  /* height: 200px; */
+  width: 100%;
+}
