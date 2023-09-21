@@ -1,9 +1,7 @@
 {
-  "plan": "plan.md",
   "theory": "theory.md",
   "code": [
-    "./code/index.html",
-    "./code/style.css"
+    "./code/index.html"
   ],
   "video": "",
   "etc": ""
