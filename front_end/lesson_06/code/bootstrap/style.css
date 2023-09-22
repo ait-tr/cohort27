@@ -1,0 +1,31 @@
+  /* Изменение цвета фона при нажатии и удержании клика */
+
+  a:active {
+    background-color: #ff4141;
+  }
+
+  .columnBorder {
+    border: 1px black solid;
+  }
+
+  .container {
+    display: flex;
+  }
+
+  /* карточка пропадает из потока при наведении на нее */
+  .lost:hover {
+    display: none;
+  }
+
+  /* карточка остается в потоке и перестает отображаться при наведении на нее */
+  .hidden:active {
+    visibility: hidden;
+  }
+
+  form {
+    width: 500px;
+  }
+
+  h4 {
+    margin: 40px 0px;
+  }

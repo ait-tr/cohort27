@@ -1,0 +1,114 @@
+body {
+  height: 11000px;
+}
+
+.square {
+  height: 200px;
+  width: 200px;
+  border: 1px black solid;
+  margin: 5px;
+  background-color: #fff;
+}
+
+/* по умолчанию все элементы имеют значение position:static */
+
+.stickySquare {
+  /* элемент остается в потоке. и осается на месте, когда доскролим до указанного значения по высоте*/
+  position: sticky;
+  /* не забываем указать значение по оси y, до которого будет двигаться элемент */
+  top: 10px;
+  z-index: -2;
+  background-color: rgb(255, 196, 228);
+}
+
+.fixedSquare {
+  /* элемент остается на месте и вырывается потока */
+  position: fixed;
+  background-color: rgba(196, 255, 236, 0.5);
+  z-index: 2;
+  /* не забываем указать начальное значение элемента */
+  top: 15px;
+  left: 100px;
+}
+
+/* чаще всего используется вместе с абсолютным позиционированием. задается родителю, т.к если не менять значение по осям - элемент останется на месте и будет вести себя обычно */
+
+.relativeSquare {
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  background-color: rgb(224, 190, 255);
+  position: relative;
+}
+
+.relativeSquare>p {
+  margin-right: 5px;
+}
+
+/* абсолютно спозиционированный элемент отсчитывает свое положение от своего отпозиционированного родителя или в случае если такого нет от body */
+
+.absoluteCircle {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: chartreuse;
+  position: absolute;
+  bottom: -40px;
+  right: -30px;
+  z-index: 10;
+}
+
+/* значением z-index мы меняем положение элемента отсносительно слоев на странице - можем сделать его "повыше" или "пониже" */
+
+.absoluteBigCircle {
+  height: 300px;
+  width: 300px;
+  position: absolute;
+  bottom: -40px;
+  right: -233px;
+  z-index: 110;
+  border-radius: 50%;
+  background: #dd3e54;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #6be585, #dd3e54);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #6be585, #dd3e54);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+/* для устройств с экраном меньше 770px будут применяться эти стили */
+
+@media (max-width: 770px) {
+  .relativeSquare {
+    background-color: rgb(229, 108, 43);
+    flex-direction: column;
+    /* position: relative; */
+  }
+
+  .relativeSquare>p {
+    font-size: larger;
+  }
+}
+
+@media (max-width: 400px) {
+
+  .relativeSquare {
+    background-color: rgb(71, 19, 119);
+    flex-direction: column;
+    /* position: relative; */
+  }
+
+  .relativeSquare>p {
+    font-size: larger;
+    color: white;
+  }
+
+}
+
+/* .absoluteSquare {
+  position: absolute;
+  background-color: red;
+  left: 0px;
+  top: 0px;
+} */

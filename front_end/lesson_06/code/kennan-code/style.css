@@ -1,0 +1,46 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 86px;
+    padding: 16px 24px;
+    box-sizing: border-box;
+    background-color: rgb(202, 198, 198);
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    
+}
+
+.header > div {
+    display: flex;
+}
+.main{
+    min-height:1200px ;
+    background-color: rgb(149, 201, 247);
+    border: 2px red solid;
+    
+    
+}
+
+.footer{
+    height: 482px;
+    padding: 16px 24px 70px;
+    background-color: #545454;
+
+}
+.linkWraper{
+    display: flex;
+
+}
+
+.linkWraper > li {
+    font-size: 15px;
+    margin-right: 10px;
+    text-decoration: none;
+    list-style: none; 
+}
+h1{
+    display: flex;
+    margin: 0px;
+}
