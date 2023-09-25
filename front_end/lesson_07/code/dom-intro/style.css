@@ -1,0 +1,51 @@
+h1 {
+  margin: 0;
+}
+
+button {
+  width: 200px;
+  margin-bottom: 5px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.mainHeading {
+  color: rgb(135, 61, 255);
+  font-size: 50px;
+  text-decoration: underline;
+}
+
+#btn1 {
+  background-color: aqua;
+}
+
+#btn2 {
+  background-color: darksalmon;
+}
+
+#btn3 {
+  background-color: rgba(172, 247, 191, 0.3);
+}
+
+#btn4 {
+  background-color: #ed9d9d;
+}
+
+.hidden {
+  /* элемент пропадает из потока */
+  /* display: none; */
+
+  /* элемент остается в потоке и становится невидимым */
+  visibility: hidden;
+}
+
+.visible {
+  visibility: visible;
+}
+
+#btn6 {
+  background-color: #9d9eed;
+}
