@@ -1,0 +1,10 @@
+{
+  "theory": "theory.md",
+  "code": [
+    "./code/index.html",
+    "./code/style.css",
+    "./code/script.js"
+  ],
+  "video": "",
+  "etc": ""
+}
