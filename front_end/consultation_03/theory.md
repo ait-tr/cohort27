@@ -9,7 +9,7 @@
 - Bookmarks
 Закладки
 
-- Code Spell Checker
+- Code Spell Checkern
 Расширение, проверяющее орфографию в вашем коде и предлагающее исправления для найденных ошибок.
 
 - Better Comments

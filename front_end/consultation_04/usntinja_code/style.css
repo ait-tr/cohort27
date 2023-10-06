@@ -1,0 +1,15 @@
+body {
+    background-color: #decfc4;
+}
+
+.mainHeading {
+    color: rgb(118, 68, 164);
+}
+
+div {
+    width: 300px;
+    margin: 10px;
+    background-color: #ffa9f2;
+    border: 2px rgb(118, 68, 164) solid;
+    border-radius: 5%
+}
