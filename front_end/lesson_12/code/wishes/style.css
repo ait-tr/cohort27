@@ -1,0 +1,56 @@
+input {
+  margin-bottom: 5px;
+  padding: 5px;
+}
+
+p {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+h1 {
+  margin-left: 30px;
+  margin-bottom: 15px;
+}
+
+.wishHeading {
+  font-weight: 700;
+  color: darkblue;
+}
+
+.wishForm {
+  border: 1px black solid;
+  border-radius: 1%;
+  display: flex;
+  padding: 20px;
+  box-sizing: border-box;
+  margin: 30px;
+  margin-top: 0;
+  background-color: #dedede;
+  flex-direction: column;
+  width: 400px;
+  position: relative;
+}
+
+.wishlist {
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.wish {
+  font-size: 40px;
+  color: indigo;
+}
+
+.submitBtn {
+  width: 100px;
+  margin-bottom: 5px;
+}
+
+.buttonDel {
+  position: absolute;
+  margin-left: 30px;
+  top: 169px;
+  right: 456px;
+}
