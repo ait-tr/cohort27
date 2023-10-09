@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+}
+
+main {
+  width: 100%;
+  ;
+}
+
+.header {
+  position: sticky;
+  top: 0px;
+  width: 100%;
+  min-height: 120px;
+  /*  картинка на background image */
+  background-image: url('imagebanner.jpeg');
+  background-size: cover;
+  background-position: center center;
+  /* для того чтобы отцентровать картинку */
+  justify-content: center;
+  display: flex;
+  align-items: flex-end;
+  padding: 20px 20px 30px;
+  box-sizing: border-box;
+}
+
+/* .imagebanner {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  width: 100%;
+} */
+
+.nav {
+  align-items: center;
+  width: 95%;
+  max-width: 1000px;
+  display: flex;
+  /* равномерно распределяет пустое пространство внутри контейнера */
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.navContainer {
+  display: flex;
+  align-items: flex-end;
+}
+
+.play {
+  opacity: 50%;
+  transition: opacity 0.5s ease;
+  cursor: pointer;
+}
+
+.playHeading {
+  margin: 0;
+  color: white;
+  opacity: 50%;
+  transition: opacity 0.5s ease;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.logo {
+  height: 30px;
+}
+
+.oscar {
+  opacity: 50%;
+  transition: opacity 0.5s ease;
+  cursor: pointer;
+}
+
+.navInput {
+  opacity: 50%;
+  /*  работает анимацией на плавный переход */
+  transition: opacity 0.5s ease;
+  cursor: pointer;
+  height: 20px;
+}
+
+.navInput::placeholder {
+  border-radius: 10%;
+}
+
+.navContainer:hover .play,
+.navContainer:hover .playHeading {
+  opacity: 1;
+}
+
+.navContainer:hover .oscar,
+.navContainer:hover .playHeading {
+  opacity: 1;
+
+}
+
+.navInput:hover {
+  opacity: 1;
+
+}
