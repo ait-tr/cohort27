@@ -1,0 +1,48 @@
+body {
+  background-color: rgb(255, 231, 202);
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  padding: 0;
+}
+
+.film-header {
+  width: 100%;
+  position: sticky;
+  top: 0px;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  background-color: rgb(59, 26, 26);
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.film-header>ul>li {
+  color: white;
+  list-style-type: none;
+}
+
+
+.film-card {
+  margin: auto;
+  width: fit-content;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  min-height: 400px;
+  background-color: white;
+  justify-content: space-between;
+}
+
+
+
+.film-img {
+  width: 500px;
+}

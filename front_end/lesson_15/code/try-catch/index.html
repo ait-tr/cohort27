@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Shop</title>
+  </head>
+
+  <body>
+    <h1>Загрузить товары:</h1>
+    <form id="form-items" action="">
+      <input name="form-amount" placeholder="Кол-во" type="text" required>
+      <button type="submit">Загрузить</button>
+    </form>
+    <div id="loader" style="display: none" class="loader"></div>
+    <div style="display: none" id="content">
+      <h3>Product list</h3>
+      <ul id="product-list"></ul>
+    </div>
+
+  </body>
+
+</html>
