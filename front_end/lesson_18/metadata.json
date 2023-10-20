@@ -1,0 +1,14 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "./code/first-react/src/App.tsx",
+    "./code/first-react/src/components/cityPage/cityPage.tsx",
+    "./code/first-react/src/components/counter/Counter.tsx",
+    "./code/first-react/src/App.tsx",
+    "./code/first-react/src/index.tsx",
+    "./code/first-react/src/App.css",
+    "./code/homework/index.ts"
+  ]
+}
