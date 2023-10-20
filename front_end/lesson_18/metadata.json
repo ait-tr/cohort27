@@ -4,11 +4,11 @@
   "homework": "homework.md",
   "code": [
     "./code/homework/index.ts",
-    "./code/cra/src/App.tsx",
-    "./code/cra/src/components/cityPage/cityPage.tsx",
-    "./code/cra/src/components/counter/Counter.tsx",
-    "./code/cra/src/App.tsx",
-    "./code/cra/src/index.tsx",
-    "./code/cra/src/App.css"
+    "./code/first-react/src/App.tsx",
+    "./code/first-react/src/components/cityPage/cityPage.tsx",
+    "./code/first-react/src/components/counter/Counter.tsx",
+    "./code/first-react/src/App.tsx",
+    "./code/first-react/src/index.tsx",
+    "./code/first-react/src/App.css"
   ]
 }
