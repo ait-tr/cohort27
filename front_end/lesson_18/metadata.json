@@ -5,7 +5,7 @@
   "code": [
     "./code/homework/index.ts",
     "./code/first-react/src/App.tsx",
-    "./code/first-react/src/components/cityPage/cityPage.tsx",
+    "./code/first-react/src/components/cityPage/CityPage.tsx",
     "./code/first-react/src/components/counter/Counter.tsx",
     "./code/first-react/src/App.tsx",
     "./code/first-react/src/index.tsx",
