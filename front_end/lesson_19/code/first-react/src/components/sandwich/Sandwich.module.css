@@ -1,0 +1,22 @@
+.container {
+  border: 2px dashed darkorange;
+  margin: 10px;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.btn {
+  background-color: rgb(146, 139, 248);
+}
+
+.btn:hover {
+  background-color: rgb(176, 171, 248);
+}
+
+.btnDanger {
+  background-color: red;
+}
+
+.btnBorder {
+  border: 4px dashed darksalmon;
+}
