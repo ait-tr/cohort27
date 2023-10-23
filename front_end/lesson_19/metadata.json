@@ -3,16 +3,16 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
-    ".code/first-react/src/components/sandwich/Sandwich.tsx",
-    ".code/first-react/src/components/sandwich/Sandwich.module.css",
-    ".code/first-react/src/components/myButtom/MyButton.tsx",
-    ".code/first-react/src/components/myButtom/MyButton.module.css",
-    ".code/first-react/src/components/form/Form.tsx",
-    ".code/first-react/src/components/form/form.module.css",
-    ".code/first-react/src/components/counter/Counter.tsx",
-    ".code/first-react/src/components/cityPage/CityPage.tsx",
-    ".code/first-react/src/components/btnTest/BtnTest.tsx",
-    ".code/first-react/src/components/btnTest/BtnTest.module.css",
+    "./code/first-react/src/components/sandwich/Sandwich.tsx",
+    "./code/first-react/src/components/sandwich/Sandwich.module.css",
+    "./code/first-react/src/components/myButtom/MyButton.tsx",
+    "./code/first-react/src/components/myButtom/MyButton.module.css",
+    "./code/first-react/src/components/form/Form.tsx",
+    "./code/first-react/src/components/form/form.module.css",
+    "./code/first-react/src/components/counter/Counter.tsx",
+    "./code/first-react/src/components/cityPage/CityPage.tsx",
+    "./code/first-react/src/components/btnTest/BtnTest.tsx",
+    "./code/first-react/src/components/btnTest/BtnTest.module.css",
     "./code/first-react/src/components/btnTest",
     "./code/first-react/src/components/cityPage",
     "./code/first-react/src/components/counter",
@@ -23,7 +23,7 @@
     "./code/first-react/src/App.tsx",
     "./code/first-react/src/index.css",
     "./code/first-react/src/index.tsx",
-    ".code/first-react/package.json",
-    ".code/first-react/.eslintrc.json"
+    "./code/first-react/package.json",
+    "./code/first-react/.eslintrc.json"
   ]
 }
