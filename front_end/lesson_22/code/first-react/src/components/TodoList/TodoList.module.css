@@ -1,0 +1,27 @@
+.todoContainer {
+  background-color: #f0f0f0;
+  border: 1px solid #d0d0d0;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  margin: 30px auto;
+  box-shadow: 2px 2px 5px #888888;
+}
+
+.todoInput {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #c0c0c0;
+  border-radius: 5px;
+}
+
+.todoItem {
+  margin: 8px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+}

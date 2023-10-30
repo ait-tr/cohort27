@@ -1,0 +1,22 @@
+.navbar {
+  position: sticky;
+  top: 0px;
+  background-color: #FF661F;
+  width: 100%;
+  padding: 20px;
+}
+
+.navbar>a {
+  font-size: larger;
+  margin-right: 5px;
+  text-decoration: none;
+  color: white;
+}
+
+.navbar>a:hover {
+  text-decoration: underline;
+}
+
+.navbar>a:global.active {
+  text-decoration: underline;
+}
