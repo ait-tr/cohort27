@@ -1,0 +1,33 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "./code/RTK/src/main.tsx",
+    "./code/RTK/src/index.css",
+    "./code/RTK/src/App.css",
+    "./code/RTK/src/App.tsx",
+    "./code/RTK/src/layouts/Layout.tsx",
+    "./code/RTK/src/layouts/Layout.module.css",
+    "./code/RTK/src/hooks/useLS.ts",
+    "./code/RTK/src/features/products/productSlice.ts",
+    "./code/RTK/src/features/products/Products.tsx",
+    "./code/RTK/src/features/products/Products.module.css",
+    "./code/RTK/src/features/products/productAction.ts",
+    "./code/RTK/src/features/products/types/ProductState.ts",
+    "./code/RTK/src/features/products/types/Product.ts",
+    "./code/RTK/src/components/youtubeExample/YoutubeExample.tsx",
+    "./code/RTK/src/components/youtubeExample/YoutubeExample.module.css",
+    "./code/RTK/src/components/productItem/ProductItem.tsx",
+    "./code/RTK/src/components/productForm/ProductForm.module.css",
+    "./code/RTK/src/components/productForm/ProductForm.tsx",
+    "./code/RTK/src/components/myButton/MyButton.tsx",
+    "./code/RTK/src/components/myButton/MyButton.module.css",
+    "./code/RTK/src/components/footer/Footer.module.css",
+    "./code/RTK/src/components/footer/Footer.tsx",
+    "./code/RTK/src/components/error/Error.tsx",
+    "./code/RTK/src/components/header/Header.module.css",
+    "./code/RTK/src/components/header/Header.tsx",
+    "./code/RTK/src/app/store.ts"
+  ]
+}
