@@ -1,0 +1,16 @@
+.form {
+  border-radius: 15px;
+  padding: 30px;
+  margin: 15px;
+}
+
+.form>input {
+
+  margin: 3px auto;
+  display: block;
+}
+
+.form>button {
+  margin: auto;
+  display: block;
+}
