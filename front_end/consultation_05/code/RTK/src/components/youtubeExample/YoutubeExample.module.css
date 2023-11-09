@@ -1,0 +1,58 @@
+.videoBox {
+  width: 100%;
+  /* width: 1775px; */
+  /* padding-bottom: 900px; */
+  height: 0;
+  padding-bottom: 56.25%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: -1;
+}
+
+.videoBox iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 1444px) {
+  .videoBox {
+    width: 1775px;
+    padding-bottom: 900px;
+    height: 0;
+    top: 0;
+    left: -300px;
+    position: fixed;
+    z-index: -1;
+  }
+}
+
+@media (max-width: 800px) {
+  .videoBox {
+    width: 347%;
+    /* width: 1775px; */
+    height: 0;
+    padding-bottom: 207.25%;
+    /* padding-bottom: 1000px; */
+    top: 0;
+    left: -700px;
+    position: fixed;
+    z-index: -1;
+  }
+}
+
+
+@media (max-width: 500px) {
+  .videoBox {
+    width: 347%;
+    /* width: 1775px; */
+    height: 0;
+    padding-bottom: 207.25%;
+    /* padding-bottom: 1000px; */
+    top: 0;
+    left: -500px;
+    position: fixed;
+    z-index: -1;
+  }
+}
