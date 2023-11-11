@@ -1,0 +1,23 @@
+{
+  "workbench.colorCustomizations": {
+    "activityBar.activeBackground": "#cbb2b1",
+    "activityBar.background": "#cbb2b1",
+    "activityBar.foreground": "#15202b",
+    "activityBar.inactiveForeground": "#15202b99",
+    "activityBarBadge.background": "#59865b",
+    "activityBarBadge.foreground": "#e7e7e7",
+    "commandCenter.border": "#15202b99",
+    "sash.hoverBorder": "#cbb2b1",
+    "statusBar.background": "#b79492",
+    "statusBar.foreground": "#15202b",
+    "statusBarItem.hoverBackground": "#a37673",
+    "statusBarItem.remoteBackground": "#b79492",
+    "statusBarItem.remoteForeground": "#15202b",
+    "titleBar.activeBackground": "#b79492",
+    "titleBar.activeForeground": "#15202b",
+    "titleBar.inactiveBackground": "#b7949299",
+    "titleBar.inactiveForeground": "#15202b99"
+  },
+  "peacock.color": "#B79492",
+  "cSpell.words": ["деструктуризацию"]
+}

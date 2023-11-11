@@ -1,0 +1,37 @@
+.button {
+  margin: 10px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+  color: #333;
+}
+
+/* Styles for active button */
+.active {
+  background: linear-gradient(to bottom, #EFEFEF, #CDCDCD);
+  border: 1px solid #CDCDCD;
+  border-radius: 5px;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+  color: #333;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.active:hover {
+  background: linear-gradient(to bottom, #CDCDCD, #EFEFEF);
+  transform: translateY(-2px);
+}
+
+/* Styles for disabled button */
+.disabled {
+  background: #EFEFEF;
+  border: 1px solid #CDCDCD;
+  border-radius: 5px;
+  color: #A9A9A9;
+  padding: 10px 20px;
+  user-select: none;
+  filter: grayscale(100%);
+  transition: background 0.3s ease;
+}
