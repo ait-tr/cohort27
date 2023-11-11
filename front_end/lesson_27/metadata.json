@@ -1,7 +1,5 @@
 {
-  "plan": "plan.md",
   "theory": "theory.md",
-  "homework": "homework.md",
   "code": [
     "./code/RTK/src/components/loader/Loader.module.css",
     "./code/RTK/src/components/loader/Loader.tsx",
@@ -34,10 +32,13 @@
     "./code/RTK/src/components/myButton/MyButton.module.css",
     "./code/RTK/src/components/footer/Footer.module.css",
     "./code/RTK/src/components/footer/Footer.tsx",
+    "./code/RTK/src/components/form/form.module.css",
+    "./code/RTK/src/components/form/Form.tsx",
     "./code/RTK/src/components/error/Error.tsx",
     "./code/RTK/src/components/header/Header.module.css",
     "./code/RTK/src/components/header/Header.tsx",
     "./code/RTK/src/app/store.ts"
-  ]
+  ],
+  "video": "",
+  "etc": ""
 }
-
