@@ -1,0 +1,1 @@
+https://raw.githubusercontent.com/ait-tr/cohort27/back_end/lesson_01/resources/#1_Spring_Boot_Onion_Hexagonal_ar.pptm

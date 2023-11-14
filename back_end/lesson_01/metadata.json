@@ -1,0 +1,16 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/src/main/java/client/Main.java",
+    "code/src/main/java/our_application/controllers/UserController.java",
+    "code/src/main/java/our_application/domain/User.java",
+    "code/src/main/java/our_application/repositories/CrudRepository.java",
+    "code/src/main/java/our_application/repositories/UserRepository.java",
+    "code/src/main/java/our_application/repositories/UserRepositoryMap.java",
+    "code/src/main/java/our_application/services/UserService.java",
+    "code/src/main/java/our_application/services/UserServiceImpl.java"
+  ],
+  "video": ""
+}
