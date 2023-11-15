@@ -1,0 +1,10 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/src/main/java/lesson_02/ArrayUtils.java",
+    "code/src/test/java/lesson_02/ArrayUtilsTest.java"
+  ],
+  "video": ""
+}
