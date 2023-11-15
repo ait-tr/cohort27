@@ -1,1 +1,1 @@
-https://raw.githubusercontent.com/ait-tr/cohort27/main/back_end/lesson_02/resources/2. Unit testing. JUnit. Mockito tests.pptm
+https://raw.githubusercontent.com/ait-tr/cohort27/main/back_end/lesson_02/resources/2._Unit_testing._JUnit._Mockito_tests.pptm
