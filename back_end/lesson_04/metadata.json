@@ -1,0 +1,15 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/lesson_04/homework/Main.java",
+    "code/lesson_04/task_1/UserInputTest.java",
+    "code/lesson_04/task_2/ExceptionCauseTest.java",
+    "code/lesson_04/task_3/CheckedExceptionTest.java",
+    "code/lesson_04/task_4/TooBigAgeException.java",
+    "code/lesson_04/task_4/TooSmallAgeException.java",
+    "code/lesson_04/task_4/UserExceptionsTest.java"
+  ],
+  "video": ""
+}
