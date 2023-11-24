@@ -1,0 +1,13 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/comparing/task_01/Cat.java",
+    "code/comparing/task_01/Dog.java",
+    "code/comparing/task_01/PrimitiveComparing.java",
+    "code/comparing/task_02/CatComparator.java",
+    "code/comparing/task_02/Main.java"
+  ],
+  "video": ""
+}

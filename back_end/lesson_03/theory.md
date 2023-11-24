@@ -1,0 +1,1 @@
+https://raw.githubusercontent.com/ait-tr/cohort27/main/back_end/lesson_03/resources/3_Comparing_objects_in_Java.Comparator,_Comparable.pptm

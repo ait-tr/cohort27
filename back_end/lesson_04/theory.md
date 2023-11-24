@@ -1,0 +1,1 @@
+https://raw.githubusercontent.com/ait-tr/cohort27/main/back_end/lesson_04/resources/4.Exceptions.pptm
