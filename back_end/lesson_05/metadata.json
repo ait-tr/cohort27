@@ -1,0 +1,25 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/lesson_05/task_1/Cat.java",
+    "code/lesson_05/task_1/CatLoad.java",
+    "code/lesson_05/task_1/CatSave.java",
+    "code/lesson_05/task_2/Cat.java",
+    "code/lesson_05/task_2/CatLoad.java",
+    "code/lesson_05/task_2/CatSave.java",
+    "code/lesson_05/task_2/Food.java",
+    "code/lesson_05/task_2/Owner.java",
+    "code/lesson_05/task_3/Cat.java",
+    "code/lesson_05/task_3/CatLoad.java",
+    "code/lesson_05/task_3/CatSave.java",
+    "code/lesson_05/task_4/Cat.java",
+    "code/lesson_05/task_4/CatLoad.java",
+    "code/lesson_05/task_4/CatSave.java",
+    "code/lesson_05/task_4/Food.java",
+    "code/lesson_05/task_4/Owner.java",
+    "code/pom.xml"
+  ],
+  "video": ""
+}
