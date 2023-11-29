@@ -1,0 +1,18 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/app/code/Application.java",
+    "code/app/staff/administration/Director.java",
+    "code/app/staff/administration/ProductionChief.java",
+    "code/app/staff/administration/SalesChief.java",
+    "code/app/staff/specialists/production/MachineOperator.java",
+    "code/app/staff/specialists/production/Storekeeper.java",
+    "code/app/staff/specialists/sales/Merchandiser.java",
+    "code/app/staff/specialists/sales/SalesManager.java",
+    "code/app/staff/specialists/Secretary.java",
+    "code/beans.xml"
+  ],
+  "video": ""
+}

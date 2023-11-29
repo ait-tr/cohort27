@@ -1,0 +1,33 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<beans xmlns = "http://www.springframework.org/schema/beans"
+       xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+<!--    комментарий-->
+<!--    комментарий-->
+<!--    комментарий-->
+
+    <bean id="dir" class="app.staff.administration.Director">
+        <property name="secretary" ref="sec"/>
+        <property name="productionChief" ref="p_ch"/>
+        <property name="salesChief" ref="s_ch"/>
+    </bean>
+
+    <bean id="p_ch" class="app.staff.administration.ProductionChief">
+        <property name="machineOperator" ref="m_op"/>
+        <property name="storekeeper" ref="s_k"/>
+    </bean>
+
+    <bean id="s_ch" class="app.staff.administration.SalesChief">
+        <property name="merchandiser" ref="merch"/>
+        <property name="salesManager" ref="s_m"/>
+    </bean>
+
+    <bean id="m_op" class="app.staff.specialists.production.MachineOperator"/>
+    <bean id="s_k" class="app.staff.specialists.production.Storekeeper"/>
+    <bean id="merch" class="app.staff.specialists.sales.Merchandiser"/>
+    <bean id="s_m" class="app.staff.specialists.sales.SalesManager"/>
+    <bean id="sec" class="app.staff.specialists.Secretary"/>
+
+</beans>

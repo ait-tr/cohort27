@@ -1,0 +1,2 @@
+https://raw.githubusercontent.com/ait-tr/cohort27/main/back_end/lesson_06/resources/5.Spring_Framework_Introduction_Context_Beans.pptm
+https://raw.githubusercontent.com/ait-tr/cohort27/main/back_end/lesson_06/resources/libs/Библиотеки.rar

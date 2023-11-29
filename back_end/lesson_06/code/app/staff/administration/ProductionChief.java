@@ -1,0 +1,31 @@
+package app.staff.administration;
+
+import app.staff.specialists.production.MachineOperator;
+import app.staff.specialists.production.Storekeeper;
+
+public class ProductionChief {
+
+    private MachineOperator machineOperator;
+    private Storekeeper storekeeper;
+
+    public void giveOrders() {
+        machineOperator.work();
+        storekeeper.work();
+    }
+
+    public MachineOperator getMachineOperator() {
+        return machineOperator;
+    }
+
+    public void setMachineOperator(MachineOperator machineOperator) {
+        this.machineOperator = machineOperator;
+    }
+
+    public Storekeeper getStorekeeper() {
+        return storekeeper;
+    }
+
+    public void setStorekeeper(Storekeeper storekeeper) {
+        this.storekeeper = storekeeper;
+    }
+}
