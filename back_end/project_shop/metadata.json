@@ -1,0 +1,13 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/g_27_shop_project/src/main/java/de/aittr/g_27_shop_project/domain/CommonProduct.java",
+    "code/g_27_shop_project/src/main/java/de/aittr/g_27_shop_project/domain/Product.java",
+    "code/g_27_shop_project/src/main/java/de/aittr/g_27_shop_project/G27ShopProjectApplication.java",
+    "code/g_27_shop_project/pom.xml",
+    "code/g_27_shop_project/README.md"
+  ],
+  "video": ""
+}
