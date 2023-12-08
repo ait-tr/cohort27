@@ -1,0 +1,16 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/src/main/java/de/aittr/g_27_rest_demo/controllers/CatController.java",
+    "code/src/main/java/de/aittr/g_27_rest_demo/domain/Cat.java",
+    "code/src/main/java/de/aittr/g_27_rest_demo/domain/SimpleCat.java",
+    "code/src/main/java/de/aittr/g_27_rest_demo/repositories/CatRepository.java",
+    "code/src/main/java/de/aittr/g_27_rest_demo/repositories/CrudRepository.java",
+    "code/src/main/java/de/aittr/g_27_rest_demo/services/AppService.java",
+    "code/src/main/java/de/aittr/g_27_rest_demo/services/CatService.java",
+    "code/src/main/java/de/aittr/g_27_rest_demo/G27RestDemoApplication.java"
+  ],
+  "video": ""
+}
