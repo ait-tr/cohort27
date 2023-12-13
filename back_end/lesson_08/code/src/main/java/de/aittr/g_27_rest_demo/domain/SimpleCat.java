@@ -9,6 +9,9 @@ public class SimpleCat implements Cat {
     private String color;
     private double weight;
 
+    public SimpleCat() {
+    }
+
     public SimpleCat(int age, String color, double weight) {
         this.age = age;
         this.color = color;

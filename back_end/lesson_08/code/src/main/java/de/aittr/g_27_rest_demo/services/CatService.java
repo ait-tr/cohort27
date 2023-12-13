@@ -18,12 +18,12 @@ public class CatService implements AppService<Cat> {
 
     @Override
     public Cat save(Cat obj) {
-        return null;
+        return repository.save(obj);
     }
 
     @Override
     public Cat getById(int id) {
-        return null;
+        return repository.getById(id);
     }
 
     @Override
