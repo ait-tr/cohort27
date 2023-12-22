@@ -1,23 +1,24 @@
 package de.aittr.g_27_shop_project.domain;
 
-import de.aittr.g_27_shop_project.domain.interfaces.Product;
+import de.aittr.g_27_shop_project.domain.interfaces.Cart;
+import de.aittr.g_27_shop_project.domain.interfaces.Customer;
 
 import java.util.Objects;
 
-public class CommonProduct implements Product {
+public class CommonCustomer implements Customer {
 
     private int id;
     private boolean isActive;
     private String name;
-    private double price;
+    private Cart cart;
 
-    public CommonProduct() {
+    public CommonCustomer() {
         this.isActive = true;
     }
 
-    public CommonProduct(String name, double price) {
+    public CommonCustomer(String name, Cart cart) {
         this.name = name;
-        this.price = price;
+        this.cart = cart;
         this.isActive = true;
     }
 
@@ -37,26 +38,26 @@ public class CommonProduct implements Product {
     }
 
     @Override
-    public double getPrice() {
-        return price;
+    public Cart getCart() {
+        return cart;
     }
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        CommonProduct that = (CommonProduct) o;
-        return id == that.id && isActive == that.isActive && Double.compare(that.price, price) == 0 && Objects.equals(name, that.name);
+        CommonCustomer that = (CommonCustomer) o;
+        return id == that.id && isActive == that.isActive && Objects.equals(name, that.name) && Objects.equals(cart, that.cart);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, isActive, name, price);
+        return Objects.hash(id, isActive, name, cart);
     }
 
     @Override
     public String toString() {
-        return String.format("Продукт: ИД - %d, наименование - %s, цена - %.2f, активен - %s.",
-                id, name, price, isActive ? "да" : "нет");
+        return String.format("Покупатель: ИД - %d, имя - %s, активен - %s.",
+                id, name, isActive ? "да" : "нет");
     }
 }
