@@ -1,0 +1,19 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/QA27_Phonebook/src/main/java/com/phonebook/fw/ApplicationManager.java",
+    "code/QA27_Phonebook/src/main/java/com/phonebook/fw/BaseHelper.java",
+    "code/QA27_Phonebook/src/main/java/com/phonebook/fw/UserHelper.java",
+    "code/QA27_Phonebook/src/main/java/com/phonebook/fw/ContactHelper.java",
+    "code/QA27_Phonebook/src/main/java/com/phonebook/fw/HomePageHelper.java",
+    "code/QA27_Phonebook/src/main/java/com/phonebook/models/User.java",
+    "code/QA27_Phonebook/src/main/java/com/phonebook/models/Contact.java",
+    "code/QA27_Phonebook/src/test/java/com/ait/phonebook/tests/TestBase.java",
+    "code/QA27_Phonebook/src/test/java/com/ait/phonebook/tests/CreateAccountTests.java",
+    "code/QA27_Phonebook/src/test/java/com/ait/phonebook/tests/LoginTests.java",
+    "code/QA27_Phonebook/src/test/java/com/ait/phonebook/tests/AddContactTests.java",
+    "code/QA27_Phonebook/src/test/java/com/ait/phonebook/tests/RemoveContactTests.java"
+  ]
+}
