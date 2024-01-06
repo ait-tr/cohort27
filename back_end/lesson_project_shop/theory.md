@@ -1,1 +1,1 @@
-https://raw.githubusercontent.com/ait-tr/cohort27/main/back_end/project_shop/resources/Project.Shop.pptm
+https://raw.githubusercontent.com/ait-tr/cohort27/main/back_end/lesson_project_shop/resources/Project.Shop.pptm
