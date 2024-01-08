@@ -14,7 +14,10 @@
     "code/g_27_shop_project/src/main/java/de/aittr/g_27_shop_project/repositories/CommonCustomerRepository.java",
     "code/g_27_shop_project/src/main/java/de/aittr/g_27_shop_project/repositories/CommonProductRepository.java",
     "code/g_27_shop_project/src/main/java/de/aittr/g_27_shop_project/repositories/DBConnector.java",
-    "code/g_27_shop_project/src/main/java/de/aittr/g_27_shop_project/G27ShopProjectApplication.java"
+    "code/g_27_shop_project/src/main/java/de/aittr/g_27_shop_project/G27ShopProjectApplication.java",
+    "code/g_27_shop_project/src/main/java/de/aittr/g_27_shop_project/services/interfaces/ProductService.java",
+    "code/g_27_shop_project/src/main/java/de/aittr/g_27_shop_project/services/CommonProductService.java",
+    "code/g_27_shop_project/src/main/java/de/aittr/g_27_shop_project/controllers/ProductController.java"
   ],
   "video": ""
 }
