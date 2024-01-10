@@ -23,8 +23,18 @@ public class CommonCustomer implements Customer {
     }
 
     @Override
+    public void setCart(Cart cart) {
+        this.cart = cart;
+    }
+
+    @Override
     public int getId() {
         return id;
+    }
+
+    @Override
+    public void setId(int id) {
+        this.id = id;
     }
 
     @Override

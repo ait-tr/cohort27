@@ -14,6 +14,10 @@ public class CommonCart implements Cart {
     public CommonCart() {
     }
 
+    public CommonCart(int id) {
+        this.id = id;
+    }
+
     @Override
     public int getId() {
         return id;

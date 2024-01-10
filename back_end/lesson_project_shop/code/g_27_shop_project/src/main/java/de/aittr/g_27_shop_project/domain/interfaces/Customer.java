@@ -9,4 +9,8 @@ public interface Customer {
     String getName();
 
     Cart getCart();
+
+    void setId(int id);
+
+    void setCart(Cart cart);
 }
