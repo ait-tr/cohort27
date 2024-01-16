@@ -1,5 +1,6 @@
 package de.aittr.g_27_shop_project.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import de.aittr.g_27_shop_project.domain.interfaces.Product;
 
 import java.util.Objects;
@@ -39,6 +40,7 @@ public class CommonProduct implements Product {
     }
 
     @Override
+    @JsonIgnore
     public boolean isActive() {
         return isActive;
     }

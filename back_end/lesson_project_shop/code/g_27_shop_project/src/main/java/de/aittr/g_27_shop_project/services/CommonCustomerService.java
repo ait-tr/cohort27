@@ -1,11 +1,13 @@
 package de.aittr.g_27_shop_project.services;
 
 import de.aittr.g_27_shop_project.domain.interfaces.Customer;
+import de.aittr.g_27_shop_project.domain.interfaces.Product;
 import de.aittr.g_27_shop_project.repositories.interfaces.CustomerRepository;
 import de.aittr.g_27_shop_project.services.interfaces.CustomerService;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.NoSuchElementException;
 
 @Service
 public class CommonCustomerService implements CustomerService {
@@ -32,7 +34,13 @@ public class CommonCustomerService implements CustomerService {
 
     @Override
     public List<Customer> getAllActiveCustomers() {
-        return null;
+        List<Customer> customers = repository.getAll();
+
+        if (customers.isEmpty()) {
+            throw new NoSuchElementException("В базе данных нет покупателей");
+        }
+
+        return customers;
     }
 
     @Override

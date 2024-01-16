@@ -1,5 +1,6 @@
 package de.aittr.g_27_shop_project.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import de.aittr.g_27_shop_project.domain.interfaces.Cart;
 import de.aittr.g_27_shop_project.domain.interfaces.Product;
 
@@ -52,6 +53,7 @@ public class CommonCart implements Cart {
     }
 
     @Override
+    @JsonIgnore
     public double getAveragePrice() {
         return products.stream()
                 .filter(x -> x.isActive())
