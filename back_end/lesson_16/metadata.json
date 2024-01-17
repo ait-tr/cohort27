@@ -1,0 +1,15 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/g_27_data_jpa/src/main/java/de/aittr/g_27_data_jpa/controllers/BookController.java",
+    "code/g_27_data_jpa/src/main/java/de/aittr/g_27_data_jpa/domain/Book.java",
+    "code/g_27_data_jpa/src/main/java/de/aittr/g_27_data_jpa/repositories/BookRepository.java",
+    "code/g_27_data_jpa/src/main/java/de/aittr/g_27_data_jpa/services/BookService.java",
+    "code/g_27_data_jpa/src/main/java/de/aittr/g_27_data_jpa/G27DataJpaApplication.java",
+    "code/g_27_data_jpa/src/main/resources/application.properties",
+    "code/g_27_data_jpa/pom.xml"
+  ],
+  "video": ""
+}
