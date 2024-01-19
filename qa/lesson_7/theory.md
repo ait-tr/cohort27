@@ -19,8 +19,8 @@ one of the black box test design techniques that relates to dynamic analysis. Us
 
 [Презентация](https://docs.google.com/presentation/d/1X2AFW4ik4coNbsdNbLJOKXPa1iUiBR3S/edit?usp=sharing&ouid=116447005932578256378&rtpof=true&sd=true)
 
-[Decision tables exercises](https://docs.google.com/spreadsheets/d/1h1J2v0YlcrF5KcuzFNyScoQHmgOOqiZn/edit?usp=sharing&ouid=116447005932578256378&rtpof=true&sd=true)
+[Decision tables exercises](https://docs.google.com/spreadsheets/d/1sYcrqql8nYhkSovxEMVf12B6rDix9jHc/edit?usp=sharing&ouid=116447005932578256378&rtpof=true&sd=true)
 
-[TestNG documentation](https://testng.org/doc/documentation-main.html)
+[TestNG documentation](https://testng.org)
 
 
