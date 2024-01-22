@@ -1,6 +1,6 @@
 package de.aittr.g_27_shop_project.controllers;
 
-import de.aittr.g_27_shop_project.domain.CommonCustomer;
+import de.aittr.g_27_shop_project.domain.jdbc.CommonCustomer;
 import de.aittr.g_27_shop_project.domain.interfaces.Customer;
 import de.aittr.g_27_shop_project.services.interfaces.CustomerService;
 import org.springframework.web.bind.annotation.*;

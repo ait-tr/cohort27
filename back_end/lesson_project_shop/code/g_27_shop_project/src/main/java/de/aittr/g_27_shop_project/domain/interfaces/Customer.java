@@ -13,4 +13,8 @@ public interface Customer {
     void setId(int id);
 
     void setCart(Cart cart);
+
+    void setActive(boolean isActive);
+
+    void setName(String name);
 }
