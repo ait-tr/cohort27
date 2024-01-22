@@ -27,9 +27,9 @@
     "code/g_27_shop_project/src/main/java/de/aittr/g_27_shop_project/controllers/ProductController.java",
     "code/g_27_shop_project/src/main/java/de/aittr/g_27_shop_project/controllers/CustomerController.java",
     "code/g_27_shop_project/src/main/java/de/aittr/g_27_shop_project/G27ShopProjectApplication.java",
-    "back_end/lesson_project_shop/code/g_27_shop_project/src/main/resources/application.properties",
-    "back_end/lesson_project_shop/code/g_27_shop_project/pom.xml",
-    "back_end/lesson_project_shop/code/g_27_shop_project/README.md"
+    "code/g_27_shop_project/src/main/resources/application.properties",
+    "code/g_27_shop_project/pom.xml",
+    "code/g_27_shop_project/README.md"
   ],
   "video": ""
 }
