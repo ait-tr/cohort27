@@ -1,0 +1,12 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/QA27_Phonebook/build.gradle",
+    "code/QA27_Phonebook/src/main/java/com/phonebook/fw/ApplicationManager.java",
+    "code/QA27_Phonebook/src/test/java/com/phonebook/tests/TestBase.java",
+    "code/QA27_Phonebook/src/test/resources/testng.xml",
+    "code/QA27_Phonebook/src/test/resources/regression.xml"
+  ]
+}
