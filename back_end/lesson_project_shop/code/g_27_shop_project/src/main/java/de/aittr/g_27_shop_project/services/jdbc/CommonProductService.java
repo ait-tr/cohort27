@@ -1,9 +1,10 @@
 package de.aittr.g_27_shop_project.services.jdbc;
 
+import de.aittr.g_27_shop_project.domain.dto.ProductDto;
 import de.aittr.g_27_shop_project.domain.interfaces.Product;
 import de.aittr.g_27_shop_project.repositories.interfaces.ProductRepository;
 import de.aittr.g_27_shop_project.services.interfaces.ProductService;
-import org.springframework.stereotype.Service;
+import de.aittr.g_27_shop_project.services.mapping.ProductMappingService;
 
 import java.util.List;
 import java.util.NoSuchElementException;
@@ -12,13 +13,15 @@ import java.util.NoSuchElementException;
 public class CommonProductService implements ProductService {
 
     private ProductRepository repository;
+    private ProductMappingService mappingService;
 
-    public CommonProductService(ProductRepository repository) {
+    public CommonProductService(ProductRepository repository, ProductMappingService mappingService) {
         this.repository = repository;
+        this.mappingService = mappingService;
     }
 
     @Override
-    public Product save(Product product) {
+    public ProductDto save(ProductDto product) {
 
         if (product == null) {
             throw new IllegalArgumentException("Сохраняемый продукт не может быть null.");
@@ -32,27 +35,29 @@ public class CommonProductService implements ProductService {
             throw new IllegalArgumentException("Цена сохраняемого продукта не может быть отрицательной либо равной нулю.");
         }
 
-        return repository.save(product);
+        Product entity = mappingService.mapDtoToCommonProduct(product);
+        entity = repository.save(entity);
+        return mappingService.mapEntityToDto(entity);
     }
 
     @Override
-    public List<Product> getAllActiveProducts() {
+    public List<ProductDto> getAllActiveProducts() {
         List<Product> products = repository.getAll();
 
         if (products.isEmpty()) {
             throw new NoSuchElementException("В базе данных нет продуктов");
         }
 
-        return products;
+        return products.stream().map(x -> mappingService.mapEntityToDto(x)).toList();
     }
 
     @Override
-    public Product getActiveProductById(int id) {
+    public ProductDto getActiveProductById(int id) {
         return null;
     }
 
     @Override
-    public void update(Product product) {
+    public void update(ProductDto product) {
 
     }
 

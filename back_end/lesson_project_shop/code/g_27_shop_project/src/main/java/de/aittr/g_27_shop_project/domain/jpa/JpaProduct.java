@@ -23,6 +23,16 @@ public class JpaProduct implements Product {
     @Column(name = "is_active")
     private boolean isActive;
 
+    public JpaProduct() {
+    }
+
+    public JpaProduct(int id, String name, double price, boolean isActive) {
+        this.id = id;
+        this.name = name;
+        this.price = price;
+        this.isActive = isActive;
+    }
+
     @Override
     public int getId() {
         return id;

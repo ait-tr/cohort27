@@ -26,6 +26,8 @@
     "code/g_27_shop_project/src/main/java/de/aittr/g_27_shop_project/services/jpa/JpaProductService.java",
     "code/g_27_shop_project/src/main/java/de/aittr/g_27_shop_project/controllers/ProductController.java",
     "code/g_27_shop_project/src/main/java/de/aittr/g_27_shop_project/controllers/CustomerController.java",
+    "code/g_27_shop_project/src/main/java/de/aittr/g_27_shop_project/domain/dto/ProductDto.java",
+    "code/g_27_shop_project/src/main/java/de/aittr/g_27_shop_project/services/mapping/ProductMappingService.java",
     "code/g_27_shop_project/src/main/java/de/aittr/g_27_shop_project/G27ShopProjectApplication.java",
     "code/g_27_shop_project/src/main/resources/application.properties",
     "code/g_27_shop_project/pom.xml"
