@@ -3,8 +3,8 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
-    "code/QA27_Phonebook/src/test/java/com/ait/phonebook/tests/TestBase.java",
-    "code/QA27_Phonebook/src/test/java/com/ait/phonebook/tests/AddContactTests.java",
-    "code/QA27_PhoneBook/src/test/resources/logback.xml"
+    "code/QA27_Phonebook/src/test/java/com/phonebook/tests/TestBase.java",
+    "code/QA27_Phonebook/src/test/java/com/phonebook/tests/AddContactTests.java",
+    "code/QA27_Phonebook/src/test/resources/logback.xml"
   ]
 }
