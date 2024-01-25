@@ -1,6 +1,6 @@
-package de.aittr.g_27_shop_project.repositories;
+package de.aittr.g_27_shop_project.repositories.jdbc;
 
-import de.aittr.g_27_shop_project.domain.CommonProduct;
+import de.aittr.g_27_shop_project.domain.jdbc.CommonProduct;
 import de.aittr.g_27_shop_project.domain.interfaces.Product;
 import de.aittr.g_27_shop_project.repositories.interfaces.ProductRepository;
 import org.springframework.stereotype.Repository;
@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 
-import static de.aittr.g_27_shop_project.repositories.DBConnector.getConnection;
+import static de.aittr.g_27_shop_project.repositories.jdbc.DBConnector.getConnection;
 
 @Repository
 public class CommonProductRepository implements ProductRepository {
