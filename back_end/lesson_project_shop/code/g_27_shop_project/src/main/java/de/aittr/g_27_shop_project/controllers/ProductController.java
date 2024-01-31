@@ -1,8 +1,6 @@
 package de.aittr.g_27_shop_project.controllers;
 
 import de.aittr.g_27_shop_project.domain.dto.ProductDto;
-import de.aittr.g_27_shop_project.domain.jdbc.CommonProduct;
-import de.aittr.g_27_shop_project.domain.interfaces.Product;
 import de.aittr.g_27_shop_project.exception_handling.Response;
 import de.aittr.g_27_shop_project.exception_handling.exceptions.FirstTestException;
 import de.aittr.g_27_shop_project.services.interfaces.ProductService;

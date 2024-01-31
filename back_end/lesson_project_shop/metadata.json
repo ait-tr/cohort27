@@ -34,6 +34,7 @@
     "code/g_27_shop_project/src/main/java/de/aittr/g_27_shop_project/exception_handling/exceptions/FourthTestException.java",
     "code/g_27_shop_project/src/main/java/de/aittr/g_27_shop_project/exception_handling/Response.java",
     "code/g_27_shop_project/src/main/java/de/aittr/g_27_shop_project/exception_handling/CommonAdvice.java",
+    "code/g_27_shop_project/src/main/java/de/aittr/g_27_shop_project/logging/AspectLogging.java",
     "code/g_27_shop_project/src/main/java/de/aittr/g_27_shop_project/G27ShopProjectApplication.java",
     "code/g_27_shop_project/src/main/resources/application.properties",
     "code/g_27_shop_project/pom.xml"
