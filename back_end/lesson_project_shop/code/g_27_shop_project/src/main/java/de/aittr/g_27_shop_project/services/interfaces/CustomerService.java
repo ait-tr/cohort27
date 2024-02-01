@@ -1,7 +1,6 @@
 package de.aittr.g_27_shop_project.services.interfaces;
 
 import de.aittr.g_27_shop_project.domain.interfaces.Customer;
-import de.aittr.g_27_shop_project.domain.interfaces.Product;
 
 import java.util.List;
 

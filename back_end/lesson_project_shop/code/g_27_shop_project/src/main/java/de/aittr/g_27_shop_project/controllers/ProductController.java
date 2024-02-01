@@ -1,9 +1,11 @@
 package de.aittr.g_27_shop_project.controllers;
 
 import de.aittr.g_27_shop_project.domain.dto.ProductDto;
-import de.aittr.g_27_shop_project.domain.jdbc.CommonProduct;
-import de.aittr.g_27_shop_project.domain.interfaces.Product;
+import de.aittr.g_27_shop_project.exception_handling.Response;
+import de.aittr.g_27_shop_project.exception_handling.exceptions.FirstTestException;
 import de.aittr.g_27_shop_project.services.interfaces.ProductService;
+import jakarta.validation.Valid;
+import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -24,7 +26,7 @@ public class ProductController {
 
     // http://12.34.56.78:8080/product - POST
     @PostMapping
-    public ProductDto save(@RequestBody ProductDto product) {
+    public ProductDto save(@Valid @RequestBody ProductDto product) {
         return service.save(product);
     }
 
@@ -46,5 +48,17 @@ public class ProductController {
     @GetMapping("/restore/{id}")
     public void restoreById(@PathVariable int id) {
         service.restoreById(id);
+    }
+
+    // 1 способ - написание метода-хэндлера в контроллере
+    // Минус - когда требуется одинаковая обработка ошибок,
+    // такой хэндлер придётся написать в каждом контроллере.
+    // Плюс - когда требуется разная обработка ошибок для разных контроллеров,
+    // такой способ позволяет настроить точечно разную логику обработки
+    // под каждый контроллер в отдельности.
+    @ExceptionHandler(FirstTestException.class)
+    @ResponseStatus(HttpStatus.I_AM_A_TEAPOT)
+    public Response handleException(FirstTestException e) {
+        return new Response(e.getMessage());
     }
 }

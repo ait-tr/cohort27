@@ -1,7 +1,6 @@
 package de.aittr.g_27_shop_project.services.jdbc;
 
 import de.aittr.g_27_shop_project.domain.interfaces.Customer;
-import de.aittr.g_27_shop_project.domain.interfaces.Product;
 import de.aittr.g_27_shop_project.repositories.interfaces.CustomerRepository;
 import de.aittr.g_27_shop_project.services.interfaces.CustomerService;
 import org.springframework.stereotype.Service;

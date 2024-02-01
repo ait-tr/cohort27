@@ -1,0 +1,1 @@
+https://raw.githubusercontent.com/ait-tr/cohort27/main/back_end/lesson_20/resources/20_Spring_Boot_logging_and_AOP_basics.pdf
