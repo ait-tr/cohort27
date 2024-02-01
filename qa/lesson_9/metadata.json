@@ -6,6 +6,6 @@
     "code/QA27_Phonebook/src/main/java/com/phonebook/fw/BaseHelper.java",
     "code/QA27_Phonebook/src/main/java/com/phonebook/models/Contact.java",
     "code/QA27_Phonebook/src/test/java/com/phonebook/tests/TestBase.java",
-    "code/QA27_Phonebook/src/test/java/com/phonebook/tests/AddNewContactTests.java"
+    "code/QA27_Phonebook/src/test/java/com/phonebook/tests/AddContactTests.java"
   ]
 }
