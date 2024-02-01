@@ -1,6 +1,6 @@
 {
   "plan": "plan.md",
-  "theory": "theory.md"
+  "theory": "theory.md",
   "code": [
     "code/QA27_Phonebook/src/main/java/com/phonebook/utils/DataProviders.java",
     "code/QA27_Phonebook/src/main/java/com/phonebook/fw/BaseHelper.java",
