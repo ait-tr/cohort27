@@ -1,0 +1,1 @@
+https://raw.githubusercontent.com/ait-tr/cohort27/main/back_end/lesson_22/resources/22_Spring_Boot_security.pdf
