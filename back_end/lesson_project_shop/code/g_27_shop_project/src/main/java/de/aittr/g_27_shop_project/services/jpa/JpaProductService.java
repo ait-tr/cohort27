@@ -2,9 +2,11 @@ package de.aittr.g_27_shop_project.services.jpa;
 
 import de.aittr.g_27_shop_project.domain.dto.ProductDto;
 import de.aittr.g_27_shop_project.domain.jpa.JpaProduct;
+import de.aittr.g_27_shop_project.domain.jpa.Task;
 import de.aittr.g_27_shop_project.exception_handling.exceptions.FourthTestException;
 import de.aittr.g_27_shop_project.exception_handling.exceptions.ThirdTestException;
 import de.aittr.g_27_shop_project.repositories.jpa.JpaProductRepository;
+import de.aittr.g_27_shop_project.scheduling.ScheduleExecutor;
 import de.aittr.g_27_shop_project.services.interfaces.ProductService;
 import de.aittr.g_27_shop_project.services.mapping.ProductMappingService;
 import jakarta.transaction.Transactional;
@@ -12,6 +14,7 @@ import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -43,6 +46,8 @@ public class JpaProductService implements ProductService {
 
     @Override
     public List<ProductDto> getAllActiveProducts() {
+        Task task = new Task("Method getAllActiveProducts called");
+        ScheduleExecutor.scheduleTaskExecution(task);
         return repository.findAll()
                 .stream()
                 .filter(x -> x.isActive())
