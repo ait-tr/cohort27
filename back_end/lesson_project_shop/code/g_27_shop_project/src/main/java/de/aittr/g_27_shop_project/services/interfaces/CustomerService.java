@@ -1,18 +1,19 @@
 package de.aittr.g_27_shop_project.services.interfaces;
 
+import de.aittr.g_27_shop_project.domain.dto.CustomerDto;
 import de.aittr.g_27_shop_project.domain.interfaces.Customer;
 
 import java.util.List;
 
 public interface CustomerService {
 
-    Customer save(Customer customer);
+    CustomerDto save(CustomerDto customer);
 
-    List<Customer> getAllActiveCustomers();
+    List<CustomerDto> getAllActiveCustomers();
 
-    Customer getActiveCustomerById(int id);
+    CustomerDto getActiveCustomerById(int id);
 
-    void update(Customer customer);
+    void update(CustomerDto customer);
 
     void deleteById(int id);
 
