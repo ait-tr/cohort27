@@ -1,0 +1,21 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/g_27_security/src/main/java/de/aittr/g_27_security/domain/Car.java",
+    "code/g_27_security/src/main/java/de/aittr/g_27_security/domain/Role.java",
+    "code/g_27_security/src/main/java/de/aittr/g_27_security/domain/User.java",
+    "code/g_27_security/src/main/java/de/aittr/g_27_security/repositories/CarRepository.java",
+    "code/g_27_security/src/main/java/de/aittr/g_27_security/repositories/UserRepository.java",
+    "code/g_27_security/src/main/java/de/aittr/g_27_security/services/CarService.java",
+    "code/g_27_security/src/main/java/de/aittr/g_27_security/services/UserService.java",
+    "code/g_27_security/src/main/java/de/aittr/g_27_security/controllers/CarController.java",
+    "code/g_27_security/src/main/java/de/aittr/g_27_security/config/SecurityConfig.java",
+    "code/g_27_security/src/main/java/de/aittr/g_27_security/G27SecurityApplication.java",
+    "code/g_27_security/src/main/java/de/aittr/g_27_security/Test.java",
+    "code/g_27_security/src/main/resources/application.properties",
+    "code/g_27_security/pom.xml"
+  ],
+  "video": ""
+}
