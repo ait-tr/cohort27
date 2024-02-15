@@ -1,45 +1,29 @@
-package de.aittr.g_27_shop_project.services.jdbc;
+package de.aittr.g_27_shop_project.services.jpa;
 
 import de.aittr.g_27_shop_project.domain.interfaces.Customer;
-import de.aittr.g_27_shop_project.repositories.interfaces.CustomerRepository;
+import de.aittr.g_27_shop_project.repositories.jpa.JpaCustomerRepository;
 import de.aittr.g_27_shop_project.services.interfaces.CustomerService;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.NoSuchElementException;
 
-//@Service
-public class CommonCustomerService implements CustomerService {
+@Service
+public class JpaCustomerService implements CustomerService {
 
-    private CustomerRepository repository;
+    private JpaCustomerRepository repository;
 
-    public CommonCustomerService(CustomerRepository repository) {
+    public JpaCustomerService(JpaCustomerRepository repository) {
         this.repository = repository;
     }
 
     @Override
     public Customer save(Customer customer) {
-
-        if (customer == null) {
-            throw new IllegalArgumentException("Сохраняемый покупатель не может быть null.");
-        }
-
-        if (customer.getName() == null || customer.getName().isEmpty()) {
-            throw new IllegalArgumentException("Имя сохраняемого покупателя не может быть пустым.");
-        }
-
-        return repository.save(customer);
+        return null;
     }
 
     @Override
     public List<Customer> getAllActiveCustomers() {
-        List<Customer> customers = repository.getAll();
-
-        if (customers.isEmpty()) {
-            throw new NoSuchElementException("В базе данных нет покупателей");
-        }
-
-        return customers;
+        return null;
     }
 
     @Override
