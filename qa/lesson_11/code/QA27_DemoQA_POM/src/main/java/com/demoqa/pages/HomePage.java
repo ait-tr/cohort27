@@ -14,7 +14,23 @@ public class HomePage extends BasePage{
     WebElement alertsFrameWindows;
 
     public SidePanel getAlertsFrameWindows() {
-        click(alertsFrameWindows);
+        clickWithJS(alertsFrameWindows,0,300);
+        return new SidePanel(driver);
+    }
+
+    @FindBy(className = "fc-button-label")
+    WebElement consent;
+
+    public HomePage confirmCookies() {
+        click(consent);
+        return this;
+    }
+
+    @FindBy(xpath = "//h5[.='Widgets']")
+    WebElement widgets;
+
+    public SidePanel getWidgets() {
+        clickWithJS(widgets,0,300);
         return new SidePanel(driver);
     }
 }
