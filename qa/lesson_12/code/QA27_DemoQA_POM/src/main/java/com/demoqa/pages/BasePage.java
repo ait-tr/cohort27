@@ -41,4 +41,25 @@ public abstract class BasePage {
         return new WebDriverWait(driver, Duration.ofSeconds(time))
                 .until(ExpectedConditions.textToBePresentInElement(element,text));
     }
+
+    public void hideIframes() {
+        hideAd();
+        hideFooter();
+    }
+
+    public void hideFooter() {
+        js.executeScript("document.querySelector('footer').style.display='none';");
+    }
+
+    public void hideAd() {
+        js.executeScript("document.getElementById('adplus-anchor').style.display='none';");
+    }
+
+    public void typeWithJS(WebElement element, String text,int x,int y) {
+        if (text != null) {
+            clickWithJS(element,x,y);
+            element.clear();
+            element.sendKeys(text);
+        }
+    }
 }

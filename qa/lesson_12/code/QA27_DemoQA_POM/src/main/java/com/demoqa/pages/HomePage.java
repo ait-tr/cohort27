@@ -33,4 +33,12 @@ public class HomePage extends BasePage{
         clickWithJS(widgets,0,300);
         return new SidePanel(driver);
     }
+
+    @FindBy(xpath = "//h5[.='Forms']")
+    WebElement forms;
+
+    public SidePanel getForms() {
+        clickWithJS(forms,0,300);
+        return new SidePanel(driver);
+    }
 }

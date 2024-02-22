@@ -18,4 +18,14 @@ public class SelectTests extends TestBase {
     public void selectOldStyleTest() {
         new SelectPage(driver).selectOldStyle("Blue");
     }
+
+    @Test
+    public void multiSelectTest() {
+        new SelectPage(driver).multiSelect(new String[]{"Red","Green","Blue"});
+    }
+
+    @Test
+    public void standardMultiSelectTest() {
+        new SelectPage(driver).standardMultiSelect(2);
+    }
 }
