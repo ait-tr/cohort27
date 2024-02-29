@@ -20,6 +20,14 @@ public class PracticeFormTest extends TestBase {
         new PracticeFormPage(driver)
                 .enterPersonalData("Jack", "Sparrow", "jack@gm.com", "1234567890")
                 .selectGender("Male")
-                .typeOfDate("12 April 1987");
+                .typeOfDate("12 April 1987")
+                .addSubject(new String[]{"Math","English","Chemistry"})
+                .selectHobby(new String[]{"Sports","Reading","Music"})
+                .uploadFile("C:/Tools/1.jpg")
+                .selectState("NCR")
+                .selectCity("Delhi")
+                .submit()
+                .verifyStudentFormTitle("Thanks for submitting the form");
     }
 }
+

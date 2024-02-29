@@ -1,0 +1,11 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/QA27_DemoQA_POM/pom.xml",
+    "code/QA27_DemoQA_POM/src/test/java/com/demoqa/tests/PracticeFormTests.java",
+    "code/QA27_DemoQA_POM/src/main/java/com/demoqa/pages/PracticeFormPage.java",
+    "code/QA27_DemoQA_POM/src/test/resources/testng.xml"
+  ]
+}

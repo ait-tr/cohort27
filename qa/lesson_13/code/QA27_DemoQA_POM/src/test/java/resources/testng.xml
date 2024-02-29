@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Smoky" verbose="1">
+    <test name="Nopackage">
+        <classes>
+            <class name="com.demoqa.tests.PracticeFormTest"/>
+        </classes>
+    </test>
+</suite>
