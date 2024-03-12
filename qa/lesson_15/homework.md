@@ -1,5 +1,5 @@
 ## Homework
 
+Добавьте, пожалуйста, в проект, который был создан на уроке, тестовый класс, который редактирует контакт
 
-
-2. Установите, пожалуйста, [Android Studio](https://developer.android.com/studio)
+[Swagger Phonebook](https://contactapp-telran-backend.herokuapp.com/swagger-ui/index.html#/)
