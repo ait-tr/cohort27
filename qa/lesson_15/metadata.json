@@ -12,8 +12,8 @@
     "code/QA27_Phonebook_API/src/test/java/com/phonebook/tests/LoginRATests.java",
     "code/QA27_Phonebook_API/src/test/java/com/phonebook/tests/GetAllContactsRATests.java",
     "code/QA27_Phonebook_API/src/test/java/com/phonebook/tests/AddContactRATests.java",
-    "code/QA27_Phonebook_API/src/test/java/com/phonebook/tests/DeleteContactByIdRATests.java",
-    "code/QA27_Phonebook_API/src/test/java/com/phonebook/tests/DeleteAllContactsTests.java"
+    "code/QA27_Phonebook_API/src/test/java/com/phonebook/tests/DeleteContactByIdRATest.java",
+    "code/QA27_Phonebook_API/src/test/java/com/phonebook/tests/DeleteAllContactsRATests.java"
   ],
   "homework": "homework.md",
   "video": ""
