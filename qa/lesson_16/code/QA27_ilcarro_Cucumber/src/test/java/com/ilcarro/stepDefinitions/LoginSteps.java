@@ -1,4 +1,4 @@
-package ilcarro.stepDefinitions;
+package com.ilcarro.stepDefinitions;
 
 import com.ilcarro.pages.HomePage;
 import com.ilcarro.pages.LoginPage;
