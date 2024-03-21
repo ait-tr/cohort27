@@ -1,7 +1,7 @@
 ## Задачи на урок
 
-1. API Autotests 
-2. RestAssured
+1. Appium
+2. Automate actions on device
 
 
 
