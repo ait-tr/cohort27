@@ -1,16 +1,12 @@
-package com.reminder.fw;
+package com.remindly.fw;
 
 import io.appium.java_client.AppiumDriver;
-import io.appium.java_client.PerformsTouchActions;
-import io.appium.java_client.TouchAction;
-import io.appium.java_client.touch.offset.PointOption;
 import org.openqa.selenium.By;
-import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebElement;
 
 import java.util.List;
 
-public class ReminderHelper extends BaseHelper {
+public class ReminderHelper extends com.remindly.fw.BaseHelper {
 
     public ReminderHelper(AppiumDriver driver) {
         super(driver);
@@ -36,19 +32,6 @@ public class ReminderHelper extends BaseHelper {
                 }
             }
         }
-    }
-
-    public void swipe(double startPoint, double stopPoint) {
-        Dimension size = driver.manage().window().getSize();
-
-        int x = size.width / 2;
-
-        int startY = (int) (size.height * startPoint);
-        int stopY = (int) (size.height * stopPoint);
-
-        new TouchAction((PerformsTouchActions) driver).longPress(PointOption.point(x, startY))
-                .moveTo(PointOption.point(x, stopY))
-                .release().perform();
     }
 
     public String getSelectedMonth() {
@@ -85,23 +68,6 @@ public class ReminderHelper extends BaseHelper {
         getYear();
     }
 
-    public void moveInElement(By locator, double startPoint, double stopPoint) {
-        Dimension size = driver.manage().window().getSize();
-        //get activity point
-        int y = (int) (size.height * startPoint);
-        int y2 = (int) (size.height * stopPoint);
-
-        //get Locator's point
-        WebElement element = driver.findElement(locator);
-        int leftX = element.getLocation().getX();
-        int rightX = leftX + element.getSize().getWidth();
-        int middleX = (leftX + rightX) / 2;
-
-        new TouchAction((PerformsTouchActions) driver).longPress(PointOption.point(middleX, y))
-                .moveTo(PointOption.point(middleX, y2))
-                .release().perform();
-    }
-
     public String getYear() {
         return driver.findElement(By.id("month_text_view")).getText();
     }
@@ -109,4 +75,37 @@ public class ReminderHelper extends BaseHelper {
     public void tapOnOk() {
         tap(By.id("ok"));
     }
+
+    public void tapOnTimeField() {
+        tap(By.id("time"));
+    }
+
+    public void selectTime(String timeOfDay, int xHour, int yHour, int xMin, int yMin) {
+
+        pause(500);
+        if (timeOfDay.equals("am")) {
+            tapWithCoordinates(279,1318);
+        } else if (timeOfDay.equals("pm")) {
+            tapWithCoordinates(789,1318);
+        }
+        tapWithCoordinates(xHour,yHour);
+        tapWithCoordinates(xMin,yMin);
+    }
+
+    public void defineRepetition(String repeat) {
+        tap(By.id("RepeatNo"));
+        pause(500);
+        type(By.className("android.widget.EditText"),repeat);
+        tap(By.xpath("//*[@text='OK']"));
+    }
+
+    public void selectTypeOfRepetition(String typeRep) {
+        tap(By.id("RepeatType"));
+        tap(By.xpath("//*[@text='" + typeRep + "']"));
+    }
+
+    public void saveReminder() {
+        tap(By.id("save_reminder"));
+    }
+
 }

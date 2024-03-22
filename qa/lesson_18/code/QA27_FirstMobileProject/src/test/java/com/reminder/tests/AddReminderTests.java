@@ -1,4 +1,4 @@
-package com.reminder.tests;
+package com.remindly.tests;
 
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
@@ -15,7 +15,7 @@ public class AddReminderTests extends TestBase{
     public void addReminderPositiveTest() {
         //tap on add reminder
         app.getMainScreen().tapOnAddReminder();
-       //enter title
+        //enter title
         app.getReminder().enterReminderTitle("Holiday");
         //select date
         app.getReminder().tapOnDataField();
@@ -26,13 +26,16 @@ public class AddReminderTests extends TestBase{
         //select time
         app.getReminder().tapOnTimeField();
         app.getReminder().selectTime("am",535,1195,535,653);
+        app.getReminder().tapOnOk();
         //add repetition interval
         app.getReminder().defineRepetition("2");
         //swipe up
         app.getReminder().swipe(0.8,0.4);
         //select type of repetitions
         app.getReminder().selectTypeOfRepetition("Week");
+        //save repetition
+        app.getReminder().saveReminder();
         //assert reminder is added by text
-        Assert.assertTrue(app.getMainScreen().isReminderTitlePresent("Holiday"));
+        Assert.assertTrue(app.getMainScreen().isReminderTitlePresent().contains("Holiday"));
     }
 }
