@@ -1,0 +1,25 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/g_27_jwt/src/main/java/de/aittr/g_27_jwt/domain/entity/Car.java",
+    "code/g_27_jwt/src/main/java/de/aittr/g_27_jwt/domain/entity/Role.java",
+    "code/g_27_jwt/src/main/java/de/aittr/g_27_jwt/domain/entity/User.java",
+    "code/g_27_jwt/src/main/java/de/aittr/g_27_jwt/repository/CarRepository.java",
+    "code/g_27_jwt/src/main/java/de/aittr/g_27_jwt/repository/RoleRepository.java",
+    "code/g_27_jwt/src/main/java/de/aittr/g_27_jwt/repository/UserRepository.java",
+    "code/g_27_jwt/src/main/java/de/aittr/g_27_jwt/service/CarService.java",
+    "code/g_27_jwt/src/main/java/de/aittr/g_27_jwt/service/UserService.java",
+    "code/g_27_jwt/src/main/java/de/aittr/g_27_jwt/controller/CarController.java",
+    "code/g_27_jwt/src/main/java/de/aittr/g_27_jwt/G27JwtApplication.java",
+    "code/g_27_jwt/src/main/java/de/aittr/g_27_jwt/security/sec_dto/AuthInfo.java",
+    "code/g_27_jwt/src/main/java/de/aittr/g_27_jwt/security/sec_dto/RefreshRequestDto.java",
+    "code/g_27_jwt/src/main/java/de/aittr/g_27_jwt/security/sec_dto/TokenResponseDto.java",
+    "code/g_27_jwt/src/main/java/de/aittr/g_27_jwt/security/sec_service/AuthService.java",
+    "code/g_27_jwt/src/main/java/de/aittr/g_27_jwt/security/sec_service/TokenService.java",
+    "code/g_27_jwt/src/main/resources/application.properties",
+    "code/g_27_jwt/pom.xml"
+  ],
+  "video": ""
+}
