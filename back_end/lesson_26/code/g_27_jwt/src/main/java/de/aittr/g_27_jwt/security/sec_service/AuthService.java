@@ -4,6 +4,7 @@ import de.aittr.g_27_jwt.domain.entity.User;
 import de.aittr.g_27_jwt.security.sec_dto.AuthInfo;
 import de.aittr.g_27_jwt.security.sec_dto.TokenResponseDto;
 import de.aittr.g_27_jwt.service.UserService;
+import io.jsonwebtoken.Claims;
 import jakarta.annotation.Nonnull;
 import jakarta.security.auth.message.AuthException;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -40,6 +41,22 @@ public class AuthService {
         } else {
             throw new AuthException("Password is incorrect");
         }
+    }
+
+    public TokenResponseDto getAccessToken(@Nonnull String refreshToken) {
+        if (tokenService.validateRefreshToken(refreshToken)) {
+            Claims refreshClaims = tokenService.getRefreshClaims(refreshToken);
+            String username = refreshClaims.getSubject();
+            String savedRefreshToken = refreshStorage.get(username);
+
+            if (savedRefreshToken != null && savedRefreshToken.equals(refreshToken)) {
+                User user = (User) userService.loadUserByUsername(username);
+                String accessToken = tokenService.generateAccessToken(user);
+                return new TokenResponseDto(accessToken, null);
+            }
+        }
+
+        return new TokenResponseDto(null, null);
     }
 
     public AuthInfo getAuthInfo() {

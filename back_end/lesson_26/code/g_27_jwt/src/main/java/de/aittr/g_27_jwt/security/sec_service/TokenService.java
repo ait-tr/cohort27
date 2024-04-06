@@ -1,7 +1,10 @@
 package de.aittr.g_27_jwt.security.sec_service;
 
+import de.aittr.g_27_jwt.domain.entity.Role;
 import de.aittr.g_27_jwt.domain.entity.User;
 import de.aittr.g_27_jwt.repository.RoleRepository;
+import de.aittr.g_27_jwt.security.sec_dto.AuthInfo;
+import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.io.Decoders;
 import io.jsonwebtoken.security.Keys;
@@ -13,7 +16,7 @@ import javax.crypto.SecretKey;
 import java.time.Instant;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
-import java.util.Date;
+import java.util.*;
 
 @Service
 public class TokenService {
@@ -76,5 +79,35 @@ public class TokenService {
         } catch (Exception e) {
             return false;
         }
+    }
+
+    public Claims getAccessClaims(@Nonnull String accessToken) {
+        return getClaims(accessToken, accessKey);
+    }
+
+    public Claims getRefreshClaims(@Nonnull String refreshToken) {
+        return getClaims(refreshToken, refreshKey);
+    }
+
+    public Claims getClaims(@Nonnull String token, @Nonnull SecretKey key) {
+        return Jwts.parser()
+                .verifyWith(key)
+                .build()
+                .parseSignedClaims(token)
+                .getPayload();
+    }
+
+    public AuthInfo generateAuthInfo(Claims claims) {
+        String username = claims.getSubject();
+        List<LinkedHashMap<String, String>> rolesList = (List<LinkedHashMap<String, String>>) claims.get("roles");
+        Set<Role> roles = new HashSet<>();
+
+        for (LinkedHashMap<String, String> roleEntry : rolesList) {
+            String roleName = roleEntry.get("authority");
+            Role role = repository.findByName(roleName);
+            roles.add(role);
+        }
+
+        return new AuthInfo(username, roles);
     }
 }

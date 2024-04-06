@@ -18,6 +18,9 @@
     "code/g_27_jwt/src/main/java/de/aittr/g_27_jwt/security/sec_dto/TokenResponseDto.java",
     "code/g_27_jwt/src/main/java/de/aittr/g_27_jwt/security/sec_service/AuthService.java",
     "code/g_27_jwt/src/main/java/de/aittr/g_27_jwt/security/sec_service/TokenService.java",
+    "code/g_27_jwt/src/main/java/de/aittr/g_27_jwt/security/sec_controller/AuthController.java",
+    "code/g_27_jwt/src/main/java/de/aittr/g_27_jwt/security/sec_filter/TokenFilter.java",
+    "code/g_27_jwt/src/main/java/de/aittr/g_27_jwt/security/sec_config/SecurityConfig.java",
     "code/g_27_jwt/src/main/resources/application.properties",
     "code/g_27_jwt/pom.xml"
   ],
