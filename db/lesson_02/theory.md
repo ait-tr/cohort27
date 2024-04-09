@@ -1,6 +1,6 @@
 # Lesson 02
 
-Презентация: [db_02.pdf](https://github.com/ait-tr/cohort27/blob/main/basic_programming/lesson_02/presentation/db_02.pdf)
+Презентация: [db_02.pdf](https://github.com/ait-tr/cohort27/blob/main/db/lesson_02/presentation/db_02.pdf)
 
 Заметки: [db_02_notes.pdf](https://github.com/ait-tr/cohort27/blob/main/basic_programming/lesson_02/presentation/db_02_notes.pdf)
 
